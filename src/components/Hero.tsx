@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { CheckCircle2, ArrowRight } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
-import heroImage from "@/assets/hero-healthcare.jpg";
+import heroVideo from "@/assets/hero-video.mp4";
 
 export const Hero = () => {
   const [email, setEmail] = useState("");
@@ -84,9 +84,12 @@ export const Hero = () => {
 
           <div className="relative lg:block hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
-            <img
-              src={heroImage}
-              alt="Healthcare education professionals collaborating"
+            <video
+              src={heroVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
               className="relative rounded-3xl shadow-2xl w-full object-cover"
             />
           </div>
