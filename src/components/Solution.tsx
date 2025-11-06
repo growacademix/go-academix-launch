@@ -99,7 +99,7 @@ export const Solution = () => {
             </p>
             <div className="space-y-3">
               {[
-                "Reduce administrative burden by up to 60%",
+                "Reduce administrative burden by up to 34%",
                 "Improve student retention and graduation rates",
                 "Support the healthcare workforce pipeline",
                 "Modern, integrated, student-centered platform",
