@@ -86,9 +86,8 @@ export const Hero = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
             <video
               src={heroVideo}
-              autoPlay
+              controls
               loop
-              muted
               playsInline
               className="relative rounded-3xl shadow-2xl w-full object-cover"
             />
