@@ -59,9 +59,55 @@ export const Solution = () => {
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A next-generation learning management platform purpose-built for allied healthcare schools. 
-            Everything you need in one integrated, modern, student-centered solution.
+            The first platform to combine Learning Management System (LMS) and Student Information System (SIS) 
+            into one unified, modern solution purpose-built for allied healthcare schools. 
+            Reduce costs while improving outcomes.
           </p>
+        </div>
+
+        <div className="bg-card rounded-2xl border border-border p-8 mb-16">
+          <h3 className="text-2xl font-bold mb-6 text-center">Traditional Systems vs GO ACADEMIX</h3>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="font-semibold text-lg mb-4 text-destructive">Traditional Approach</h4>
+                <div className="space-y-3 text-sm">
+                  <div className="p-3 bg-muted rounded-lg">
+                    <div className="font-medium mb-1">Separate LMS</div>
+                    <div className="text-muted-foreground">Course content & grades</div>
+                  </div>
+                  <div className="text-center text-muted-foreground">+</div>
+                  <div className="p-3 bg-muted rounded-lg">
+                    <div className="font-medium mb-1">Separate SIS</div>
+                    <div className="text-muted-foreground">Student records & registration</div>
+                  </div>
+                  <div className="text-center text-muted-foreground">=</div>
+                  <div className="p-3 bg-destructive/10 border border-destructive/20 rounded-lg">
+                    <div className="font-medium text-destructive">High Costs + Data Silos</div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-lg mb-4 text-primary">GO ACADEMIX Integration</h4>
+                <div className="space-y-3 text-sm">
+                  <div className="p-4 bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 rounded-lg">
+                    <div className="font-medium mb-2">Unified Platform</div>
+                    <div className="space-y-1 text-muted-foreground">
+                      <div>✓ Learning Management</div>
+                      <div>✓ Student Information</div>
+                      <div>✓ Registration & Enrollment</div>
+                      <div>✓ Compliance Reporting</div>
+                      <div>✓ Professional Networking</div>
+                    </div>
+                  </div>
+                  <div className="text-center text-muted-foreground">=</div>
+                  <div className="p-3 bg-primary/10 border border-primary/20 rounded-lg">
+                    <div className="font-medium text-primary">34% Cost Reduction + Seamless Data</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
@@ -93,9 +139,10 @@ export const Solution = () => {
               Transform Your School's Operations
             </h3>
             <p className="text-lg text-muted-foreground mb-8">
-              GO ACADEMIX creates efficiency for schools, improves retention and graduation rates, 
-              and supports the healthcare workforce pipeline by making education more accessible, 
-              connected, and less emotionally taxing.
+              By combining LMS and SIS into one platform, GO ACADEMIX eliminates expensive redundancies, 
+              reduces administrative burden by 34%, and improves retention and graduation rates. 
+              Our integrated approach supports the healthcare workforce pipeline by making education more 
+              accessible, connected, and cost-effective.
             </p>
             <div className="space-y-3">
               {[
