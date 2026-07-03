@@ -44,6 +44,16 @@ const expectations = [
   }
 ];
 
+const ExpectationCard = ({ item }: { item: typeof expectations[number] }) => (
+  <div className="group p-8 bg-card rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg transition-all text-center">
+    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
+      <item.icon className="w-7 h-7 text-primary-foreground" />
+    </div>
+    <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+    <p className="text-muted-foreground">{item.description}</p>
+  </div>
+);
+
 export const AdvisoryCouncil = () => {
   const [email, setEmail] = useState("");
   const [school, setSchool] = useState("");
