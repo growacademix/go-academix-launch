@@ -26,11 +26,21 @@ const benefits = [
 ];
 
 const expectations = [
-  "Start with a single 30-minute demo to see what we are building and share your initial thoughts.",
-  "Occasionally answer short follow-up questions by email when we want your input on a feature or workflow.",
-  "No ongoing meetings, committees, or additional requirements. We know your time is valuable.",
-  "Share your honest feedback on features that matter most to your school.",
-  "Help us build something that better serves vocational healthcare schools across the country."
+  {
+    icon: Calendar,
+    title: "30-Minute Demo",
+    description: "Start with a single 30-minute demo to see what we are building and share your initial thoughts."
+  },
+  {
+    icon: Mail,
+    title: "Occasional Email Input",
+    description: "Occasionally answer short follow-up questions by email when we want your input on a feature or workflow."
+  },
+  {
+    icon: CheckCircle2,
+    title: "No Ongoing Commitments",
+    description: "No ongoing meetings, committees, or additional requirements. We know your time is valuable."
+  }
 ];
 
 export const AdvisoryCouncil = () => {
@@ -157,18 +167,32 @@ export const AdvisoryCouncil = () => {
               ))}
             </div>
 
-            <div className="bg-card rounded-2xl border border-border p-8 max-w-4xl mx-auto">
-              <h3 className="text-2xl font-bold mb-6 text-center">What We Are Asking For</h3>
-              <div className="grid sm:grid-cols-2 gap-4">
-                {expectations.map((item, index) => (
-                  <div key={index} className="flex items-start gap-3 p-4 bg-muted rounded-xl">
-                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-0.5">
-                      <div className="w-2 h-2 rounded-full bg-primary" />
-                    </div>
-                    <span className="text-foreground">{item}</span>
-                  </div>
-                ))}
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+                <Calendar className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-primary">Time Commitment</span>
               </div>
+              <h2 className="text-4xl font-bold mb-6">
+                What We Are Asking For
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Three simple requests that respect your time.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {expectations.map((item, index) => (
+                <div
+                  key={index}
+                  className="group p-8 bg-card rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg transition-all text-center"
+                >
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
+                    <item.icon className="w-7 h-7 text-primary-foreground" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
