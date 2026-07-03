@@ -6,6 +6,7 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ArrowRight, CheckCircle2, Phone, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const benefits = [
   {
@@ -60,14 +61,31 @@ export const AdvisoryCouncil = () => {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [submitting, setSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email && email.includes("@")) {
+    if (!email || !email.includes("@") || !school) return;
+    setSubmitting(true);
+    try {
+      const { error } = await supabase.functions.invoke("submit-advisory-council", {
+        body: { school, email, message: message || null },
+      });
+      if (error) throw error;
       setSubmitted(true);
       toast({
         title: "Thank you for your interest!",
-        description: "Connor or Jocelyn will reach out soon to schedule a conversation."
+        description: "Connor or Jocelyn will reach out soon to schedule a conversation.",
       });
+    } catch (err) {
+      console.error(err);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again, or email jocelyn@goacademix.com directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -277,9 +295,10 @@ export const AdvisoryCouncil = () => {
                         type="submit"
                         size="lg"
                         variant="secondary"
+                        disabled={submitting}
                         className="w-full h-12 px-8 shadow-lg"
                       >
-                        Request a Conversation
+                        {submitting ? "Sending..." : "Request a Conversation"}
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Button>
                       <p className="text-center text-sm text-primary-foreground/80 mt-4">
