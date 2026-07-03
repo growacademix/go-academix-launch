@@ -3,8 +3,8 @@ import ahctLogo from "@/assets/ahct-logo.png.asset.json";
 import inspireLogo from "@/assets/inspire-cna-logo.png.asset.json";
 
 const customerLogos = [
-  { src: ahctLogo.url, alt: "Allied Health Career Training" },
-  { src: inspireLogo.url, alt: "Inspire CNA School" },
+  { src: ahctLogo.url, alt: "Allied Health Career Training", href: "https://alliedhealthcareertraining.com" },
+  { src: inspireLogo.url, alt: "Inspire CNA School", href: "https://inspirecnaschool.com" },
 ];
 
 export const SocialProof = () => {
@@ -25,13 +25,20 @@ export const SocialProof = () => {
 
           <div className="mb-12 flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
             {customerLogos.map((logo) => (
-              <img
+              <a
                 key={logo.alt}
-                src={logo.src}
-                alt={logo.alt}
-                className="h-20 md:h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
-                loading="lazy"
-              />
+                href={logo.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-lg"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="h-20 md:h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                  loading="lazy"
+                />
+              </a>
             ))}
           </div>
 
