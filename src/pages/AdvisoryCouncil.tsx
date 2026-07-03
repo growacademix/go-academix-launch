@@ -307,19 +307,23 @@ export const AdvisoryCouncil = () => {
                 Prefer to Schedule Directly?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                If you would rather book a time on Jocelyn’s calendar or reach out directly, we would love to hear from you. Together, we can build something that better serves vocational healthcare schools across the country.
+                The only time commitment is a 30-minute demo. After that, we will occasionally send short questions by email. Book a demo with Connor below or email Jocelyn directly.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="tel:316-633-0621">
+                <a
+                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button size="lg" className="h-12 px-8 shadow-md">
-                    <Phone className="mr-2 w-4 h-4" />
-                    Call or Text (316) 633-0621
+                    <Calendar className="mr-2 w-4 h-4" />
+                    Schedule a 30-Minute Demo
                   </Button>
                 </a>
-                <a href="mailto:Connor@alliedhealthcareertraining.com">
+                <a href="mailto:jocelyn@goacademix.com">
                   <Button size="lg" variant="outline" className="h-12 px-8">
                     <Mail className="mr-2 w-4 h-4" />
-                    Email Connor
+                    Email Jocelyn
                   </Button>
                 </a>
               </div>
