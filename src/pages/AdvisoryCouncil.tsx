@@ -183,8 +183,11 @@ export const AdvisoryCouncil = () => {
                   <h2 className="text-4xl font-bold mb-6">
                     Join the Advisory Council
                   </h2>
-                  <p className="text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto">
-                    If you would be willing to spend a few minutes sharing your thoughts, challenges, and frustrations with your current systems, we would genuinely appreciate the opportunity to connect.
+                  <p className="text-xl text-primary-foreground/90 mb-4 max-w-2xl mx-auto">
+                    We are looking for 10 healthcare training schools to help shape the platform. The total commitment is one 30-minute demo, followed by occasional short email questions when we want your input.
+                  </p>
+                  <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+                    No ongoing meetings, no committees, and no other requirements. We know your time is valuable. Schedule a demo with Connor or email Jocelyn and we will handle the rest.
                   </p>
 
                   {!submitted ? (
