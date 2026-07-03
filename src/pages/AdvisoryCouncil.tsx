@@ -244,6 +244,21 @@ export const AdvisoryCouncil = () => {
                         Request a Conversation
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Button>
+                      <p className="text-center text-sm text-primary-foreground/80 mt-4">
+                        Rather pick a time?{" "}
+                        <a
+                          href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-primary-foreground"
+                        >
+                          Schedule a 30-minute demo on Connor’s calendar
+                        </a>
+                        {" "}or email{" "}
+                        <a href="mailto:jocelyn@goacademix.com" className="underline hover:text-primary-foreground">
+                          jocelyn@goacademix.com
+                        </a>.
+                      </p>
                     </form>
                   ) : (
                     <div className="max-w-md mx-auto p-6 bg-background/95 rounded-xl">
