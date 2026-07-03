@@ -29,7 +29,8 @@ const expectations = [
   {
     icon: Calendar,
     title: "30-Minute Demo",
-    description: "Start with a single 30-minute demo to see what we are building and share your initial thoughts."
+    description: "Start with a single 30-minute demo to see what we are building and share your initial thoughts.",
+    href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
   },
   {
     icon: Mail,
