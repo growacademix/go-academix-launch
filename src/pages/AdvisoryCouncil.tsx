@@ -29,7 +29,8 @@ const expectations = [
   {
     icon: Calendar,
     title: "30-Minute Demo",
-    description: "Start with a single 30-minute demo to see what we are building and share your initial thoughts."
+    description: "Start with a single 30-minute demo to see what we are building and share your initial thoughts.",
+    href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
   },
   {
     icon: Mail,
@@ -42,6 +43,16 @@ const expectations = [
     description: "No ongoing meetings, committees, or additional requirements. We know your time is valuable."
   }
 ];
+
+const ExpectationCard = ({ item }: { item: typeof expectations[number] }) => (
+  <div className="group p-8 bg-card rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg transition-all text-center">
+    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
+      <item.icon className="w-7 h-7 text-primary-foreground" />
+    </div>
+    <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+    <p className="text-muted-foreground">{item.description}</p>
+  </div>
+);
 
 export const AdvisoryCouncil = () => {
   const [email, setEmail] = useState("");
@@ -182,16 +193,19 @@ export const AdvisoryCouncil = () => {
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {expectations.map((item, index) => (
-                <div
-                  key={index}
-                  className="group p-8 bg-card rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg transition-all text-center"
-                >
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
-                    <item.icon className="w-7 h-7 text-primary-foreground" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">{item.title}</h3>
-                  <p className="text-muted-foreground">{item.description}</p>
-                </div>
+                item.href ? (
+                  <a
+                    key={index}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <ExpectationCard item={item} />
+                  </a>
+                ) : (
+                  <ExpectationCard key={index} item={item} />
+                )
               ))}
             </div>
           </div>
