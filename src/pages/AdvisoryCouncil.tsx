@@ -26,9 +26,10 @@ const benefits = [
 ];
 
 const expectations = [
-  "Share your honest thoughts, challenges, and frustrations with current systems.",
-  "Spend a few minutes in a conversation with Connor or Jocelyn.",
-  "Provide feedback on features that matter most to your school.",
+  "Start with a single 30-minute demo to see what we are building and share your initial thoughts.",
+  "Occasionally answer short follow-up questions by email when we want your input on a feature or workflow.",
+  "No ongoing meetings, committees, or additional requirements. We know your time is valuable.",
+  "Share your honest feedback on features that matter most to your school.",
   "Help us build something that better serves vocational healthcare schools across the country."
 ];
 
