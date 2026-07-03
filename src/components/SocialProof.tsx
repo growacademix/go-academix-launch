@@ -1,4 +1,11 @@
 import { Building2, Users, CheckCircle2 } from "lucide-react";
+import ahctLogo from "@/assets/ahct-logo.png.asset.json";
+import inspireLogo from "@/assets/inspire-cna-logo.png.asset.json";
+
+const customerLogos = [
+  { src: ahctLogo.url, alt: "Allied Health Career Training" },
+  { src: inspireLogo.url, alt: "Inspire CNA School" },
+];
 
 export const SocialProof = () => {
   return (
@@ -14,6 +21,18 @@ export const SocialProof = () => {
             <h2 className="text-4xl font-bold mb-6">
               Trusted by Leading Healthcare Educators
             </h2>
+          </div>
+
+          <div className="mb-12 flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
+            {customerLogos.map((logo) => (
+              <img
+                key={logo.alt}
+                src={logo.src}
+                alt={logo.alt}
+                className="h-20 md:h-24 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                loading="lazy"
+              />
+            ))}
           </div>
 
           <div className="bg-card rounded-2xl border-2 border-primary/20 shadow-xl overflow-hidden">
