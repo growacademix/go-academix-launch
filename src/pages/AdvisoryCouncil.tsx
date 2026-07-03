@@ -93,6 +93,40 @@ export const AdvisoryCouncil = () => {
     <div className="min-h-screen">
       <Header />
       <main>
+        <section className="pt-32 pb-20 bg-muted/30">
+          <div className="container mx-auto px-6">
+            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+              <div className="order-2 lg:order-1">
+                <div className="bg-card rounded-2xl border border-border p-8 shadow-sm">
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                    My wife, Jocelyn, and I own Allied Health Career Training in Wichita, Kansas. Each year, we train approximately 4,000 students and have grown to become one of the largest private, for-profit healthcare career schools in our state.
+                  </p>
+                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                    Over the past 15 years, we have used several different platforms for learning management and enrollment. Unfortunately, we have never found one that truly fit the needs of schools like ours. Most systems seem to be some combination of too expensive, overly complicated, inefficient, or designed for traditional colleges rather than vocational healthcare training programs.
+                  </p>
+                  <p className="text-lg text-foreground leading-relaxed font-medium">
+                    So we decided to build our own solution. GO ACADEMIX combines enrollment, payments, sponsor and loans tracking, learning management, certification tracking, attendance, and grades into a single platform designed specifically for private, for-profit healthcare training schools.
+                  </p>
+                </div>
+              </div>
+
+              <div className="order-1 lg:order-2">
+                <div className="relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
+                  <img
+                    src="/connor-jocelyn.jpg"
+                    alt="Connor and Jocelyn Powell, co-founders of GO ACADEMIX"
+                    className="relative rounded-3xl shadow-2xl w-full object-cover"
+                  />
+                </div>
+                <div className="text-center mt-4">
+                  <p className="text-sm text-muted-foreground">Co-Founders, GO ACADEMIX</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="relative pt-32 pb-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-accent/30 via-background to-background" />
           <div className="container mx-auto px-6 relative">
@@ -127,40 +161,6 @@ export const AdvisoryCouncil = () => {
                     Call or Text Connor
                   </Button>
                 </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-muted/30">
-          <div className="container mx-auto px-6">
-            <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-              <div className="order-2 lg:order-1">
-                <div className="bg-card rounded-2xl border border-border p-8 shadow-sm">
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    My wife, Jocelyn, and I own Allied Health Career Training in Wichita, Kansas. Each year, we train approximately 4,000 students and have grown to become one of the largest private, for-profit healthcare career schools in our state.
-                  </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
-                    Over the past 15 years, we have used several different platforms for learning management and enrollment. Unfortunately, we have never found one that truly fit the needs of schools like ours. Most systems seem to be some combination of too expensive, overly complicated, inefficient, or designed for traditional colleges rather than vocational healthcare training programs.
-                  </p>
-                  <p className="text-lg text-foreground leading-relaxed font-medium">
-                    So we decided to build our own solution. GO ACADEMIX combines enrollment, payments, sponsor and loans tracking, learning management, certification tracking, attendance, and grades into a single platform designed specifically for private, for-profit healthcare training schools.
-                  </p>
-                </div>
-              </div>
-
-              <div className="order-1 lg:order-2">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
-                  <img
-                    src="/connor-jocelyn.jpg"
-                    alt="Connor and Jocelyn Powell, co-founders of GO ACADEMIX"
-                    className="relative rounded-3xl shadow-2xl w-full object-cover"
-                  />
-                </div>
-                <div className="text-center mt-4">
-                  <p className="text-sm text-muted-foreground">Co-Founders, GO ACADEMIX</p>
-                </div>
               </div>
             </div>
           </div>
