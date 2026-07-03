@@ -26,9 +26,10 @@ const benefits = [
 ];
 
 const expectations = [
-  "Share your honest thoughts, challenges, and frustrations with current systems.",
-  "Spend a few minutes in a conversation with Connor or Jocelyn.",
-  "Provide feedback on features that matter most to your school.",
+  "Start with a single 30-minute demo to see what we are building and share your initial thoughts.",
+  "Occasionally answer short follow-up questions by email when we want your input on a feature or workflow.",
+  "No ongoing meetings, committees, or additional requirements. We know your time is valuable.",
+  "Share your honest feedback on features that matter most to your school.",
   "Help us build something that better serves vocational healthcare schools across the country."
 ];
 
@@ -182,8 +183,11 @@ export const AdvisoryCouncil = () => {
                   <h2 className="text-4xl font-bold mb-6">
                     Join the Advisory Council
                   </h2>
-                  <p className="text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto">
-                    If you would be willing to spend a few minutes sharing your thoughts, challenges, and frustrations with your current systems, we would genuinely appreciate the opportunity to connect.
+                  <p className="text-xl text-primary-foreground/90 mb-4 max-w-2xl mx-auto">
+                    We are looking for 10 healthcare training schools to help shape the platform. The total commitment is one 30-minute demo, followed by occasional short email questions when we want your input.
+                  </p>
+                  <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+                    No ongoing meetings, no committees, and no other requirements. We know your time is valuable. Schedule a demo with Connor or email Jocelyn and we will handle the rest.
                   </p>
 
                   {!submitted ? (
@@ -240,6 +244,21 @@ export const AdvisoryCouncil = () => {
                         Request a Conversation
                         <ArrowRight className="ml-2 w-4 h-4" />
                       </Button>
+                      <p className="text-center text-sm text-primary-foreground/80 mt-4">
+                        Rather pick a time?{" "}
+                        <a
+                          href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="underline hover:text-primary-foreground"
+                        >
+                          Schedule a 30-minute demo on Connor’s calendar
+                        </a>
+                        {" "}or email{" "}
+                        <a href="mailto:jocelyn@goacademix.com" className="underline hover:text-primary-foreground">
+                          jocelyn@goacademix.com
+                        </a>.
+                      </p>
                     </form>
                   ) : (
                     <div className="max-w-md mx-auto p-6 bg-background/95 rounded-xl">
@@ -252,14 +271,23 @@ export const AdvisoryCouncil = () => {
                     </div>
                   )}
 
-                  <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-primary-foreground/80">
+                  <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-primary-foreground/80">
+                    <a
+                      href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
+                    >
+                      <Calendar className="w-4 h-4" />
+                      <span>Schedule a 30-Minute Demo</span>
+                    </a>
+                    <a href="mailto:jocelyn@goacademix.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+                      <Mail className="w-4 h-4" />
+                      <span>jocelyn@goacademix.com</span>
+                    </a>
                     <a href="tel:316-633-0621" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
                       <Phone className="w-4 h-4" />
                       <span>(316) 633-0621</span>
-                    </a>
-                    <a href="mailto:Connor@alliedhealthcareertraining.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
-                      <Mail className="w-4 h-4" />
-                      <span>Connor@alliedhealthcareertraining.com</span>
                     </a>
                   </div>
                 </div>
@@ -279,19 +307,23 @@ export const AdvisoryCouncil = () => {
                 Prefer to Schedule Directly?
               </h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                If you would rather book a time on Jocelyn’s calendar or reach out directly, we would love to hear from you. Together, we can build something that better serves vocational healthcare schools across the country.
+                The only time commitment is a 30-minute demo. After that, we will occasionally send short questions by email. Book a demo with Connor below or email Jocelyn directly.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="tel:316-633-0621">
+                <a
+                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button size="lg" className="h-12 px-8 shadow-md">
-                    <Phone className="mr-2 w-4 h-4" />
-                    Call or Text (316) 633-0621
+                    <Calendar className="mr-2 w-4 h-4" />
+                    Schedule a 30-Minute Demo
                   </Button>
                 </a>
-                <a href="mailto:Connor@alliedhealthcareertraining.com">
+                <a href="mailto:jocelyn@goacademix.com">
                   <Button size="lg" variant="outline" className="h-12 px-8">
                     <Mail className="mr-2 w-4 h-4" />
-                    Email Connor
+                    Email Jocelyn
                   </Button>
                 </a>
               </div>
