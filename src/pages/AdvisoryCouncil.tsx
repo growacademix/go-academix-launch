@@ -119,7 +119,6 @@ export const AdvisoryCouncil = () => {
                   />
                 </div>
                 <div className="text-center mt-4">
-                  <p className="text-sm font-medium text-muted-foreground uppercase tracking-widest">Connor & Jocelyn Powell</p>
                   <p className="text-sm text-muted-foreground">Co-Founders, GO ACADEMIX</p>
                 </div>
               </div>
