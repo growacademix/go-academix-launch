@@ -113,7 +113,7 @@ export const AdvisoryCouncil = () => {
                 <div className="relative">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
                   <img
-                    src={connorJocelyn.url}
+                    src="/connor-jocelyn.jpg"
                     alt="Connor and Jocelyn Powell, co-founders of GO ACADEMIX"
                     className="relative rounded-3xl shadow-2xl w-full object-cover"
                   />
