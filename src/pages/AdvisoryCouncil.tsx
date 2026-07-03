@@ -6,7 +6,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ArrowRight, CheckCircle2, Phone, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
-import connorJocelyn from "@/assets/connor-jocelyn.jpg.asset.json";
 
 const benefits = [
   {
