@@ -271,14 +271,23 @@ export const AdvisoryCouncil = () => {
                     </div>
                   )}
 
-                  <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-8 text-sm text-primary-foreground/80">
+                  <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-primary-foreground/80">
+                    <a
+                      href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
+                    >
+                      <Calendar className="w-4 h-4" />
+                      <span>Schedule a 30-Minute Demo</span>
+                    </a>
+                    <a href="mailto:jocelyn@goacademix.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+                      <Mail className="w-4 h-4" />
+                      <span>jocelyn@goacademix.com</span>
+                    </a>
                     <a href="tel:316-633-0621" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
                       <Phone className="w-4 h-4" />
                       <span>(316) 633-0621</span>
-                    </a>
-                    <a href="mailto:Connor@alliedhealthcareertraining.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
-                      <Mail className="w-4 h-4" />
-                      <span>Connor@alliedhealthcareertraining.com</span>
                     </a>
                   </div>
                 </div>
