@@ -52,7 +52,7 @@ export const Solution = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <span className="w-2 h-2 rounded-full bg-primary" />
-            <span className="text-sm font-medium text-primary">One Platform</span>
+            <span className="text-sm font-medium text-primary">Live Today</span>
           </div>
 
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -61,7 +61,7 @@ export const Solution = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            GO ACADEMIX combines your LMS and SIS into a single, modern platform built specifically for Allied Health schools — so you can drop the extra subscriptions and stop patching things together.
+            These are the features GO ACADEMIX already powers for Allied Health schools — no roadmap promises, just the tools you can use from your first login.
           </p>
         </div>
 
