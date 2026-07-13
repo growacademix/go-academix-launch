@@ -5,7 +5,6 @@ import { Solution } from "@/components/Solution";
 import { SocialProof } from "@/components/SocialProof";
 
 import { LeadCapture } from "@/components/LeadCapture";
-import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -19,7 +18,6 @@ const Index = () => {
         <Solution />
         
         <LeadCapture />
-        <CTA />
       </main>
       <Footer />
     </div>

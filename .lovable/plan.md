@@ -1,30 +1,16 @@
-# Plan: Merge Feature Cards into Product Tour (Option A)
+Remove the repetitive bottom demo CTA so the last three sections no longer feel duplicated.
 
-Combine the 6 icon feature cards and the 7-screenshot Gallery into one unified section inside `Solution.tsx`.
+Current end-of-page flow:
+- Solution section → blue "Book a 30-min demo" block
+- LeadCapture section → email signup card
+- CTA section → second blue "Book a 30-min demo" block
 
-## Changes
+That creates two identical demo CTAs with only the email form between them. The plan is to drop the final CTA section and let LeadCapture serve as the closing conversion point.
 
-1. **`src/components/Solution.tsx`**
-   - Keep: "Live Today" header, comparison diagram, roadmap note, and demo CTA block.
-   - Remove: the 6 icon-based feature cards.
-   - Add: a screenshot grid (reuse the 7 screenshot assets from Gallery) where each card shows the screenshot + a live-feature title + short caption. Clicking a card opens the existing lightbox (Dialog) for a full-size view.
-   - Card mapping:
-     - Enrollment & Registration → Public Enrollment Page
-     - Student Records → Student Directory
-     - Sponsor Tracking & Payments → Payments & Sponsors
-     - Learning Management, Attendance & Grades → Course Detail
-     - Certificate Tracking & Student Portal → Student Portal
-     - Owner Dashboard → Owner Dashboard
-     - Team Access → Team Invitations
+Changes:
+1. In `src/pages/Index.tsx`, remove the `<CTA />` import and usage.
+2. Keep the demo CTA inside `Solution.tsx` — it appears right after the product tour, which is the highest-intent moment.
+3. Optionally add a small "Rather book a demo?" text link beneath the LeadCapture form so high-intent visitors still have an escape hatch without another full blue block.
+4. Run the build check to confirm no broken references.
 
-2. **`src/pages/Index.tsx`**
-   - Remove the `Gallery` import and `<Gallery />` usage.
-
-3. **`src/components/Gallery.tsx`**
-   - Delete the file.
-
-4. **Anchors/nav**
-   - If `#gallery` is referenced anywhere (header nav, links), update to point to the Solution section id or remove.
-
-## Result
-One cohesive "Live Today" section: comparison → visual proof of each live feature (screenshots) → demo CTA. No duplication, shorter page, stronger evidence.
+This keeps one strong demo CTA, one lower-friction email capture, and eliminates the repetitive closing block.
