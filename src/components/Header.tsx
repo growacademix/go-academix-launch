@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
+const DEMO_URL =
+  "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv";
+
 export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -14,8 +17,10 @@ export const Header = () => {
             <Link to="/advisorycouncil" className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors hidden sm:block">
               Advisory Council
             </Link>
-            <Button size="lg" className="shadow-md">
-              Request Early Access
+            <Button asChild size="lg" className="shadow-md">
+              <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+                Book a Demo
+              </a>
             </Button>
           </div>
         </div>
