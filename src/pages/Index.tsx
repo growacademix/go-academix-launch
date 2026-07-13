@@ -4,6 +4,7 @@ import { Problem } from "@/components/Problem";
 import { Solution } from "@/components/Solution";
 import { SocialProof } from "@/components/SocialProof";
 import { Gallery } from "@/components/Gallery";
+import { LeadCapture } from "@/components/LeadCapture";
 import { CTA } from "@/components/CTA";
 import { Footer } from "@/components/Footer";
 
@@ -17,6 +18,7 @@ const Index = () => {
         <Problem />
         <Solution />
         <Gallery />
+        <LeadCapture />
         <CTA />
       </main>
       <Footer />
