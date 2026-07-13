@@ -52,8 +52,6 @@ export const Hero = () => {
             <div className="rounded-lg border border-border shadow-card overflow-hidden bg-card">
               <video
                 src={heroVideoAsset.url}
-                autoPlay
-                muted
                 controls
                 loop
                 playsInline

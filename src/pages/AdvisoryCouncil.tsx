@@ -275,9 +275,9 @@ export const AdvisoryCouncil = () => {
                       <Button
                         type="submit"
                         size="lg"
-                        variant="secondary"
+                        variant="outline"
                         disabled={submitting}
-                        className="w-full h-12 px-8 shadow-sm"
+                        className="w-full h-12 px-8 shadow-sm bg-background text-primary border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary"
                       >
                         {submitting ? "Sending..." : "Request a Conversation"}
                         <ArrowRight className="ml-2 w-4 h-4" />
