@@ -23,7 +23,7 @@ export const CTA = () => {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="bg-background text-primary border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary"
+                  className="bg-white text-primary border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary"
                 >
                   <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
                     <Calendar className="mr-2 w-4 h-4" />
