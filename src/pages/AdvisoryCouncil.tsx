@@ -8,22 +8,25 @@ import { ArrowRight, CheckCircle2, Phone, Mail, Calendar, Users, MessageSquare, 
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
+const DEMO_URL =
+  "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv";
+
 const benefits = [
   {
     icon: Sparkles,
     title: "Early Access",
-    description: "Be among the first schools to use GO ACADEMIX before public launch."
+    description: "Be among the first schools to use GO ACADEMIX before public launch.",
   },
   {
     icon: MessageSquare,
     title: "Direct Input",
-    description: "Shape the product roadmap with feedback that directly influences development."
+    description: "Shape the product roadmap with feedback that directly influences development.",
   },
   {
     icon: CheckCircle2,
     title: "Heavily Discounted Pricing",
-    description: "Lock in advisory-member pricing as a thank you for helping build the platform."
-  }
+    description: "Lock in advisory-member pricing as a thank you for helping build the platform.",
+  },
 ];
 
 const expectations = [
@@ -31,26 +34,26 @@ const expectations = [
     icon: Calendar,
     title: "30-Minute Demo",
     description: "Start with a single 30-minute demo to see what we are building and share your initial thoughts.",
-    href: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
+    href: DEMO_URL,
   },
   {
     icon: Mail,
     title: "Occasional Email Input",
-    description: "Occasionally answer short follow-up questions by email when we want your input on a feature or workflow."
+    description: "Occasionally answer short follow-up questions by email when we want your input on a feature or workflow.",
   },
   {
     icon: CheckCircle2,
     title: "No Ongoing Commitments",
-    description: "No ongoing meetings, committees, or additional requirements. We know your time is valuable."
-  }
+    description: "No ongoing meetings, committees, or additional requirements. We know your time is valuable.",
+  },
 ];
 
 const ExpectationCard = ({ item }: { item: typeof expectations[number] }) => (
-  <div className="group p-8 bg-card rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg transition-all text-center">
-    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
-      <item.icon className="w-7 h-7 text-primary-foreground" />
+  <div className="group p-8 bg-card rounded-lg border border-border hover:border-primary/30 hover:shadow-md transition-all text-center h-full">
+    <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 mx-auto">
+      <item.icon className="w-7 h-7 text-primary" />
     </div>
-    <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+    <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
     <p className="text-muted-foreground">{item.description}</p>
   </div>
 );
@@ -60,7 +63,6 @@ export const AdvisoryCouncil = () => {
   const [school, setSchool] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
-
   const [submitting, setSubmitting] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -93,11 +95,11 @@ export const AdvisoryCouncil = () => {
     <div className="min-h-screen">
       <Header />
       <main>
-        <section className="pt-32 pb-20 bg-muted/30">
+        <section className="pt-32 pb-20 bg-accent/50">
           <div className="container mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
               <div className="order-2 lg:order-1">
-                <div className="bg-card rounded-2xl border border-border p-8 shadow-sm">
+                <div className="bg-card rounded-lg border border-border p-8 shadow-card">
                   <p className="text-lg text-muted-foreground leading-relaxed mb-6">
                     My wife, Jocelyn, and I own Allied Health Career Training in Wichita, Kansas. Each year, we train approximately 4,000 students and have grown to become one of the largest private, for-profit healthcare career schools in our state.
                   </p>
@@ -111,56 +113,14 @@ export const AdvisoryCouncil = () => {
               </div>
 
               <div className="order-1 lg:order-2">
-                <div className="relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-3xl" />
+                <div className="rounded-lg border border-border shadow-card overflow-hidden bg-card">
                   <img
                     src="/connor-jocelyn.jpg"
                     alt="Connor and Jocelyn Powell, co-founders of GO ACADEMIX"
-                    className="relative rounded-3xl shadow-2xl w-full object-cover"
+                    className="w-full object-cover"
                   />
                 </div>
-                <div className="text-center mt-4">
-                  <p className="text-sm text-muted-foreground">Co-Founders, GO ACADEMIX</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="relative pt-32 pb-20 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-accent/30 via-background to-background" />
-          <div className="container mx-auto px-6 relative">
-            <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                <span className="text-sm font-medium text-primary">Advisory Partnership</span>
-              </div>
-
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
-                Shape the Future of{" "}
-                <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                  Healthcare Learning
-                </span>
-              </h1>
-
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8">
-                We are looking for 10 healthcare training schools to join our Advisory Council. 
-                This is not a sales pitch. We want honest feedback from people who understand this industry as well as we do.
-              </p>
-
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#join">
-                  <Button size="lg" className="h-12 px-8 shadow-md">
-                    Join the Advisory Council
-                    <ArrowRight className="ml-2 w-4 h-4" />
-                  </Button>
-                </a>
-                <a href="tel:316-633-0621">
-                  <Button size="lg" variant="outline" className="h-12 px-8">
-                    <Phone className="mr-2 w-4 h-4" />
-                    Call or Text Connor
-                  </Button>
-                </a>
+                <p className="text-center mt-4 text-sm text-muted-foreground">Co-Founders, GO ACADEMIX</p>
               </div>
             </div>
           </div>
@@ -168,15 +128,48 @@ export const AdvisoryCouncil = () => {
 
         <section className="py-20">
           <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                <span className="text-sm font-medium text-primary">Advisory Partnership</span>
+              </div>
+
+              <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
+                Shape the Future of{" "}
+                <span className="text-primary">Allied Health Certificate Learning</span>
+              </h1>
+
+              <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8">
+                We are looking for 10 healthcare training schools to join our Advisory Council. This is not a sales pitch. We want honest feedback from people who understand this industry as well as we do.
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Button asChild size="lg">
+                  <a href="#join">
+                    Join the Advisory Council
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="outline">
+                  <a href="tel:316-633-0621">
+                    <Phone className="mr-2 w-4 h-4" />
+                    Call or Text Connor
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-accent/50">
+          <div className="container mx-auto px-6">
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
                 <Users className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium text-primary">Why Join</span>
               </div>
-              <h2 className="text-4xl font-bold mb-6">
-                Advisory Council Benefits
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6">Advisory Council Benefits</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 We are not sending this to sell you software. We are looking for honest feedback from schools that understand this industry.
               </p>
             </div>
@@ -185,12 +178,12 @@ export const AdvisoryCouncil = () => {
               {benefits.map((benefit, index) => (
                 <div
                   key={index}
-                  className="group p-8 bg-card rounded-2xl border border-border hover:border-primary/30 hover:shadow-lg transition-all text-center"
+                  className="group p-8 bg-card rounded-lg border border-border hover:border-primary/30 hover:shadow-md transition-all text-center"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform mx-auto">
-                    <benefit.icon className="w-7 h-7 text-primary-foreground" />
+                  <div className="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 mx-auto">
+                    <benefit.icon className="w-7 h-7 text-primary" />
                   </div>
-                  <h3 className="text-xl font-bold mb-3">{benefit.title}</h3>
+                  <h3 className="text-xl font-semibold mb-3">{benefit.title}</h3>
                   <p className="text-muted-foreground">{benefit.description}</p>
                 </div>
               ))}
@@ -201,48 +194,36 @@ export const AdvisoryCouncil = () => {
                 <Calendar className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium text-primary">Time Commitment</span>
               </div>
-              <h2 className="text-4xl font-bold mb-6">
-                What We Are Asking For
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6">What We Are Asking For</h2>
+              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Three simple requests that respect your time.
               </p>
             </div>
 
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-              {expectations.map((item, index) => (
+              {expectations.map((item, index) =>
                 item.href ? (
-                  <a
-                    key={index}
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block"
-                  >
+                  <a key={index} href={item.href} target="_blank" rel="noopener noreferrer" className="block">
                     <ExpectationCard item={item} />
                   </a>
                 ) : (
                   <ExpectationCard key={index} item={item} />
                 )
-              ))}
+              )}
             </div>
           </div>
         </section>
 
-        <section id="join" className="py-20 bg-muted/30">
+        <section id="join" className="py-20">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto">
-              <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-primary via-primary to-secondary p-12 shadow-2xl">
-                <div className="absolute inset-0 bg-grid-white/10 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.5))]" />
-
-                <div className="relative text-center text-primary-foreground">
-                  <h2 className="text-4xl font-bold mb-6">
-                    Join the Advisory Council
-                  </h2>
-                  <p className="text-xl text-primary-foreground/90 mb-4 max-w-2xl mx-auto">
+              <div className="rounded-lg bg-primary p-12 shadow-card">
+                <div className="text-center text-primary-foreground">
+                  <h2 className="text-3xl lg:text-4xl font-semibold mb-6">Join the Advisory Council</h2>
+                  <p className="text-lg text-primary-foreground/90 mb-4 max-w-2xl mx-auto">
                     We are looking for 10 healthcare training schools to help shape the platform. The total commitment is one 30-minute demo, followed by occasional short email questions when we want your input.
                   </p>
-                  <p className="text-lg text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
+                  <p className="text-base text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
                     No ongoing meetings, no committees, and no other requirements. We know your time is valuable. Schedule a demo with Connor or email Jocelyn and we will handle the rest.
                   </p>
 
@@ -296,7 +277,7 @@ export const AdvisoryCouncil = () => {
                         size="lg"
                         variant="secondary"
                         disabled={submitting}
-                        className="w-full h-12 px-8 shadow-lg"
+                        className="w-full h-12 px-8 shadow-sm"
                       >
                         {submitting ? "Sending..." : "Request a Conversation"}
                         <ArrowRight className="ml-2 w-4 h-4" />
@@ -304,33 +285,32 @@ export const AdvisoryCouncil = () => {
                       <p className="text-center text-sm text-primary-foreground/80 mt-4">
                         Rather pick a time?{" "}
                         <a
-                          href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
+                          href={DEMO_URL}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="underline hover:text-primary-foreground"
                         >
-                          Schedule a 30-minute demo on Connor’s calendar
-                        </a>
-                        {" "}or email{" "}
+                          Schedule a 30-minute demo on Connor's calendar
+                        </a>{" "}
+                        or email{" "}
                         <a href="mailto:jocelyn@goacademix.com" className="underline hover:text-primary-foreground">
                           jocelyn@goacademix.com
-                        </a>.
+                        </a>
+                        .
                       </p>
                     </form>
                   ) : (
-                    <div className="max-w-md mx-auto p-6 bg-background/95 rounded-xl">
+                    <div className="max-w-md mx-auto p-6 bg-background/95 rounded-lg">
                       <div className="flex items-center gap-3 text-foreground justify-center">
                         <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
-                        <p className="font-medium">
-                          Thank you! Connor or Jocelyn will be in touch soon.
-                        </p>
+                        <p className="font-medium">Thank you! Connor or Jocelyn will be in touch soon.</p>
                       </div>
                     </div>
                   )}
 
                   <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-primary-foreground/80">
                     <a
-                      href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
+                      href={DEMO_URL}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
@@ -338,11 +318,17 @@ export const AdvisoryCouncil = () => {
                       <Calendar className="w-4 h-4" />
                       <span>Schedule a 30-Minute Demo</span>
                     </a>
-                    <a href="mailto:jocelyn@goacademix.com" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+                    <a
+                      href="mailto:jocelyn@goacademix.com"
+                      className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
+                    >
                       <Mail className="w-4 h-4" />
                       <span>jocelyn@goacademix.com</span>
                     </a>
-                    <a href="tel:316-633-0621" className="flex items-center gap-2 hover:text-primary-foreground transition-colors">
+                    <a
+                      href="tel:316-633-0621"
+                      className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
+                    >
                       <Phone className="w-4 h-4" />
                       <span>(316) 633-0621</span>
                     </a>
@@ -353,36 +339,30 @@ export const AdvisoryCouncil = () => {
           </div>
         </section>
 
-        <section className="py-20">
+        <section className="py-20 bg-accent/50">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 border border-secondary/30 mb-6">
-                <Calendar className="w-4 h-4 text-secondary-foreground" />
-                <span className="text-sm font-medium text-secondary-foreground">Let’s Find a Few Minutes</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+                <Calendar className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-primary">Let's Find a Few Minutes</span>
               </div>
-              <h2 className="text-3xl font-bold mb-6">
-                Prefer to Schedule Directly?
-              </h2>
+              <h2 className="text-3xl font-semibold mb-6">Prefer to Schedule Directly?</h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
                 The only time commitment is a 30-minute demo. After that, we will occasionally send short questions by email. Book a demo with Connor below or email Jocelyn directly.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a
-                  href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Button size="lg" className="h-12 px-8 shadow-md">
+                <Button asChild size="lg">
+                  <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
                     <Calendar className="mr-2 w-4 h-4" />
                     Schedule a 30-Minute Demo
-                  </Button>
-                </a>
-                <a href="mailto:jocelyn@goacademix.com">
-                  <Button size="lg" variant="outline" className="h-12 px-8">
+                  </a>
+                </Button>
+                <Button asChild size="lg" variant="outline">
+                  <a href="mailto:jocelyn@goacademix.com">
                     <Mail className="mr-2 w-4 h-4" />
                     Email Jocelyn
-                  </Button>
-                </a>
+                  </a>
+                </Button>
               </div>
               <p className="mt-8 text-sm text-muted-foreground">
                 Thank you for everything you do to educate the next generation of healthcare professionals.

@@ -21,19 +21,19 @@ const painPoints = [
 
 export const Problem = () => {
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-accent/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-destructive/10 border border-destructive/20 mb-6">
-            <AlertCircle className="w-4 h-4 text-destructive" />
-            <span className="text-sm font-medium text-destructive">Sound familiar?</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+            <AlertCircle className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-primary">Sound Familiar?</span>
           </div>
 
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Running an Allied Health school shouldn't feel like duct-taping software together.
           </h2>
 
-          <p className="text-xl text-muted-foreground">
+          <p className="text-lg text-muted-foreground">
             We've sat with school owners, admins, and instructors. The same frustrations keep coming up.
           </p>
         </div>
@@ -42,7 +42,7 @@ export const Problem = () => {
           {painPoints.map((p, i) => (
             <div
               key={i}
-              className="p-8 bg-card rounded-2xl border border-border shadow-sm"
+              className="p-8 bg-card rounded-lg border border-border shadow-card"
             >
               <h3 className="text-xl font-semibold mb-3">{p.title}</h3>
               <p className="text-muted-foreground leading-relaxed">{p.body}</p>
