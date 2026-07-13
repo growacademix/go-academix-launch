@@ -1,10 +1,10 @@
 import {
   GraduationCap,
-  FileCheck,
+  Building2,
+  CreditCard,
+  BookOpen,
   Award,
-  Network,
-  TrendingUp,
-  Heart,
+  ClipboardCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
@@ -16,32 +16,32 @@ const features = [
   {
     icon: GraduationCap,
     title: "Enrollment & Registration",
-    description: "Sign students up, collect payments, and get them into courses without re-entering data three times.",
+    description: "Sign students up, collect payments, and get them into courses without re-entering the same data three times.",
   },
   {
-    icon: FileCheck,
-    title: "Compliance, Done for You",
-    description: "Clinical hours, immunizations, background checks, and state reporting — tracked automatically as students move through the program.",
+    icon: Building2,
+    title: "Sponsor Tracking",
+    description: "Keep employer and agency partnerships organized so you know who sponsored which student and when.",
+  },
+  {
+    icon: CreditCard,
+    title: "Payments & Financing",
+    description: "Collect payments directly and offer students loan options through Fortify — all inside the same platform.",
+  },
+  {
+    icon: BookOpen,
+    title: "Learning Management",
+    description: "Deliver coursework, track progress, and manage grades in one place instead of a separate LMS subscription.",
   },
   {
     icon: Award,
-    title: "Stackable Credentials",
-    description: "Move a CNA into Med Tech, or a PCT into Phlebotomy, without rebuilding their record from scratch.",
+    title: "Certificate Tracking",
+    description: "Know exactly who completed what, when, and which certificates are ready to issue — no spreadsheet hunting.",
   },
   {
-    icon: Network,
-    title: "Stay Connected After Graduation",
-    description: "Alumni network and job pathways that keep grads in healthcare — and keep them coming back for the next credential.",
-  },
-  {
-    icon: TrendingUp,
-    title: "Actually See What's Happening",
-    description: "One dashboard for enrollment, attendance, grades, and completion. No exports, no pivot tables.",
-  },
-  {
-    icon: Heart,
-    title: "Built for Allied Health",
-    description: "Not general education, not K-12 — every workflow is designed around how your school actually operates.",
+    icon: ClipboardCheck,
+    title: "Attendance & Grades",
+    description: "Record attendance and grades daily so student records stay current and state-ready from day one.",
   },
 ];
 
@@ -52,7 +52,7 @@ export const Solution = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <span className="w-2 h-2 rounded-full bg-primary" />
-            <span className="text-sm font-medium text-primary">One Platform</span>
+            <span className="text-sm font-medium text-primary">Live Today</span>
           </div>
 
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -61,7 +61,7 @@ export const Solution = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            GO ACADEMIX combines your LMS and SIS into a single, modern platform built specifically for Allied Health schools — so you can drop the extra subscriptions and stop patching things together.
+            These are the features GO ACADEMIX already powers for Allied Health schools — no roadmap promises, just the tools you can use from your first login.
           </p>
         </div>
 
