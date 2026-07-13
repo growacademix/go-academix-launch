@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { CheckCircle2, Mail } from "lucide-react";
+import { CheckCircle2, Mail, Calendar } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+
+const DEMO_URL =
+  "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv";
 
 export const LeadCapture = () => {
   const { toast } = useToast();
@@ -58,10 +61,19 @@ export const LeadCapture = () => {
                   <div className="flex flex-col items-center text-center gap-3 p-6 rounded-lg bg-primary/5 border border-primary/20">
                     <CheckCircle2 className="w-10 h-10 text-primary" />
                     <h3 className="font-semibold">You're on the list.</h3>
-                    <p className="text-sm text-muted-foreground">
-                      We'll be in touch. If you want to skip ahead, book a demo anytime.
-                    </p>
-                  </div>
+                  <p className="text-sm text-muted-foreground">
+                    We'll be in touch. If you want to skip ahead, book a demo anytime.
+                  </p>
+                  <a
+                    href={DEMO_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                  >
+                    <Calendar className="w-4 h-4" />
+                    Book a 30-min demo
+                  </a>
+                </div>
                 ) : (
                   <form onSubmit={onSubmit} className="space-y-3">
                     <Input
@@ -84,6 +96,18 @@ export const LeadCapture = () => {
                     </Button>
                     <p className="text-xs text-muted-foreground text-center">
                       We'll never share your email. One-click unsubscribe.
+                    </p>
+                    <p className="text-xs text-center text-muted-foreground">
+                      Rather talk now?{" "}
+                      <a
+                        href={DEMO_URL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="font-medium text-primary hover:underline inline-flex items-center gap-1"
+                      >
+                        <Calendar className="w-3 h-3" />
+                        Book a 30-min demo
+                      </a>
                     </p>
                   </form>
                 )}
