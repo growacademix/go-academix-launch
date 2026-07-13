@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { CostComparison } from "@/components/CostComparison";
 import shot1 from "@/assets/shot-11.45.17_am.png.asset.json";
 import shot2 from "@/assets/shot-11.50.58_am.png.asset.json";
 import shot3 from "@/assets/shot-11.49.00_am.png.asset.json";
@@ -73,55 +74,9 @@ export const Solution = () => {
           </p>
         </div>
 
-        <div className="bg-card rounded-lg border border-border shadow-card p-8 mb-16">
-          <h3 className="text-2xl font-semibold mb-6 text-center">What Most Schools Use Today vs. GO ACADEMIX</h3>
-          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-            <div>
-              <h4 className="font-semibold text-lg mb-4 text-muted-foreground">Today</h4>
-              <div className="space-y-3 text-sm">
-                <div className="p-3 bg-muted rounded-md border border-border">
-                  <div className="font-medium mb-1">LMS Subscription</div>
-                  <div className="text-muted-foreground">Course content & grades</div>
-                </div>
-                <div className="text-center text-muted-foreground">+</div>
-                <div className="p-3 bg-muted rounded-md border border-border">
-                  <div className="font-medium mb-1">SIS Subscription</div>
-                  <div className="text-muted-foreground">Records, enrollment, billing</div>
-                </div>
-                <div className="text-center text-muted-foreground">+</div>
-                <div className="p-3 bg-muted rounded-md border border-border">
-                  <div className="font-medium mb-1">Payment Processor, Spreadsheets, Manual Tracking…</div>
-                  <div className="text-muted-foreground">Held together by staff time</div>
-                </div>
-                <div className="text-center text-muted-foreground">=</div>
-                <div className="p-3 bg-muted rounded-md border border-border">
-                  <div className="font-medium">Overpaying. Overworked. Data everywhere.</div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-semibold text-lg mb-4 text-primary">With GO ACADEMIX — Live Today</h4>
-              <div className="space-y-3 text-sm">
-                <div className="p-4 bg-primary/5 border border-primary/20 rounded-md">
-                  <div className="font-medium mb-2">One platform, one login</div>
-                  <div className="space-y-1 text-muted-foreground">
-                    <div>Enrollment & registration</div>
-                    <div>Sponsor tracking</div>
-                    <div>Payments & Fortify loan option integration</div>
-                    <div>Learning management</div>
-                    <div>Certificate tracking</div>
-                    <div>Attendance & grades</div>
-                  </div>
-                </div>
-                <div className="text-center text-muted-foreground">=</div>
-                <div className="p-3 bg-primary/5 border border-primary/20 rounded-md">
-                  <div className="font-medium text-primary">Fewer vendors, less busywork, one source of truth.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="mt-8 max-w-4xl mx-auto p-4 rounded-md border border-border bg-muted/50">
+        <div className="mb-16">
+          <CostComparison />
+          <div className="mt-6 max-w-4xl mx-auto p-4 rounded-md border border-border bg-muted/50">
             <p className="text-sm text-muted-foreground">
               <span className="font-medium text-foreground">On the roadmap:</span> automated compliance workflows, advanced state reporting, scheduling, and alumni/career pathways — already in development with feedback from our partner schools.
             </p>
