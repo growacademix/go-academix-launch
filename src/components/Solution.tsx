@@ -1,43 +1,47 @@
-import { 
-  GraduationCap, 
-  FileCheck, 
-  Award, 
+import {
+  GraduationCap,
+  FileCheck,
+  Award,
   Network,
   TrendingUp,
-  Heart
+  Heart,
 } from "lucide-react";
-import featureImage from "@/assets/feature-network.jpg";
+import { Button } from "@/components/ui/button";
+import { Calendar, ArrowRight } from "lucide-react";
+
+const DEMO_URL =
+  "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv";
 
 const features = [
   {
     icon: GraduationCap,
-    title: "Integrated Registration",
-    description: "Streamlined student enrollment and course management in one unified system.",
+    title: "Enrollment & registration",
+    description: "Sign students up, collect payments, and get them into courses without re-entering data three times.",
   },
   {
     icon: FileCheck,
-    title: "Compliance Reporting",
-    description: "Healthcare-specific compliance tools built right into the platform.",
+    title: "Compliance, done for you",
+    description: "Clinical hours, immunizations, background checks, and state reporting — tracked automatically as students move through the program.",
   },
   {
     icon: Award,
-    title: "Credential Stacking",
-    description: "Help students advance from one credential to the next seamlessly.",
+    title: "Stackable credentials",
+    description: "Move a CNA into Med Tech, or a PCT into Phlebotomy, without rebuilding their record from scratch.",
   },
   {
     icon: Network,
-    title: "Professional Network",
-    description: "Built-in networking to keep students connected and advancing in their careers.",
+    title: "Stay connected after graduation",
+    description: "Alumni network and job pathways that keep grads in healthcare — and keep them coming back for the next credential.",
   },
   {
     icon: TrendingUp,
-    title: "Improved Retention",
-    description: "Reduce student burnout and improve graduation rates with better support.",
+    title: "Actually see what's happening",
+    description: "One dashboard for enrollment, attendance, grades, and completion. No exports, no pivot tables.",
   },
   {
     icon: Heart,
-    title: "Student-Centered",
-    description: "Features designed to support students beyond the classroom experience.",
+    title: "Built for Allied Health",
+    description: "Not general education, not K-12 — every workflow is designed around how your school actually operates.",
   },
 ];
 
@@ -48,62 +52,63 @@ export const Solution = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <span className="w-2 h-2 rounded-full bg-primary" />
-            <span className="text-sm font-medium text-primary">The Solution</span>
+            <span className="text-sm font-medium text-primary">One platform</span>
           </div>
-          
+
           <h2 className="text-4xl font-bold mb-6">
-            Meet{" "}
+            Everything your school runs on,{" "}
             <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              GO ACADEMIX
+              in one place
             </span>
           </h2>
-          
+
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            The first platform to combine Learning Management System (LMS) and Student Information System (SIS) 
-            into one unified, modern solution purpose-built for allied healthcare schools. 
-            Reduce costs while improving outcomes.
+            GO ACADEMIX combines your LMS and SIS into a single, modern platform built specifically for Allied Health schools — so you can drop the extra subscriptions and stop patching things together.
           </p>
         </div>
 
         <div className="bg-card rounded-2xl border border-border p-8 mb-16">
-          <h3 className="text-2xl font-bold mb-6 text-center">Traditional Systems vs GO ACADEMIX</h3>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="font-semibold text-lg mb-4 text-destructive">Traditional Approach</h4>
-                <div className="space-y-3 text-sm">
-                  <div className="p-3 bg-muted rounded-lg">
-                    <div className="font-medium mb-1">Separate LMS</div>
-                    <div className="text-muted-foreground">Course content & grades</div>
-                  </div>
-                  <div className="text-center text-muted-foreground">+</div>
-                  <div className="p-3 bg-muted rounded-lg">
-                    <div className="font-medium mb-1">Separate SIS</div>
-                    <div className="text-muted-foreground">Student records & registration</div>
-                  </div>
-                  <div className="text-center text-muted-foreground">=</div>
-                  <div className="p-3 bg-destructive/10 border border-destructive/20 rounded-lg">
-                    <div className="font-medium text-destructive">High Costs + Data Silos</div>
-                  </div>
+          <h3 className="text-2xl font-bold mb-6 text-center">What most schools use today vs. GO ACADEMIX</h3>
+          <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
+            <div>
+              <h4 className="font-semibold text-lg mb-4 text-destructive">Today</h4>
+              <div className="space-y-3 text-sm">
+                <div className="p-3 bg-muted rounded-lg">
+                  <div className="font-medium mb-1">LMS subscription</div>
+                  <div className="text-muted-foreground">Course content & grades</div>
+                </div>
+                <div className="text-center text-muted-foreground">+</div>
+                <div className="p-3 bg-muted rounded-lg">
+                  <div className="font-medium mb-1">SIS subscription</div>
+                  <div className="text-muted-foreground">Records, enrollment, billing</div>
+                </div>
+                <div className="text-center text-muted-foreground">+</div>
+                <div className="p-3 bg-muted rounded-lg">
+                  <div className="font-medium mb-1">Scheduling, compliance, spreadsheets…</div>
+                  <div className="text-muted-foreground">Held together by staff time</div>
+                </div>
+                <div className="text-center text-muted-foreground">=</div>
+                <div className="p-3 bg-destructive/10 border border-destructive/20 rounded-lg">
+                  <div className="font-medium text-destructive">Overpaying. Overworked. Data everywhere.</div>
                 </div>
               </div>
-              <div>
-                <h4 className="font-semibold text-lg mb-4 text-primary">GO ACADEMIX Integration</h4>
-                <div className="space-y-3 text-sm">
-                  <div className="p-4 bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 rounded-lg">
-                    <div className="font-medium mb-2">Unified Platform</div>
-                    <div className="space-y-1 text-muted-foreground">
-                      <div>✓ Learning Management</div>
-                      <div>✓ Student Information</div>
-                      <div>✓ Registration & Enrollment</div>
-                      <div>✓ Compliance Reporting</div>
-                      <div>✓ Professional Networking</div>
-                    </div>
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg mb-4 text-primary">With GO ACADEMIX</h4>
+              <div className="space-y-3 text-sm">
+                <div className="p-4 bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 rounded-lg">
+                  <div className="font-medium mb-2">One platform, one login</div>
+                  <div className="space-y-1 text-muted-foreground">
+                    <div>✓ Enrollment & registration</div>
+                    <div>✓ Course delivery & grades</div>
+                    <div>✓ Compliance & state reporting</div>
+                    <div>✓ Scheduling & attendance</div>
+                    <div>✓ Alumni & career pathways</div>
                   </div>
-                  <div className="text-center text-muted-foreground">=</div>
-                  <div className="p-3 bg-primary/10 border border-primary/20 rounded-lg">
-                    <div className="font-medium text-primary">34% Cost Reduction + Seamless Data</div>
-                  </div>
+                </div>
+                <div className="text-center text-muted-foreground">=</div>
+                <div className="p-3 bg-primary/10 border border-primary/20 rounded-lg">
+                  <div className="font-medium text-primary">Fewer vendors, less busywork, one source of truth.</div>
                 </div>
               </div>
             </div>
@@ -125,41 +130,20 @@ export const Solution = () => {
           ))}
         </div>
 
-        <div className="bg-gradient-to-br from-accent via-accent/50 to-background rounded-3xl p-12 relative overflow-hidden">
-          <div className="absolute top-0 right-0 w-1/2 h-full opacity-20">
-            <img 
-              src={featureImage} 
-              alt="Connected network illustration" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          
-          <div className="relative max-w-2xl">
-            <h3 className="text-3xl font-bold mb-6">
-              Transform Your School's Operations
-            </h3>
-            <p className="text-lg text-muted-foreground mb-8">
-              By combining LMS and SIS into one platform, GO ACADEMIX eliminates expensive redundancies, 
-              reduces administrative burden by 34%, and improves retention and graduation rates. 
-              Our integrated approach supports the healthcare workforce pipeline by making education more 
-              accessible, connected, and cost-effective.
-            </p>
-            <div className="space-y-3">
-              {[
-                "Reduce administrative burden by up to 34%",
-                "Improve student retention and graduation rates",
-                "Support the healthcare workforce pipeline",
-                "Modern, integrated, student-centered platform",
-              ].map((benefit, i) => (
-                <div key={i} className="flex items-center gap-3">
-                  <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <div className="w-2 h-2 rounded-full bg-primary" />
-                  </div>
-                  <span className="text-foreground font-medium">{benefit}</span>
-                </div>
-              ))}
-            </div>
-          </div>
+        <div className="bg-gradient-to-br from-accent via-accent/50 to-background rounded-3xl p-12 text-center">
+          <h3 className="text-3xl font-bold mb-4">
+            The best way to see it is to see it.
+          </h3>
+          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+            Every school runs a little differently. Book a short call and we'll walk through your actual workflows — not a generic demo deck.
+          </p>
+          <Button asChild size="lg" className="h-12 px-8 shadow-md">
+            <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+              <Calendar className="mr-2 w-4 h-4" />
+              Book a 30-min demo
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </a>
+          </Button>
         </div>
       </div>
     </section>
