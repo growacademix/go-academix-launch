@@ -1,53 +1,61 @@
-import {
-  GraduationCap,
-  Building2,
-  CreditCard,
-  BookOpen,
-  Award,
-  ClipboardCheck,
-} from "lucide-react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
+import shot1 from "@/assets/shot-11.45.17_am.png.asset.json";
+import shot2 from "@/assets/shot-11.50.58_am.png.asset.json";
+import shot3 from "@/assets/shot-11.49.00_am.png.asset.json";
+import shot4 from "@/assets/shot-11.52.40_am.png.asset.json";
+import shot5 from "@/assets/shot-11.50.25_am.png.asset.json";
+import shot6 from "@/assets/shot-11.51.49_am.png.asset.json";
+import shot7 from "@/assets/shot-12.01.33_pm.png.asset.json";
 
 const DEMO_URL =
   "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv";
 
-const features = [
+const shots = [
   {
-    icon: GraduationCap,
+    src: shot1.url,
+    title: "Owner Dashboard",
+    caption: "One view of enrollment, revenue, and completion — no exports required.",
+  },
+  {
+    src: shot5.url,
     title: "Enrollment & Registration",
-    description: "Sign students up, collect payments, and get them into courses without re-entering the same data three times.",
+    caption: "Your branded catalog page — students self-enroll and pay online.",
   },
   {
-    icon: Building2,
-    title: "Sponsor Tracking",
-    description: "Keep employer and agency partnerships organized so you know who sponsored which student and when.",
+    src: shot2.url,
+    title: "Payments, Financing & Sponsors",
+    caption: "Tuition, deposits, balances, Fortify loan options, and sponsor billing in one place.",
   },
   {
-    icon: CreditCard,
-    title: "Payments & Financing",
-    description: "Collect payments directly and offer students loan options through Fortify — all inside the same platform.",
+    src: shot3.url,
+    title: "Student Directory",
+    caption: "Every student, their course, payment status, and contact info at a glance.",
   },
   {
-    icon: BookOpen,
-    title: "Learning Management",
-    description: "Deliver coursework, track progress, and manage grades in one place instead of a separate LMS subscription.",
+    src: shot4.url,
+    title: "Learning, Attendance & Grades",
+    caption: "Program details, schedule, modules, grades, and attendance — all inside one course view.",
   },
   {
-    icon: Award,
-    title: "Certificate Tracking",
-    description: "Know exactly who completed what, when, and which certificates are ready to issue — no spreadsheet hunting.",
+    src: shot7.url,
+    title: "Certificates & Student Portal",
+    caption: "Students see their courses, schedule, grades, certificates, and payments.",
   },
   {
-    icon: ClipboardCheck,
-    title: "Attendance & Grades",
-    description: "Record attendance and grades daily so student records stay current and state-ready from day one.",
+    src: shot6.url,
+    title: "Team Access",
+    caption: "Bring owners, admins, and instructors into your school with role-based access.",
   },
 ];
 
 export const Solution = () => {
+  const [open, setOpen] = useState<number | null>(null);
+
   return (
-    <section className="py-20">
+    <section id="product" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
@@ -61,7 +69,7 @@ export const Solution = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            These are the features GO ACADEMIX already powers for Allied Health schools — no roadmap promises, just the tools you can use from your first login.
+            These are real screens from GO ACADEMIX — the same ones our school and Inspire CNA use every day. No roadmap promises, just the tools you can use from your first login.
           </p>
         </div>
 
@@ -121,19 +129,41 @@ export const Solution = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className="group p-6 bg-card rounded-lg border border-border hover:border-primary/30 hover:shadow-md transition-all"
+          {shots.map((shot, i) => (
+            <button
+              key={i}
+              onClick={() => setOpen(i)}
+              className="group text-left bg-card rounded-lg border border-border overflow-hidden hover:border-primary/40 hover:shadow-md transition-all"
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                <feature.icon className="w-6 h-6 text-primary" />
+              <div className="aspect-[16/10] overflow-hidden bg-muted">
+                <img
+                  src={shot.src}
+                  alt={shot.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-300"
+                />
               </div>
-              <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-              <p className="text-muted-foreground">{feature.description}</p>
-            </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-1">{shot.title}</h3>
+                <p className="text-sm text-muted-foreground">{shot.caption}</p>
+              </div>
+            </button>
           ))}
         </div>
+
+        <Dialog open={open !== null} onOpenChange={(o) => !o && setOpen(null)}>
+          <DialogContent className="max-w-6xl p-0 overflow-hidden">
+            {open !== null && (
+              <div>
+                <img src={shots[open].src} alt={shots[open].title} className="w-full h-auto" />
+                <div className="p-4 border-t border-border">
+                  <h3 className="font-semibold">{shots[open].title}</h3>
+                  <p className="text-sm text-muted-foreground">{shots[open].caption}</p>
+                </div>
+              </div>
+            )}
+          </DialogContent>
+        </Dialog>
 
         <div className="bg-primary rounded-lg p-12 text-center">
           <h3 className="text-3xl font-semibold mb-4 text-primary-foreground">
