@@ -15,27 +15,27 @@ const DEMO_URL =
 const features = [
   {
     icon: GraduationCap,
-    title: "Enrollment & registration",
+    title: "Enrollment & Registration",
     description: "Sign students up, collect payments, and get them into courses without re-entering data three times.",
   },
   {
     icon: FileCheck,
-    title: "Compliance, done for you",
+    title: "Compliance, Done for You",
     description: "Clinical hours, immunizations, background checks, and state reporting — tracked automatically as students move through the program.",
   },
   {
     icon: Award,
-    title: "Stackable credentials",
+    title: "Stackable Credentials",
     description: "Move a CNA into Med Tech, or a PCT into Phlebotomy, without rebuilding their record from scratch.",
   },
   {
     icon: Network,
-    title: "Stay connected after graduation",
+    title: "Stay Connected After Graduation",
     description: "Alumni network and job pathways that keep grads in healthcare — and keep them coming back for the next credential.",
   },
   {
     icon: TrendingUp,
-    title: "Actually see what's happening",
+    title: "Actually See What's Happening",
     description: "One dashboard for enrollment, attendance, grades, and completion. No exports, no pivot tables.",
   },
   {
@@ -52,62 +52,60 @@ export const Solution = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <span className="w-2 h-2 rounded-full bg-primary" />
-            <span className="text-sm font-medium text-primary">One platform</span>
+            <span className="text-sm font-medium text-primary">One Platform</span>
           </div>
 
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Everything your school runs on,{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              in one place
-            </span>
+            <span className="text-primary">in one place</span>
           </h2>
 
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             GO ACADEMIX combines your LMS and SIS into a single, modern platform built specifically for Allied Health schools — so you can drop the extra subscriptions and stop patching things together.
           </p>
         </div>
 
-        <div className="bg-card rounded-2xl border border-border p-8 mb-16">
-          <h3 className="text-2xl font-bold mb-6 text-center">What most schools use today vs. GO ACADEMIX</h3>
+        <div className="bg-card rounded-lg border border-border shadow-card p-8 mb-16">
+          <h3 className="text-2xl font-semibold mb-6 text-center">What Most Schools Use Today vs. GO ACADEMIX</h3>
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div>
-              <h4 className="font-semibold text-lg mb-4 text-destructive">Today</h4>
+              <h4 className="font-semibold text-lg mb-4 text-muted-foreground">Today</h4>
               <div className="space-y-3 text-sm">
-                <div className="p-3 bg-muted rounded-lg">
-                  <div className="font-medium mb-1">LMS subscription</div>
+                <div className="p-3 bg-muted rounded-md border border-border">
+                  <div className="font-medium mb-1">LMS Subscription</div>
                   <div className="text-muted-foreground">Course content & grades</div>
                 </div>
                 <div className="text-center text-muted-foreground">+</div>
-                <div className="p-3 bg-muted rounded-lg">
-                  <div className="font-medium mb-1">SIS subscription</div>
+                <div className="p-3 bg-muted rounded-md border border-border">
+                  <div className="font-medium mb-1">SIS Subscription</div>
                   <div className="text-muted-foreground">Records, enrollment, billing</div>
                 </div>
                 <div className="text-center text-muted-foreground">+</div>
-                <div className="p-3 bg-muted rounded-lg">
-                  <div className="font-medium mb-1">Scheduling, compliance, spreadsheets…</div>
+                <div className="p-3 bg-muted rounded-md border border-border">
+                  <div className="font-medium mb-1">Scheduling, Compliance, Spreadsheets…</div>
                   <div className="text-muted-foreground">Held together by staff time</div>
                 </div>
                 <div className="text-center text-muted-foreground">=</div>
-                <div className="p-3 bg-destructive/10 border border-destructive/20 rounded-lg">
-                  <div className="font-medium text-destructive">Overpaying. Overworked. Data everywhere.</div>
+                <div className="p-3 bg-muted rounded-md border border-border">
+                  <div className="font-medium">Overpaying. Overworked. Data everywhere.</div>
                 </div>
               </div>
             </div>
             <div>
               <h4 className="font-semibold text-lg mb-4 text-primary">With GO ACADEMIX</h4>
               <div className="space-y-3 text-sm">
-                <div className="p-4 bg-gradient-to-br from-primary/10 to-secondary/10 border border-primary/20 rounded-lg">
+                <div className="p-4 bg-primary/5 border border-primary/20 rounded-md">
                   <div className="font-medium mb-2">One platform, one login</div>
                   <div className="space-y-1 text-muted-foreground">
-                    <div>✓ Enrollment & registration</div>
-                    <div>✓ Course delivery & grades</div>
-                    <div>✓ Compliance & state reporting</div>
-                    <div>✓ Scheduling & attendance</div>
-                    <div>✓ Alumni & career pathways</div>
+                    <div>Enrollment & registration</div>
+                    <div>Course delivery & grades</div>
+                    <div>Compliance & state reporting</div>
+                    <div>Scheduling & attendance</div>
+                    <div>Alumni & career pathways</div>
                   </div>
                 </div>
                 <div className="text-center text-muted-foreground">=</div>
-                <div className="p-3 bg-primary/10 border border-primary/20 rounded-lg">
+                <div className="p-3 bg-primary/5 border border-primary/20 rounded-md">
                   <div className="font-medium text-primary">Fewer vendors, less busywork, one source of truth.</div>
                 </div>
               </div>
@@ -119,25 +117,30 @@ export const Solution = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="group p-6 bg-card rounded-xl border border-border hover:border-primary/30 hover:shadow-lg transition-all"
+              className="group p-6 bg-card rounded-lg border border-border hover:border-primary/30 hover:shadow-md transition-all"
             >
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <feature.icon className="w-6 h-6 text-primary-foreground" />
+              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
+                <feature.icon className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-lg font-bold mb-2">{feature.title}</h3>
+              <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
               <p className="text-muted-foreground">{feature.description}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-gradient-to-br from-accent via-accent/50 to-background rounded-3xl p-12 text-center">
-          <h3 className="text-3xl font-bold mb-4">
+        <div className="bg-primary rounded-lg p-12 text-center">
+          <h3 className="text-3xl font-semibold mb-4 text-primary-foreground">
             The best way to see it is to see it.
           </h3>
-          <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
             Every school runs a little differently. Book a short call and we'll walk through your actual workflows — not a generic demo deck.
           </p>
-          <Button asChild size="lg" className="h-12 px-8 shadow-md">
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="bg-white text-primary border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary"
+          >
             <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
               <Calendar className="mr-2 w-4 h-4" />
               Book a 30-min demo
