@@ -19,10 +19,10 @@ export const SocialProof = () => {
             </div>
 
             <h2 className="text-4xl font-bold mb-4">
-              Schools already shaping GO ACADEMIX
+              Built by owners, shaped by real schools
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We're building this alongside working Allied Health schools — not in a boardroom.
+              Allied Health Career Training is our school. Inspire CNA School is a partner we've already sold to. Both are helping us build GO ACADEMIX — not in a boardroom, but in real classrooms.
             </p>
           </div>
 
@@ -47,7 +47,7 @@ export const SocialProof = () => {
 
           <div className="bg-card rounded-2xl border border-primary/20 shadow-md p-8">
             <blockquote className="text-lg text-foreground italic border-l-4 border-primary pl-6 mb-4">
-              "Allied Health Career Training is helping guide the product and plans to move all 3,500+ of their annual students onto GO ACADEMIX. They know these problems firsthand — and so do we."
+              "We own Allied Health Career Training, so we live these problems every day. Inspire CNA School in Denver is already using GO ACADEMIX and giving us feedback. Together, these schools are making sure the platform actually works for owners like us."
             </blockquote>
             <p className="text-sm text-muted-foreground pl-6">
               — Connor & Jocelyn, GO ACADEMIX founders
