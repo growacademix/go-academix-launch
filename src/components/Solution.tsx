@@ -82,7 +82,7 @@ export const Solution = () => {
                 </div>
                 <div className="text-center text-muted-foreground">+</div>
                 <div className="p-3 bg-muted rounded-md border border-border">
-                  <div className="font-medium mb-1">Scheduling, Compliance, Spreadsheets…</div>
+                  <div className="font-medium mb-1">Payment Processor, Spreadsheets, Manual Tracking…</div>
                   <div className="text-muted-foreground">Held together by staff time</div>
                 </div>
                 <div className="text-center text-muted-foreground">=</div>
@@ -92,24 +92,31 @@ export const Solution = () => {
               </div>
             </div>
             <div>
-              <h4 className="font-semibold text-lg mb-4 text-primary">With GO ACADEMIX</h4>
+              <h4 className="font-semibold text-lg mb-4 text-primary">With GO ACADEMIX — Live Today</h4>
               <div className="space-y-3 text-sm">
                 <div className="p-4 bg-primary/5 border border-primary/20 rounded-md">
                   <div className="font-medium mb-2">One platform, one login</div>
                   <div className="space-y-1 text-muted-foreground">
                     <div>Enrollment & registration</div>
-                    <div>Course delivery & grades</div>
-                    <div>Compliance & state reporting</div>
-                    <div>Scheduling & attendance</div>
-                    <div>Alumni & career pathways</div>
+                    <div>Sponsor tracking</div>
+                    <div>Payments & Fortify loan option integration</div>
+                    <div>Learning management</div>
+                    <div>Certificate tracking</div>
+                    <div>Attendance & grades</div>
                   </div>
                 </div>
                 <div className="text-center text-muted-foreground">=</div>
                 <div className="p-3 bg-primary/5 border border-primary/20 rounded-md">
-                  <div className="font-medium text-primary">Fewer vendors, less busywork, one source of truth.</div>
+                  <div className="font-medium text-primary">Few-shot demo.</div>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div className="mt-8 max-w-4xl mx-auto p-4 rounded-md border border-border bg-muted/50">
+            <p className="text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">On the roadmap:</span> automated compliance workflows, advanced state reporting, scheduling, and alumni/career pathways — already in development with feedback from our partner schools.
+            </p>
           </div>
         </div>
 
