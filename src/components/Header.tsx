@@ -11,7 +11,7 @@ export const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo.url} alt="GO ACADEMIX" className="h-16 w-auto" />
+            <img src={logo} alt="GO ACADEMIX" className="h-16 w-auto" />
           </Link>
           <div className="flex items-center gap-4">
             <Link
