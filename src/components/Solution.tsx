@@ -107,7 +107,7 @@ export const Solution = () => {
                 </div>
                 <div className="text-center text-muted-foreground">=</div>
                 <div className="p-3 bg-primary/5 border border-primary/20 rounded-md">
-                  <div className="font-medium text-primary">Few-shot demo.</div>
+                  <div className="font-medium text-primary">Fewer vendors, less busywork, one source of truth.</div>
                 </div>
               </div>
             </div>
