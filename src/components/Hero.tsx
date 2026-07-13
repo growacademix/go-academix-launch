@@ -1,85 +1,55 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { CheckCircle2, ArrowRight } from "lucide-react";
-import { toast } from "@/hooks/use-toast";
+import { ArrowRight, Calendar, Mail } from "lucide-react";
 import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
 
+const DEMO_URL =
+  "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv";
+
 export const Hero = () => {
-  const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email && email.includes("@")) {
-      setSubmitted(true);
-      toast({
-        title: "Thank you for your interest!",
-        description: "We'll be in touch soon with early access details."
-      });
-    }
-  };
-
   return (
     <section className="relative pt-32 pb-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-accent/30 via-background to-background" />
-      
+
       <div className="container mx-auto px-6 relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent border border-primary/20">
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               <span className="text-sm font-medium text-accent-foreground">
-                Solving the healthcare education crisis
+                Built with Allied Health school owners
               </span>
             </div>
-            
+
             <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-              The Future of{" "}
+              One platform for your school.{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Allied Health Certificate Learning
+                Finally.
               </span>
             </h1>
-            
+
             <p className="text-xl text-muted-foreground leading-relaxed">
-              An all-in-one learning management platform designed specifically for allied healthcare schools. 
-              Integrated registration, compliance reporting, credential stacking, and professional networking—all in one place.
+              You're paying for an LMS, a SIS, a scheduling tool, a compliance tracker, and probably a few spreadsheets holding it all together. We know — because our launch partner was doing the same thing. GO ACADEMIX brings it into one platform designed for Allied Health schools.
             </p>
 
-            {!submitted ? (
-              <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  className="flex-1 h-12 text-base"
-                />
-                <Button type="submit" size="lg" className="h-12 px-8 shadow-md">
-                  Get Early Access
+            <div className="flex flex-col sm:flex-row gap-3">
+              <Button asChild size="lg" className="h-12 px-8 shadow-md">
+                <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+                  <Calendar className="mr-2 w-4 h-4" />
+                  Book a 30-min demo
                   <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
-              </form>
-            ) : (
-              <div className="flex items-center gap-3 p-4 bg-accent rounded-lg border border-primary/20">
-                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
-                <p className="text-accent-foreground font-medium">
-                  Thanks! We'll contact you soon about early access.
-                </p>
-              </div>
-            )}
-
-            <div className="flex items-center gap-6 text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
-                <span>No credit card required</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-primary" />
-                <span>Early adopter benefits</span>
-              </div>
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="h-12 px-8">
+                <a href="mailto:jocelyn@goacademix.com">
+                  <Mail className="mr-2 w-4 h-4" />
+                  Email Jocelyn
+                </a>
+              </Button>
             </div>
+
+            <p className="text-sm text-muted-foreground">
+              No sales pitch — just a real conversation about what your school is dealing with.
+            </p>
           </div>
 
           <div className="relative lg:block hidden">

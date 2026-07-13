@@ -1,20 +1,21 @@
-import { AlertCircle, Users, Wrench, TrendingDown } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 
-const problems = [
+const painPoints = [
   {
-    icon: Users,
-    stat: "3.2 Million",
-    label: "Healthcare worker shortage projected by 2026",
+    title: "Your tools don't talk to each other",
+    body: "Student enrolls in one system, gets set up in another, tracked for compliance in a third. Everything is re-typed by hand.",
   },
   {
-    icon: TrendingDown,
-    stat: "65,766+",
-    label: "Qualified nursing applications rejected in 2023",
+    title: "You're paying for way too much software",
+    body: "An LMS built for universities, a SIS that was old ten years ago, plus scheduling and reporting add-ons. The bills add up fast.",
   },
   {
-    icon: Wrench,
-    stat: "1,400 Schools",
-    label: "Struggling with fragmented, outdated technology",
+    title: "Compliance eats your week",
+    body: "State reports, clinical hours, immunizations, background checks — all lives in binders, PDFs, and someone's memory.",
+  },
+  {
+    title: "Students slip through the cracks",
+    body: "Without one view of a student, it's hard to catch who's falling behind until it's too late — and re-enrolling them is even harder.",
   },
 ];
 
@@ -22,47 +23,36 @@ export const Problem = () => {
   return (
     <section className="py-20 bg-muted/30">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 max-w-3xl mx-auto">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-destructive/10 border border-destructive/20 mb-6">
             <AlertCircle className="w-4 h-4 text-destructive" />
-            <span className="text-sm font-medium text-destructive">The Crisis</span>
+            <span className="text-sm font-medium text-destructive">Sound familiar?</span>
           </div>
-          
+
           <h2 className="text-4xl font-bold mb-6">
-            Healthcare Education Is <span className="text-destructive">Broken</span>
+            Running an Allied Health school shouldn't feel like duct-taping software together.
           </h2>
-          
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Schools training healthcare professionals are forced to piece together multiple tools for registration, learning, 
-            compliance reporting, and student tracking. This creates inefficiency, drives up costs, and risks losing students 
-            along the credentialing pathway.
+
+          <p className="text-xl text-muted-foreground">
+            We've sat with school owners, admins, and instructors. The same frustrations keep coming up.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          {problems.map((problem, index) => (
+        <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+          {painPoints.map((p, i) => (
             <div
-              key={index}
-              className="p-8 bg-card rounded-2xl border border-border shadow-sm hover:shadow-md transition-all"
+              key={i}
+              className="p-8 bg-card rounded-2xl border border-border shadow-sm"
             >
-              <problem.icon className="w-12 h-12 text-destructive mb-4" />
-              <div className="text-3xl font-bold text-foreground mb-2">
-                {problem.stat}
-              </div>
-              <p className="text-muted-foreground">{problem.label}</p>
+              <h3 className="text-xl font-semibold mb-3">{p.title}</h3>
+              <p className="text-muted-foreground leading-relaxed">{p.body}</p>
             </div>
           ))}
         </div>
 
-        <div className="bg-card border border-border rounded-2xl p-8 shadow-sm">
-          <h3 className="text-2xl font-bold mb-4">The Legacy LMS Problem</h3>
-          <p className="text-muted-foreground text-lg leading-relaxed">
-            Current learning management systems like Canvas or Blackboard were built for general education, not healthcare. 
-            They lack healthcare-specific compliance tools, credential tracking, and features that keep students feeling 
-            supported beyond the classroom. Schools face a heavy administrative burden and students miss opportunities 
-            to advance or burn out and leave the healthcare industry.
-          </p>
-        </div>
+        <p className="text-center text-lg text-muted-foreground mt-12 max-w-2xl mx-auto">
+          If any of that hit close to home, you're not alone — and you don't have to keep living with it.
+        </p>
       </div>
     </section>
   );
