@@ -6,7 +6,7 @@ export const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center">
-            <img src={logo.url} alt="GO ACADEMIX" className="h-10 w-auto" />
+            <img src={logo} alt="GO ACADEMIX" className="h-10 w-auto" />
           </div>
 
           <p className="text-sm text-muted-foreground text-center">
