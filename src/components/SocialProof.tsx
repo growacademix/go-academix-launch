@@ -45,21 +45,6 @@ export const SocialProof = () => {
             ))}
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
-            <div className="bg-card rounded-lg shadow-card p-6 border border-border text-center">
-              <p className="text-3xl font-bold text-primary mb-1">4,000+</p>
-              <p className="text-sm text-muted-foreground">students trained per year at Allied Health Career Training</p>
-            </div>
-            <div className="bg-card rounded-lg shadow-card p-6 border border-border text-center">
-              <p className="text-3xl font-bold text-primary mb-1">34%</p>
-              <p className="text-sm text-muted-foreground">reduction in admin burden vs. legacy LMS + SIS setups</p>
-            </div>
-            <div className="bg-card rounded-lg shadow-card p-6 border border-border text-center">
-              <p className="text-3xl font-bold text-primary mb-1">2</p>
-              <p className="text-sm text-muted-foreground">real Allied Health schools actively shaping the platform</p>
-            </div>
-          </div>
-
           <div className="bg-card rounded-lg shadow-card p-8 border-l-4 border-l-primary">
             <blockquote className="text-lg text-foreground leading-relaxed mb-4">
               "We own Allied Health Career Training, so we live these problems every day. Inspire CNA School in Denver is already using GO ACADEMIX and giving us feedback. Together, these schools are making sure the platform actually works for owners like us."
