@@ -13,12 +13,12 @@ const painPoints = [
   },
   {
     title: "Compliance eats your week",
-    body: "State reports, clinical hours, immunizations, background checks — all lives in binders, PDFs, and someone's memory.",
+    body: "State reports, clinical hours, immunizations, background checks. It all lives in binders, PDFs, and someone's memory.",
     icon: ClipboardCheck,
   },
   {
     title: "Students slip through the cracks",
-    body: "Without one view of a student, it's hard to catch who's falling behind until it's too late — and re-enrolling them is even harder.",
+    body: "Without one view of a student, it's hard to catch who's falling behind until it's too late. Re-enrolling them is even harder.",
     icon: Users,
   },
 ];
