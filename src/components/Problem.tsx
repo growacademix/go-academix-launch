@@ -1,21 +1,25 @@
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, Puzzle, Receipt, ClipboardCheck, Users } from "lucide-react";
 
 const painPoints = [
   {
     title: "Your tools don't talk to each other",
     body: "Student enrolls in one system, gets set up in another, tracked for compliance in a third. Everything is re-typed by hand.",
+    icon: Puzzle,
   },
   {
     title: "You're paying for way too much software",
     body: "An LMS built for universities, a SIS that was old ten years ago, plus scheduling and reporting add-ons. The bills add up fast.",
+    icon: Receipt,
   },
   {
     title: "Compliance eats your week",
     body: "State reports, clinical hours, immunizations, background checks — all lives in binders, PDFs, and someone's memory.",
+    icon: ClipboardCheck,
   },
   {
     title: "Students slip through the cracks",
     body: "Without one view of a student, it's hard to catch who's falling behind until it's too late — and re-enrolling them is even harder.",
+    icon: Users,
   },
 ];
 
