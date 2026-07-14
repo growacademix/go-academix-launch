@@ -44,7 +44,7 @@ export const Hero = () => {
             </div>
 
             <p className="text-sm text-muted-foreground">
-              No sales pitch — just a real conversation about what your school is dealing with.
+              No sales pitch. Just a real conversation about what your school is dealing with.
             </p>
           </div>
 
