@@ -18,12 +18,12 @@ const shots = [
   {
     src: shot1.url,
     title: "Owner Dashboard",
-    caption: "One view of enrollment, revenue, and completion — no exports required.",
+    caption: "One view of enrollment, revenue, and completion. No exports required.",
   },
   {
     src: shot5.url,
     title: "Enrollment & Registration",
-    caption: "Your branded catalog page — students self-enroll and pay online.",
+    caption: "Your branded catalog page where students self-enroll and pay online.",
   },
   {
     src: shot2.url,
@@ -38,7 +38,7 @@ const shots = [
   {
     src: shot4.url,
     title: "Learning, Attendance & Grades",
-    caption: "Program details, schedule, modules, grades, and attendance — all inside one course view.",
+    caption: "Program details, schedule, modules, grades, and attendance inside one course view.",
   },
   {
     src: shot7.url,
