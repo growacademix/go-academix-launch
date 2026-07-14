@@ -1,21 +1,25 @@
-import { AlertCircle } from "lucide-react";
+import { AlertCircle, Puzzle, Receipt, ClipboardCheck, Users } from "lucide-react";
 
 const painPoints = [
   {
     title: "Your tools don't talk to each other",
     body: "Student enrolls in one system, gets set up in another, tracked for compliance in a third. Everything is re-typed by hand.",
+    icon: Puzzle,
   },
   {
     title: "You're paying for way too much software",
     body: "An LMS built for universities, a SIS that was old ten years ago, plus scheduling and reporting add-ons. The bills add up fast.",
+    icon: Receipt,
   },
   {
     title: "Compliance eats your week",
     body: "State reports, clinical hours, immunizations, background checks — all lives in binders, PDFs, and someone's memory.",
+    icon: ClipboardCheck,
   },
   {
     title: "Students slip through the cracks",
     body: "Without one view of a student, it's hard to catch who's falling behind until it's too late — and re-enrolling them is even harder.",
+    icon: Users,
   },
 ];
 
@@ -39,15 +43,21 @@ export const Problem = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {painPoints.map((p, i) => (
-            <div
-              key={i}
-              className="p-8 bg-card rounded-lg border border-border shadow-card"
-            >
-              <h3 className="text-xl font-semibold mb-3">{p.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{p.body}</p>
-            </div>
-          ))}
+          {painPoints.map((p, i) => {
+            const Icon = p.icon;
+            return (
+              <div
+                key={i}
+                className="p-8 bg-card rounded-lg border border-border shadow-card"
+              >
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 mb-5">
+                  <Icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">{p.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{p.body}</p>
+              </div>
+            );
+          })}
         </div>
 
         <p className="text-center text-lg text-muted-foreground mt-12 max-w-2xl mx-auto">
