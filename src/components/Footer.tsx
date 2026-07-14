@@ -1,4 +1,4 @@
-import logo from "@/assets/logo-goacademix-cropped.png";
+import logo from "@/assets/logo-goacademix-official.png.asset.json";
 
 export const Footer = () => {
   return (
