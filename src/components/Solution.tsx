@@ -125,7 +125,7 @@ export const Solution = () => {
             The best way to see it is to see it.
           </h3>
           <p className="text-lg text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-            Every school runs a little differently. Book a short call and we'll walk through your actual workflows — not a generic demo deck.
+            Every school runs a little differently. Book a short call and we'll walk through your actual workflows, not a generic demo deck.
           </p>
           <Button
             asChild
