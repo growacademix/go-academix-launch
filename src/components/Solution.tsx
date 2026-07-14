@@ -70,7 +70,7 @@ export const Solution = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            These are real screens from GO ACADEMIX — the same ones our school and Inspire CNA use every day. No roadmap promises, just the tools you can use from your first login.
+            These are real screens from GO ACADEMIX. The same ones our school and Inspire CNA use every day. No roadmap promises, just the tools you can use from your first login.
           </p>
         </div>
 
@@ -78,7 +78,7 @@ export const Solution = () => {
           <CostComparison />
           <div className="mt-6 max-w-4xl mx-auto p-4 rounded-md border border-border bg-muted/50">
             <p className="text-sm text-muted-foreground">
-              <span className="font-medium text-foreground">On the roadmap:</span> automated compliance workflows, advanced state reporting, scheduling, and alumni/career pathways — already in development with feedback from our partner schools.
+              <span className="font-medium text-foreground">On the roadmap:</span> automated compliance workflows, advanced state reporting, scheduling, and alumni/career pathways. Already in development with feedback from our partner schools.
             </p>
           </div>
         </div>
