@@ -43,15 +43,21 @@ export const Problem = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
-          {painPoints.map((p, i) => (
-            <div
-              key={i}
-              className="p-8 bg-card rounded-lg border border-border shadow-card"
-            >
-              <h3 className="text-xl font-semibold mb-3">{p.title}</h3>
-              <p className="text-muted-foreground leading-relaxed">{p.body}</p>
-            </div>
-          ))}
+          {painPoints.map((p, i) => {
+            const Icon = p.icon;
+            return (
+              <div
+                key={i}
+                className="p-8 bg-card rounded-lg border border-border shadow-card"
+              >
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 mb-5">
+                  <Icon className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-xl font-semibold mb-3">{p.title}</h3>
+                <p className="text-muted-foreground leading-relaxed">{p.body}</p>
+              </div>
+            );
+          })}
         </div>
 
         <p className="text-center text-lg text-muted-foreground mt-12 max-w-2xl mx-auto">
