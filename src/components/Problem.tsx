@@ -61,7 +61,7 @@ export const Problem = () => {
         </div>
 
         <p className="text-center text-lg text-muted-foreground mt-12 max-w-2xl mx-auto">
-          If any of that hit close to home, you're not alone — and you don't have to keep living with it.
+          If any of that hit close to home, you're not alone. And you don't have to keep living with it.
         </p>
       </div>
     </section>
