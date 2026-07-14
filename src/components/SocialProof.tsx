@@ -22,7 +22,7 @@ export const SocialProof = () => {
               Built by owners, shaped by real schools
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Allied Health Career Training is our school. Inspire CNA School is a partner we've already sold to. Both are helping us build GO ACADEMIX — not in a boardroom, but in real classrooms.
+              Allied Health Career Training is our school — we train 4,000+ students a year there. Inspire CNA School in Denver is a partner we've already sold to. Together, these two schools are shaping GO ACADEMIX in real classrooms, and early users are seeing a 34% reduction in admin burden compared to legacy LMS + SIS setups.
             </p>
           </div>
 
@@ -43,21 +43,6 @@ export const SocialProof = () => {
                 />
               </a>
             ))}
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10">
-            <div className="bg-card rounded-lg shadow-card p-6 border border-border text-center">
-              <p className="text-3xl font-bold text-primary mb-1">4,000+</p>
-              <p className="text-sm text-muted-foreground">students trained per year at Allied Health Career Training</p>
-            </div>
-            <div className="bg-card rounded-lg shadow-card p-6 border border-border text-center">
-              <p className="text-3xl font-bold text-primary mb-1">34%</p>
-              <p className="text-sm text-muted-foreground">reduction in admin burden vs. legacy LMS + SIS setups</p>
-            </div>
-            <div className="bg-card rounded-lg shadow-card p-6 border border-border text-center">
-              <p className="text-3xl font-bold text-primary mb-1">2</p>
-              <p className="text-sm text-muted-foreground">real Allied Health schools actively shaping the platform</p>
-            </div>
           </div>
 
           <div className="bg-card rounded-lg shadow-card p-8 border-l-4 border-l-primary">
