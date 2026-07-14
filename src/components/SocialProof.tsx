@@ -22,7 +22,7 @@ export const SocialProof = () => {
               Built by owners, shaped by real schools
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Allied Health Career Training is our school. Inspire CNA School is a partner we've already sold to. Both are helping us build GO ACADEMIX — not in a boardroom, but in real classrooms.
+              Allied Health Career Training is our school — we train 4,000+ students a year there. Inspire CNA School in Denver is a partner we've already sold to. Together, these two schools are shaping GO ACADEMIX in real classrooms, and early users are seeing a 34% reduction in admin burden compared to legacy LMS + SIS setups.
             </p>
           </div>
 
