@@ -1,7 +1,7 @@
 import { CheckCircle2, Quote } from "lucide-react";
 import ahctLogo from "@/assets/ahct-logo.png.asset.json";
 import inspireLogo from "@/assets/inspire-cna-logo.png.asset.json";
-import logo from "@/assets/logo-goacademix.png.asset.json";
+import logo from "@/assets/logo-goacademix-official.png.asset.json";
 
 const stats = [
   {
