@@ -24,7 +24,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              You're paying for an LMS, a SIS, a scheduling tool, a compliance tracker, and probably a few spreadsheets holding it all together. We know — because we run Allied Health Career Training, our own school, and we were doing the same thing. GO ACADEMIX brings it into one platform designed for Allied Health schools.
+              Right now you're paying for an LMS, a SIS, a scheduling tool, a compliance tracker, and a stack of spreadsheets holding it all together. We were doing the same thing at our own school, Allied Health Career Training. GO ACADEMIX puts it all in one platform built for Allied Health schools.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
