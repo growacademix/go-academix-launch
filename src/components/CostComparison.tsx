@@ -143,7 +143,7 @@ export const CostComparison = () => {
           </div>
         </div>
         <div className="text-sm md:text-right md:max-w-xs opacity-95">
-          That's {fmt(savings * 12)} a year back — and {DEFAULT_ITEMS.length} fewer vendors to manage.
+          That's {fmt(savings * 12)} a year back in your pocket, and {DEFAULT_ITEMS.length} fewer vendors to manage.
         </div>
       </div>
     </div>

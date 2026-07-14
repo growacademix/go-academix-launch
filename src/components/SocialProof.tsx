@@ -80,7 +80,7 @@ export const SocialProof = () => {
                 <Quote className="w-8 h-8 text-primary fill-primary/20 mb-6" />
                 <blockquote className="text-xl lg:text-2xl text-foreground leading-relaxed">
                   We own Allied Health Career Training, so we live these problems every day. Inspire CNA School is
-                  already using GO ACADEMIX and giving us feedback — together we make sure the platform actually works
+                  already using GO ACADEMIX and giving us feedback. Together we make sure the platform actually works
                   for owners like us.
                 </blockquote>
               </div>
