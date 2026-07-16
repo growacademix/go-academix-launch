@@ -137,14 +137,14 @@ export const CostComparison = () => {
       </div>
 
       {/* Consolidation summary */}
-      <div className="mt-6 rounded-lg p-6 bg-gradient-to-r from-secondary to-primary text-primary-foreground flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div className="mt-6 rounded-lg p-6 bg-[hsl(var(--brand-ink))] text-white flex flex-col md:flex-row md:items-center md:justify-between gap-5">
         <div className="md:max-w-xl">
-          <div className="text-[11px] tracking-wider opacity-80 mb-1">THE REAL VALUE</div>
+          <div className="text-[11px] tracking-wider text-white/70 mb-1">THE REAL VALUE</div>
           <div className="text-lg font-medium leading-snug">
             Replace {activeCount} disconnected tools with one platform so your team can focus on students, not software.
           </div>
         </div>
-        <div className="text-sm md:text-right md:max-w-xs opacity-95 shrink-0">
+        <div className="text-sm md:text-right md:max-w-xs text-white/90 shrink-0">
           Fewer logins, less re-entry, and one place to see every student from enrollment to certificate.
         </div>
       </div>
