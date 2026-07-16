@@ -44,8 +44,9 @@ export const Problem = () => {
             return (
               <div
                 key={i}
-                className="p-8 bg-card rounded-lg border border-border shadow-card border-l-4 border-l-transparent"
-                style={{ borderLeftColor: isTeal ? "hsl(var(--primary))" : "hsl(var(--success))" }}
+                className={`p-8 bg-card rounded-lg border border-border shadow-card border-l-4 ${
+                  isTeal ? "border-l-primary" : "border-l-success"
+                }`}
               >
                 <div
                   className={`inline-flex items-center justify-center w-12 h-12 rounded-lg border mb-5 ${
