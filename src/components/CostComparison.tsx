@@ -63,7 +63,7 @@ export const CostComparison = () => {
             <p className="text-sm text-muted-foreground mt-1">Each one needs its own login, data entry, and reconciliation.</p>
           </div>
 
-          <div className="divide-y divide-border/70 flex-1 bg-white/60 rounded-xl px-4">
+          <div className="divide-y divide-border/60 flex-1">
             {TODAY_TOOLS.map((item) => {
               const isActive = active[item.key];
               return (
@@ -112,9 +112,9 @@ export const CostComparison = () => {
             <p className="text-sm text-muted-foreground mt-1">Everything below, connected from enrollment to certificate.</p>
           </div>
 
-          <ul className="space-y-3 flex-1 bg-white/50 rounded-xl px-4 py-1">
+          <ul className="space-y-3 flex-1">
             {GO_INCLUDES.map((f) => (
-              <li key={f} className="flex items-center gap-3 py-1">
+              <li key={f} className="flex items-center gap-3">
                 <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary text-primary-foreground shrink-0">
                   <Check className="w-3 h-3" />
                 </span>
