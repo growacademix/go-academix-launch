@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { CheckCircle2, Mail, Calendar } from "lucide-react";
+import { CheckCircle2, Calendar } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -44,12 +44,8 @@ export const LeadCapture = () => {
           <div className="bg-card rounded-lg border border-border shadow-card p-8 md:p-12">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-4">
-                  <Mail className="w-4 h-4 text-primary" />
-                  <span className="text-xs font-medium text-primary">Not Ready For A Demo?</span>
-                </div>
                 <h2 className="text-2xl lg:text-3xl font-bold mb-3">
-                  Stay in the loop.
+                  Not ready for a demo? Stay in the loop.
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
                   Drop your email and we'll send occasional product updates, lessons from simplifying our own school, and early access when new features ship. No spam, unsubscribe anytime.

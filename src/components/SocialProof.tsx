@@ -1,4 +1,4 @@
-import { CheckCircle2, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 import ahctLogo from "@/assets/ahct-logo.png.asset.json";
 import inspireLogo from "@/assets/inspire-cna-logo.png.asset.json";
 import logo from "@/assets/logo-goacademix-official.png.asset.json";
@@ -42,11 +42,6 @@ export const SocialProof = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-              <CheckCircle2 className="w-4 h-4 text-primary" />
-              <span className="text-sm font-medium text-primary">Built with real schools</span>
-            </div>
-
             <h2 className="text-3xl lg:text-5xl font-bold mb-5 tracking-tight">
               Built by owners,
               <br />

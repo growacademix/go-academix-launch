@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { ArrowRight, CheckCircle2, Phone, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, Phone, Mail, Calendar, MessageSquare, Sparkles } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
@@ -129,11 +129,6 @@ export const AdvisoryCouncil = () => {
         <section className="py-20">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-                <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                <span className="text-sm font-medium text-primary">Advisory Partnership</span>
-              </div>
-
               <h1 className="text-4xl lg:text-5xl font-bold leading-tight mb-6">
                 Shape the Future of{" "}
                 <span className="text-primary">Allied Health Certificate Learning</span>
@@ -164,11 +159,7 @@ export const AdvisoryCouncil = () => {
         <section className="py-20 bg-accent/50">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-                <Users className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Why Join</span>
-              </div>
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">Advisory Council Benefits</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6">Why join the Advisory Council</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 We are not sending this to sell you software. We are looking for honest feedback from schools that understand this industry.
               </p>
@@ -190,11 +181,7 @@ export const AdvisoryCouncil = () => {
             </div>
 
             <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-                <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Time Commitment</span>
-              </div>
-              <h2 className="text-3xl lg:text-4xl font-bold mb-6">What We Are Asking For</h2>
+              <h2 className="text-3xl lg:text-4xl font-bold mb-6">What we are asking for</h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Three simple requests that respect your time.
               </p>
@@ -342,11 +329,7 @@ export const AdvisoryCouncil = () => {
         <section className="py-20 bg-accent/50">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-                <Calendar className="w-4 h-4 text-primary" />
-                <span className="text-sm font-medium text-primary">Let's Find a Few Minutes</span>
-              </div>
-              <h2 className="text-3xl font-semibold mb-6">Prefer to Schedule Directly?</h2>
+              <h2 className="text-3xl font-semibold mb-6">Prefer to schedule directly?</h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
                 The only time commitment is a 30-minute demo. After that, we will occasionally send short questions by email. Book a demo with Connor below or email Jocelyn directly.
               </p>
