@@ -54,8 +54,10 @@ export const LeadCapture = () => {
 
               <div>
                 {done ? (
-                  <div className="flex flex-col items-center text-center gap-3 p-6 rounded-lg bg-primary/5 border border-primary/20">
-                    <CheckCircle2 className="w-10 h-10 text-primary" />
+                  <div className="flex flex-col items-center text-center gap-3 p-6 rounded-lg bg-success/10 border border-success/30">
+                    <div className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-success/20 text-success">
+                      <CheckCircle2 className="w-7 h-7" />
+                    </div>
                     <h3 className="font-semibold">You're on the list.</h3>
                   <p className="text-sm text-muted-foreground">
                     We'll be in touch. If you want to skip ahead, book a demo anytime.
@@ -64,7 +66,7 @@ export const LeadCapture = () => {
                     href={DEMO_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
+                    className="inline-flex items-center gap-1.5 text-sm font-medium text-success hover:underline"
                   >
                     <Calendar className="w-4 h-4" />
                     Book a 30-min demo
