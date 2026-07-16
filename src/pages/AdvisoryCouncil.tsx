@@ -24,8 +24,8 @@ const benefits = [
   },
   {
     icon: CheckCircle2,
-    title: "Heavily Discounted Pricing",
-    description: "Lock in advisory-member pricing as a thank you for helping build the platform.",
+    title: "Founding Member Benefits",
+    description: "Get early access and advisory-member benefits as a thank you for helping build the platform.",
   },
 ];
 

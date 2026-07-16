@@ -1,20 +1,19 @@
 import { useMemo, useState } from "react";
-import { Check, Minus, Plus } from "lucide-react";
+import { Check, Minus } from "lucide-react";
 
 type ToolItem = {
   key: string;
   label: string;
   sub: string;
-  defaultCost: number;
 };
 
 const TODAY_TOOLS: ToolItem[] = [
-  { key: "lms", label: "LMS", sub: "Course content & grades", defaultCost: 200 },
-  { key: "sis", label: "SIS / student records", sub: "Records, enrollment, billing", defaultCost: 250 },
-  { key: "sched", label: "Scheduling tool", sub: "Classes, rooms, rosters", defaultCost: 90 },
-  { key: "compliance", label: "Compliance / reporting", sub: "State & accreditation reports", defaultCost: 150 },
-  { key: "payments", label: "Payments / billing", sub: "Tuition & invoicing", defaultCost: 120 },
-  { key: "sheets", label: "Spreadsheets & staff time", sub: "The hidden glue cost", defaultCost: 400 },
+  { key: "lms", label: "LMS", sub: "Course content & grades" },
+  { key: "sis", label: "SIS / student records", sub: "Records, enrollment, billing" },
+  { key: "sched", label: "Scheduling tool", sub: "Classes, rooms, rosters" },
+  { key: "compliance", label: "Compliance / reporting", sub: "State & accreditation reports" },
+  { key: "payments", label: "Payments / billing", sub: "Tuition & invoicing" },
+  { key: "sheets", label: "Spreadsheets & staff time", sub: "The hidden glue holding it together" },
 ];
 
 const GO_INCLUDES = [
@@ -28,11 +27,6 @@ const GO_INCLUDES = [
   "Grades",
 ];
 
-const GO_PRICE = 499;
-
-const fmt = (n: number) =>
-  n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
-
 export const CostComparison = () => {
   const [active, setActive] = useState<Record<string, boolean>>(
     Object.fromEntries(TODAY_TOOLS.map((i) => [i.key, true]))
@@ -42,13 +36,6 @@ export const CostComparison = () => {
     () => Object.values(active).filter(Boolean).length,
     [active]
   );
-
-  const total = useMemo(
-    () => TODAY_TOOLS.reduce((sum, item) => sum + (active[item.key] ? item.defaultCost : 0), 0),
-    [active]
-  );
-
-  const savings = Math.max(0, total - GO_PRICE);
 
   const toggle = (key: string) => {
     setActive((prev) => ({ ...prev, [key]: !prev[key] }));
@@ -61,7 +48,7 @@ export const CostComparison = () => {
           The systems you juggle today vs. <span className="text-primary">GO ACADEMIX</span>
         </h3>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Toggle the tools your school uses. The real win is replacing them with one platform. The savings are a side effect.
+          Toggle the tools your school uses. The real win is replacing them with one platform so your team can focus on students.
         </p>
       </div>
 
@@ -81,7 +68,7 @@ export const CostComparison = () => {
                 <button
                   key={item.key}
                   onClick={() => toggle(item.key)}
-                  className={`w-full flex items-center justify-between py-3 gap-4 text-left transition-colors ${
+                  className={`w-full flex items-center justify-between py-4 gap-4 text-left transition-colors ${
                     isActive ? "opacity-100" : "opacity-40"
                   }`}
                 >
@@ -100,9 +87,6 @@ export const CostComparison = () => {
                       <div className="text-xs text-muted-foreground">{item.sub}</div>
                     </div>
                   </div>
-                  <div className="text-sm tabular-nums text-muted-foreground shrink-0">
-                    {fmt(item.defaultCost)}/mo
-                  </div>
                 </button>
               );
             })}
@@ -110,12 +94,12 @@ export const CostComparison = () => {
 
           <div className="mt-6 pt-6 border-t-2 border-foreground/80 flex items-end justify-between">
             <div>
-              <div className="text-[11px] tracking-wider text-muted-foreground">MONTHLY TOTAL</div>
-              <div className="text-xs text-muted-foreground">{fmt(total * 12)} a year</div>
+              <div className="text-[11px] tracking-wider text-muted-foreground">SYSTEMS COUNT</div>
+              <div className="text-xs text-muted-foreground">Multiple logins, vendors, and data handoffs</div>
             </div>
             <div className="text-3xl lg:text-4xl font-bold tabular-nums">
-              {fmt(total)}
-              <span className="text-sm font-normal text-muted-foreground">/mo</span>
+              {activeCount}
+              <span className="text-sm font-normal text-muted-foreground ml-1">tools</span>
             </div>
           </div>
         </div>
@@ -141,12 +125,12 @@ export const CostComparison = () => {
 
           <div className="mt-6 pt-6 border-t border-primary/40 flex items-end justify-between">
             <div>
-              <div className="text-[11px] tracking-wider text-muted-foreground">ONE PRICE</div>
-              <div className="text-xs text-muted-foreground">{fmt(GO_PRICE * 12)} a year</div>
+              <div className="text-[11px] tracking-wider text-muted-foreground">RESULT</div>
+              <div className="text-xs text-muted-foreground">One login, one invoice, one source of truth</div>
             </div>
             <div className="text-3xl lg:text-4xl font-bold text-primary tabular-nums">
-              {fmt(GO_PRICE)}
-              <span className="text-sm font-normal text-muted-foreground">/mo</span>
+              1
+              <span className="text-sm font-normal text-muted-foreground ml-1">platform</span>
             </div>
           </div>
         </div>
@@ -160,11 +144,9 @@ export const CostComparison = () => {
             Replace {activeCount} disconnected tools with one platform so your team can focus on students, not software.
           </div>
         </div>
-        {savings > 0 && (
-          <div className="text-sm md:text-right md:max-w-xs opacity-95 shrink-0">
-            Estimated savings: <span className="font-semibold">{fmt(savings)}/mo</span> ({fmt(savings * 12)} a year). That's money and hours you can put back into quality and growth.
-          </div>
-        )}
+        <div className="text-sm md:text-right md:max-w-xs opacity-95 shrink-0">
+          Fewer logins, less re-entry, and one place to see every student from enrollment to certificate.
+        </div>
       </div>
     </div>
   );
