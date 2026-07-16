@@ -19,12 +19,12 @@ export const Hero = () => {
             </div>
 
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-              One platform for your school.{" "}
+              One platform for your whole school.{" "}
               <span className="text-primary">Finally.</span>
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Right now you're paying for an LMS, a SIS, a scheduling tool, a compliance tracker, and a stack of spreadsheets holding it all together. We were doing the same thing at our own school, Allied Health Career Training. GO ACADEMIX puts it all in one platform built for Allied Health schools.
+              Right now your enrollment, payments, learning, and compliance live in separate tools that do not talk to each other. Your team re-enters the same data three times. And instead of focusing on students, you are managing software. We built GO ACADEMIX because we lived that at our own school, Allied Health Career Training. One platform, one student record, one place to run things.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">

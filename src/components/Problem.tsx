@@ -7,8 +7,8 @@ const painPoints = [
     icon: Puzzle,
   },
   {
-    title: "You're paying for way too much software",
-    body: "An LMS built for universities, a SIS that was old ten years ago, plus scheduling and reporting add-ons. The bills add up fast.",
+    title: "Your team is pulled in six directions",
+    body: "One tab for the LMS, one for billing, one for reports, and a folder of spreadsheets holding it together. Context switching eats your day.",
     icon: Receipt,
   },
   {
@@ -38,7 +38,7 @@ export const Problem = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground">
-            We've sat with school owners, admins, and instructors. The same frustrations keep coming up.
+            We've sat with school owners, admins, and instructors. The same frustrations keep coming up. The real cost is not the money. It is the time and focus that never makes it back to your students.
           </p>
         </div>
 

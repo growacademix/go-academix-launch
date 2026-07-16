@@ -52,7 +52,7 @@ export const LeadCapture = () => {
                   Stay in the loop.
                 </h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Drop your email and we'll send occasional product updates, lessons from running our own school, and early access when new features ship. No spam, unsubscribe anytime.
+                  Drop your email and we'll send occasional product updates, lessons from simplifying our own school, and early access when new features ship. No spam, unsubscribe anytime.
                 </p>
               </div>
 

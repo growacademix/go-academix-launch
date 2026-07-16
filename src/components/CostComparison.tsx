@@ -1,23 +1,21 @@
 import { useMemo, useState } from "react";
-import { Check } from "lucide-react";
+import { Check, Minus, Plus } from "lucide-react";
 
-type LineItem = {
+type ToolItem = {
   key: string;
   label: string;
   sub: string;
-  default: number;
+  defaultCost: number;
 };
 
-const DEFAULT_ITEMS: LineItem[] = [
-  { key: "lms", label: "LMS subscription", sub: "Course content & grades", default: 200 },
-  { key: "sis", label: "SIS / student records", sub: "Records, enrollment, billing", default: 250 },
-  { key: "sched", label: "Scheduling tool", sub: "Classes, rooms, rosters", default: 90 },
-  { key: "compliance", label: "Compliance / reporting", sub: "State & accreditation reports", default: 150 },
-  { key: "payments", label: "Payments / billing", sub: "Tuition & invoicing", default: 120 },
-  { key: "sheets", label: "Spreadsheets & staff time", sub: "The hidden glue cost", default: 400 },
+const TODAY_TOOLS: ToolItem[] = [
+  { key: "lms", label: "LMS", sub: "Course content & grades", defaultCost: 200 },
+  { key: "sis", label: "SIS / student records", sub: "Records, enrollment, billing", defaultCost: 250 },
+  { key: "sched", label: "Scheduling tool", sub: "Classes, rooms, rosters", defaultCost: 90 },
+  { key: "compliance", label: "Compliance / reporting", sub: "State & accreditation reports", defaultCost: 150 },
+  { key: "payments", label: "Payments / billing", sub: "Tuition & invoicing", defaultCost: 120 },
+  { key: "sheets", label: "Spreadsheets & staff time", sub: "The hidden glue cost", defaultCost: 400 },
 ];
-
-const GO_PRICE = 499;
 
 const GO_INCLUDES = [
   "Enrollment",
@@ -30,30 +28,40 @@ const GO_INCLUDES = [
   "Grades",
 ];
 
+const GO_PRICE = 499;
+
 const fmt = (n: number) =>
   n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
 
 export const CostComparison = () => {
-  const [values, setValues] = useState<Record<string, number>>(
-    Object.fromEntries(DEFAULT_ITEMS.map((i) => [i.key, i.default]))
+  const [active, setActive] = useState<Record<string, boolean>>(
+    Object.fromEntries(TODAY_TOOLS.map((i) => [i.key, true]))
+  );
+
+  const activeCount = useMemo(
+    () => Object.values(active).filter(Boolean).length,
+    [active]
   );
 
   const total = useMemo(
-    () => Object.values(values).reduce((s, v) => s + (Number(v) || 0), 0),
-    [values]
+    () => TODAY_TOOLS.reduce((sum, item) => sum + (active[item.key] ? item.defaultCost : 0), 0),
+    [active]
   );
 
   const savings = Math.max(0, total - GO_PRICE);
-  const pct = total > 0 ? Math.round((savings / total) * 100) : 0;
+
+  const toggle = (key: string) => {
+    setActive((prev) => ({ ...prev, [key]: !prev[key] }));
+  };
 
   return (
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-10">
         <h3 className="text-2xl lg:text-3xl font-semibold mb-3">
-          The stack you pay for today vs. <span className="text-primary">GO ACADEMIX</span>
+          The systems you juggle today vs. <span className="text-primary">GO ACADEMIX</span>
         </h3>
         <p className="text-muted-foreground max-w-2xl mx-auto">
-          Type in what your school pays for each tool. The totals and your savings update live.
+          Toggle the tools your school uses. The real win is replacing them with one platform. The savings are a side effect.
         </p>
       </div>
 
@@ -61,33 +69,43 @@ export const CostComparison = () => {
         {/* Today */}
         <div className="bg-card rounded-lg border border-border p-6 flex flex-col">
           <div className="mb-6">
-            <div className="text-xs tracking-wider text-muted-foreground mb-1">TODAY · A TOOL FOR EVERY JOB</div>
-            <h4 className="text-xl font-semibold">You juggle {DEFAULT_ITEMS.length} vendors</h4>
-            <p className="text-sm text-muted-foreground">Separate logins, separate bills, data everywhere.</p>
+            <div className="text-xs tracking-wider text-muted-foreground mb-1">TODAY · FRAGMENTED TOOLS</div>
+            <h4 className="text-xl font-semibold">You run {activeCount} separate systems</h4>
+            <p className="text-sm text-muted-foreground">Each one needs its own login, data entry, and reconciliation.</p>
           </div>
 
           <div className="divide-y divide-border flex-1">
-            {DEFAULT_ITEMS.map((item) => (
-              <div key={item.key} className="flex items-center justify-between py-3 gap-4">
-                <div className="min-w-0">
-                  <div className="font-medium text-sm">{item.label}</div>
-                  <div className="text-xs text-muted-foreground">{item.sub}</div>
-                </div>
-                <div className="flex items-center gap-1 shrink-0">
-                  <span className="text-muted-foreground">$</span>
-                  <input
-                    type="number"
-                    min={0}
-                    value={values[item.key]}
-                    onChange={(e) =>
-                      setValues((v) => ({ ...v, [item.key]: Math.max(0, Number(e.target.value) || 0) }))
-                    }
-                    className="w-20 px-2 py-1 text-right rounded border border-border bg-background focus:outline-none focus:ring-2 focus:ring-primary/40"
-                  />
-                  <span className="text-xs text-muted-foreground">/mo</span>
-                </div>
-              </div>
-            ))}
+            {TODAY_TOOLS.map((item) => {
+              const isActive = active[item.key];
+              return (
+                <button
+                  key={item.key}
+                  onClick={() => toggle(item.key)}
+                  className={`w-full flex items-center justify-between py-3 gap-4 text-left transition-colors ${
+                    isActive ? "opacity-100" : "opacity-40"
+                  }`}
+                >
+                  <div className="flex items-center gap-3 min-w-0">
+                    <span
+                      className={`inline-flex items-center justify-center w-6 h-6 rounded border shrink-0 ${
+                        isActive
+                          ? "bg-primary border-primary text-primary-foreground"
+                          : "border-border text-muted-foreground"
+                      }`}
+                    >
+                      {isActive ? <Check className="w-3.5 h-3.5" /> : <Minus className="w-3.5 h-3.5" />}
+                    </span>
+                    <div className="min-w-0">
+                      <div className="font-medium text-sm">{item.label}</div>
+                      <div className="text-xs text-muted-foreground">{item.sub}</div>
+                    </div>
+                  </div>
+                  <div className="text-sm tabular-nums text-muted-foreground shrink-0">
+                    {fmt(item.defaultCost)}/mo
+                  </div>
+                </button>
+              );
+            })}
           </div>
 
           <div className="mt-6 pt-6 border-t-2 border-foreground/80 flex items-end justify-between">
@@ -106,8 +124,8 @@ export const CostComparison = () => {
         <div className="bg-primary/5 rounded-lg border border-primary/30 p-6 flex flex-col">
           <div className="mb-6">
             <div className="text-xs tracking-wider text-primary mb-1">GO ACADEMIX · ONE PLATFORM</div>
-            <h4 className="text-xl font-semibold">One platform, one login</h4>
-            <p className="text-sm text-muted-foreground">Everything below, in one place.</p>
+            <h4 className="text-xl font-semibold">One platform, one student record</h4>
+            <p className="text-sm text-muted-foreground">Everything below, connected from enrollment to certificate.</p>
           </div>
 
           <ul className="space-y-3 flex-1">
@@ -134,17 +152,19 @@ export const CostComparison = () => {
         </div>
       </div>
 
-      {/* Savings bar */}
-      <div className="mt-6 rounded-lg p-6 bg-gradient-to-r from-secondary to-primary text-primary-foreground flex flex-col md:flex-row md:items-center md:justify-between gap-3">
-        <div>
-          <div className="text-[11px] tracking-wider opacity-80">YOU SAVE</div>
-          <div className="text-2xl lg:text-3xl font-bold tabular-nums">
-            {fmt(savings)}/mo · {pct}% less
+      {/* Consolidation summary */}
+      <div className="mt-6 rounded-lg p-6 bg-gradient-to-r from-secondary to-primary text-primary-foreground flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div className="md:max-w-xl">
+          <div className="text-[11px] tracking-wider opacity-80 mb-1">THE REAL VALUE</div>
+          <div className="text-lg font-medium leading-snug">
+            Replace {activeCount} disconnected tools with one platform so your team can focus on students, not software.
           </div>
         </div>
-        <div className="text-sm md:text-right md:max-w-xs opacity-95">
-          That's {fmt(savings * 12)} a year back in your pocket, and {DEFAULT_ITEMS.length} fewer vendors to manage.
-        </div>
+        {savings > 0 && (
+          <div className="text-sm md:text-right md:max-w-xs opacity-95 shrink-0">
+            Estimated savings: <span className="font-semibold">{fmt(savings)}/mo</span> ({fmt(savings * 12)} a year). That's money and hours you can put back into quality and growth.
+          </div>
+        )}
       </div>
     </div>
   );

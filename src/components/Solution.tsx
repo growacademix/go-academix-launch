@@ -70,7 +70,7 @@ export const Solution = () => {
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            These are real screens from GO ACADEMIX. The same ones our school and Inspire CNA use every day. No roadmap promises, just the tools you can use from your first login.
+            These are real screens from GO ACADEMIX. The same ones our school and Inspire CNA use every day. Enrollment, payments, learning, and certificates all connect to the same student record. No roadmap promises, just the tools you can use from your first login.
           </p>
         </div>
 
