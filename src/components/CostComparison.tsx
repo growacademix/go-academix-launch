@@ -115,7 +115,7 @@ export const CostComparison = () => {
           <ul className="space-y-3 flex-1">
             {GO_INCLUDES.map((f) => (
               <li key={f} className="flex items-center gap-3">
-                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-success text-success-foreground shrink-0">
+                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary text-primary-foreground shrink-0">
                   <Check className="w-3 h-3" />
                 </span>
                 <span className="text-sm">{f}</span>
