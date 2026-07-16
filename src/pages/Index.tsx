@@ -3,7 +3,7 @@ import { Hero } from "@/components/Hero";
 import { Problem } from "@/components/Problem";
 import { Solution } from "@/components/Solution";
 import { SocialProof } from "@/components/SocialProof";
-
+import { CostComparison } from "@/components/CostComparison";
 import { LeadCapture } from "@/components/LeadCapture";
 import { Footer } from "@/components/Footer";
 
@@ -14,9 +14,9 @@ const Index = () => {
       <main>
         <Hero />
         <SocialProof />
+        <CostComparison />
         <Problem />
         <Solution />
-        
         <LeadCapture />
       </main>
       <Footer />
