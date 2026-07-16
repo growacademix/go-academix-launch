@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Calendar, Mail } from "lucide-react";
+import { ArrowRight, Calendar, Mail, CheckCircle2 } from "lucide-react";
 import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
 
 const DEMO_URL =
@@ -7,35 +7,33 @@ const DEMO_URL =
 
 export const Hero = () => {
   return (
-    <section className="relative pt-32 pb-20">
+    <section className="relative pt-36 pb-24">
       <div className="container mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-sm font-medium text-primary">
-                Built With Allied Health School Owners
-              </span>
-            </div>
+            <span className="pill-badge">
+              <span className="pill-dot" />
+              Built with Allied Health school owners
+            </span>
 
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
+            <h1 className="heading-xxl text-5xl lg:text-7xl">
               One platform for your whole school.{" "}
               <span className="text-primary">Finally.</span>
             </h1>
 
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Right now your enrollment, payments, learning, and compliance live in separate tools that do not talk to each other. Your team re-enters the same data three times. And instead of focusing on students, you are managing software. We built GO ACADEMIX because we lived that at our own school, Allied Health Career Training. One platform, one student record, one place to run things.
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
+              Enrollment, payments, learning, and compliance live in separate tools that don't talk. So your team re-enters the same data three times. We built GO ACADEMIX at our own school. One platform, one student record, one place to run things.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button asChild size="lg">
+              <Button asChild size="lg" className="rounded-full">
                 <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
                   <Calendar className="mr-2 w-4 h-4" />
                   Book a 30-min demo
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline">
+              <Button asChild size="lg" variant="outline" className="rounded-full">
                 <a href="mailto:jocelyn@goacademix.com">
                   <Mail className="mr-2 w-4 h-4" />
                   Email Jocelyn
@@ -43,20 +41,24 @@ export const Hero = () => {
               </Button>
             </div>
 
-            <p className="text-sm text-muted-foreground">
+            <p className="flex items-start gap-2 text-sm text-muted-foreground">
+              <CheckCircle2 className="w-4 h-4 text-primary mt-0.5 shrink-0" />
               No sales pitch. Just a real conversation about what your school is dealing with.
             </p>
           </div>
 
-          <div className="relative lg:block hidden">
-            <div className="rounded-lg border border-border shadow-card overflow-hidden bg-card">
+          <div className="relative">
+            <div className="rounded-2xl border border-border overflow-hidden bg-[hsl(var(--brand-ink))] aspect-[4/3] relative shadow-lg">
               <video
                 src={heroVideoAsset.url}
                 controls
                 loop
                 playsInline
-                className="w-full object-cover"
+                className="w-full h-full object-cover"
               />
+              <div className="absolute bottom-3 left-4 mono-label text-white/70">
+                / 90-sec product tour
+              </div>
             </div>
           </div>
         </div>
