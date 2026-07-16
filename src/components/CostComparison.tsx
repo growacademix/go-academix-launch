@@ -54,7 +54,7 @@ export const CostComparison = () => {
 
       <div className="grid md:grid-cols-2 gap-6">
         {/* Today */}
-        <div className="bg-card rounded-lg border border-border p-6 flex flex-col">
+        <div className="bg-card rounded-lg border border-border p-6 flex flex-col border-l-4 border-l-muted-foreground/30">
           <div className="mb-6">
             <div className="text-xs tracking-wider text-muted-foreground mb-1">TODAY · FRAGMENTED TOOLS</div>
             <h4 className="text-xl font-semibold">You run {activeCount} separate systems</h4>
