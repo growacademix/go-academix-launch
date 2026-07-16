@@ -40,13 +40,22 @@ export const Problem = () => {
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {painPoints.map((p, i) => {
             const Icon = p.icon;
+            const isTeal = i % 2 === 0;
             return (
               <div
                 key={i}
-                className="p-8 bg-card rounded-lg border border-border shadow-card"
+                className={`p-8 bg-card rounded-lg border border-border shadow-card border-l-4 ${
+                  isTeal ? "border-l-primary" : "border-l-success"
+                }`}
               >
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 mb-5">
-                  <Icon className="w-6 h-6 text-primary" />
+                <div
+                  className={`inline-flex items-center justify-center w-12 h-12 rounded-lg border mb-5 ${
+                    isTeal
+                      ? "bg-primary/10 border-primary/20 text-primary"
+                      : "bg-success/10 border-success/30 text-success"
+                  }`}
+                >
+                  <Icon className="w-6 h-6" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{p.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{p.body}</p>
