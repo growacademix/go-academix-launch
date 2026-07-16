@@ -55,18 +55,24 @@ export const SocialProof = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-            {stats.map((stat) => (
-              <div
-                key={stat.label}
-                className="bg-card rounded-xl border border-border p-6 shadow-sm"
-              >
-                <p className="text-xs font-medium text-muted-foreground tracking-wider mb-3">
-                  / {stat.label}
-                </p>
-                <p className="text-4xl lg:text-5xl font-bold text-foreground mb-2">{stat.value}</p>
-                <p className="text-sm text-muted-foreground">{stat.description}</p>
-              </div>
-            ))}
+            {stats.map((stat, i) => {
+              const isTeal = i === 0;
+              const isGreen = i === 1;
+              return (
+                <div
+                  key={stat.label}
+                  className={`bg-card rounded-xl border border-border p-6 shadow-sm border-t-4 ${
+                    isTeal ? "border-t-primary" : isGreen ? "border-t-success" : "border-t-border"
+                  }`}
+                >
+                  <p className="text-xs font-medium text-muted-foreground tracking-wider mb-3">
+                    / {stat.label}
+                  </p>
+                  <p className="text-4xl lg:text-5xl font-bold text-foreground mb-2">{stat.value}</p>
+                  <p className="text-sm text-muted-foreground">{stat.description}</p>
+                </div>
+              );
+            })}
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 items-stretch">
