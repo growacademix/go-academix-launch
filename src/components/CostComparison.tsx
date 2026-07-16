@@ -137,7 +137,7 @@ export const CostComparison = () => {
       </div>
 
       {/* Consolidation summary */}
-      <div className="mt-6 rounded-lg p-6 bg-[hsl(234,7%,28%)] text-white flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+      <div className="mt-6 rounded-lg p-6 bg-[hsl(var(--brand-ink))] text-white flex flex-col md:flex-row md:items-center md:justify-between gap-5">
         <div className="md:max-w-xl">
           <div className="text-[11px] tracking-wider text-white/70 mb-1">THE REAL VALUE</div>
           <div className="text-lg font-medium leading-snug">
