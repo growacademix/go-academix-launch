@@ -105,7 +105,7 @@ export const CostComparison = () => {
         </div>
 
         {/* GO ACADEMIX */}
-        <div className="bg-primary/5 rounded-lg border border-primary/30 p-6 flex flex-col">
+        <div className="bg-primary/5 rounded-lg border border-primary/30 p-6 flex flex-col border-l-4 border-l-success">
           <div className="mb-6">
             <div className="text-xs tracking-wider text-primary mb-1">GO ACADEMIX · ONE PLATFORM</div>
             <h4 className="text-xl font-semibold">One platform, one student record</h4>
@@ -115,7 +115,7 @@ export const CostComparison = () => {
           <ul className="space-y-3 flex-1">
             {GO_INCLUDES.map((f) => (
               <li key={f} className="flex items-center gap-3">
-                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary text-primary-foreground shrink-0">
+                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-success text-success-foreground shrink-0">
                   <Check className="w-3 h-3" />
                 </span>
                 <span className="text-sm">{f}</span>
