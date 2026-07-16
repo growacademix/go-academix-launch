@@ -124,7 +124,7 @@ export const Solution = () => {
           </DialogContent>
         </Dialog>
 
-        <div className="bg-primary rounded-lg p-12 text-center">
+        <div className="bg-gradient-to-br from-primary to-brand-green-deep rounded-lg p-12 text-center">
           <h3 className="text-3xl font-semibold mb-4 text-primary-foreground">
             The best way to see it is to see it.
           </h3>
