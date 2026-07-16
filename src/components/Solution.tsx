@@ -59,11 +59,6 @@ export const Solution = () => {
     <section id="product" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-            <span className="w-2 h-2 rounded-full bg-primary" />
-            <span className="text-sm font-medium text-primary">Live Today</span>
-          </div>
-
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Everything your school runs on,{" "}
             <span className="text-primary">in one place</span>

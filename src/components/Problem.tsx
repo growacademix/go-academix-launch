@@ -1,4 +1,4 @@
-import { AlertCircle, Puzzle, Receipt, ClipboardCheck, Users } from "lucide-react";
+import { Puzzle, Receipt, ClipboardCheck, Users } from "lucide-react";
 
 const painPoints = [
   {
@@ -28,11 +28,6 @@ export const Problem = () => {
     <section className="py-20 bg-accent/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
-            <AlertCircle className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Sound Familiar?</span>
-          </div>
-
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Running an Allied Health school shouldn't feel like duct-taping software together.
           </h2>

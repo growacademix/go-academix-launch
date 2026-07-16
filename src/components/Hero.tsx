@@ -11,13 +11,6 @@ export const Hero = () => {
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              <span className="text-sm font-medium text-primary">
-                Built With Allied Health School Owners
-              </span>
-            </div>
-
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
               One platform for your whole school.{" "}
               <span className="text-primary">Finally.</span>
