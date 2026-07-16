@@ -54,7 +54,7 @@ export const CostComparison = () => {
 
       <div className="grid md:grid-cols-2 gap-5">
         {/* Today */}
-        <div className="bg-card rounded-2xl border border-border p-7 flex flex-col">
+        <div className="bg-[hsl(48,33%,97%)] rounded-2xl border border-border p-7 flex flex-col shadow-sm">
           <div className="mb-6">
             <div className="mono-label mb-2">/ Today &nbsp;·&nbsp; fragmented_tools</div>
             <h4 className="text-2xl font-semibold tracking-tight">
@@ -63,7 +63,7 @@ export const CostComparison = () => {
             <p className="text-sm text-muted-foreground mt-1">Each one needs its own login, data entry, and reconciliation.</p>
           </div>
 
-          <div className="divide-y divide-border flex-1">
+          <div className="divide-y divide-border/70 flex-1 bg-white/60 rounded-xl px-4">
             {TODAY_TOOLS.map((item) => {
               const isActive = active[item.key];
               return (
@@ -105,16 +105,16 @@ export const CostComparison = () => {
         </div>
 
         {/* GO ACADEMIX */}
-        <div className="bg-primary/5 rounded-2xl border border-primary/30 p-7 flex flex-col">
+        <div className="bg-primary/[0.08] rounded-2xl border border-primary/30 p-7 flex flex-col shadow-sm shadow-primary/5">
           <div className="mb-6">
             <div className="mono-label text-primary mb-2">/ Go_academix &nbsp;·&nbsp; one_platform</div>
             <h4 className="text-2xl font-semibold tracking-tight">One platform, one student record</h4>
             <p className="text-sm text-muted-foreground mt-1">Everything below, connected from enrollment to certificate.</p>
           </div>
 
-          <ul className="space-y-3 flex-1">
+          <ul className="space-y-3 flex-1 bg-white/50 rounded-xl px-4 py-1">
             {GO_INCLUDES.map((f) => (
-              <li key={f} className="flex items-center gap-3">
+              <li key={f} className="flex items-center gap-3 py-1">
                 <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-primary text-primary-foreground shrink-0">
                   <Check className="w-3 h-3" />
                 </span>
@@ -123,7 +123,7 @@ export const CostComparison = () => {
             ))}
           </ul>
 
-          <div className="mt-6 pt-6 border-t border-primary/40 flex items-end justify-between">
+          <div className="mt-6 pt-6 border-t border-primary/30 flex items-end justify-between">
             <div>
               <div className="mono-label">/ Result</div>
               <div className="text-xs text-muted-foreground mt-1">One login, one invoice, one source of truth</div>
@@ -137,9 +137,9 @@ export const CostComparison = () => {
       </div>
 
       {/* Consolidation summary */}
-      <div className="mt-5 rounded-2xl p-8 bg-[hsl(var(--brand-ink))] text-white flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+      <div className="mt-5 rounded-2xl p-8 bg-gradient-to-br from-[hsl(var(--brand-ink))] to-[hsl(222,47%,16%)] text-white flex flex-col md:flex-row md:items-center md:justify-between gap-5 shadow-lg shadow-foreground/5">
         <div className="md:max-w-xl">
-          <div className="mono-label text-white/60 mb-2">/ The_real_value</div>
+          <div className="mono-label text-white/70 mb-2">/ The_real_value</div>
           <div className="text-xl lg:text-2xl font-semibold leading-snug tracking-tight">
             Replace {activeCount} disconnected tools with one platform so your team can focus on students, not software.
           </div>
