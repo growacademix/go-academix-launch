@@ -66,7 +66,7 @@ export const Solution = () => {
 
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Everything your school runs on,{" "}
-            <span className="text-primary">...in one place</span>
+            <span className="text-primary">in one place</span>
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
