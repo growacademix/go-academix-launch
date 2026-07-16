@@ -48,7 +48,7 @@ export const Hero = () => {
           </div>
 
           <div className="relative">
-            <div className="rounded-2xl border border-border overflow-hidden bg-[hsl(var(--brand-ink))] aspect-[4/3] relative shadow-lg">
+            <div className="rounded-2xl border border-border overflow-hidden bg-[hsl(var(--brand-ink))] aspect-[4/3] relative shadow-lg [&_video::-webkit-media-controls-play-button]:text-primary [&_video::-webkit-media-controls-play-button]:hover:text-primary/90 [&_video::-webkit-media-controls-play-button]:drop-shadow-sm">
               <video
                 src={heroVideoAsset.url}
                 controls
