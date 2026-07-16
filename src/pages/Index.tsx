@@ -14,9 +14,9 @@ const Index = () => {
       <main>
         <Hero />
         <SocialProof />
+        <CostComparison />
         <Problem />
         <Solution />
-        
         <LeadCapture />
       </main>
       <Footer />
