@@ -175,3 +175,33 @@
     outline-offset: 2px;
   }
 }
+
+@layer components {
+  .mono-label {
+    font-family: var(--font-mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: hsl(var(--muted-foreground));
+  }
+  .mono-num {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: hsl(var(--muted-foreground));
+    letter-spacing: 0.05em;
+  }
+  .pill-badge {
+    @apply inline-flex items-center gap-2 px-3 py-1.5 rounded-full border text-xs font-medium;
+    background: hsl(var(--primary) / 0.08);
+    border-color: hsl(var(--primary) / 0.25);
+    color: hsl(var(--brand-teal-deep));
+  }
+  .pill-dot {
+    @apply w-1.5 h-1.5 rounded-full bg-primary;
+  }
+  .heading-xxl {
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.02;
+  }
+}
