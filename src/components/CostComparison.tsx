@@ -44,9 +44,9 @@ export const CostComparison = () => {
   return (
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-12">
-        <h3 className="heading-xxl text-3xl lg:text-5xl mb-4">
+        <h2 className="heading-xxl text-3xl lg:text-4xl mb-4">
           The systems you juggle today vs. <span className="text-primary">GO ACADEMIX</span>
-        </h3>
+        </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
           Toggle the tools your school uses. The real win is replacing them with one platform so your team can focus on students.
         </p>
