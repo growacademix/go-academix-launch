@@ -58,7 +58,7 @@ export const Solution = () => {
   return (
     <section id="product" className="py-20">
       <div className="container mx-auto px-6">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <span className="w-2 h-2 rounded-full bg-primary" />
             <span className="text-sm font-medium text-primary">Live Today</span>
@@ -66,21 +66,12 @@ export const Solution = () => {
 
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Everything your school runs on,{" "}
-            <span className="text-primary">in one place</span>
+            <span className="text-primary">...in one place</span>
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
             These are real screens from GO ACADEMIX. The same ones our school and Inspire CNA use every day. No roadmap promises, just the tools you can use from your first login.
           </p>
-        </div>
-
-        <div className="mb-16">
-          <CostComparison />
-          <div className="mt-6 max-w-4xl mx-auto p-4 rounded-md border border-border bg-muted/50">
-            <p className="text-sm text-muted-foreground">
-              <span className="font-medium text-foreground">On the roadmap:</span> automated compliance workflows, advanced state reporting, scheduling, and alumni/career pathways. Already in development with feedback from our partner schools.
-            </p>
-          </div>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
@@ -104,6 +95,15 @@ export const Solution = () => {
               </div>
             </button>
           ))}
+        </div>
+
+        <div className="mb-16">
+          <CostComparison />
+          <div className="mt-6 max-w-4xl mx-auto p-4 rounded-md border border-border bg-muted/50">
+            <p className="text-sm text-muted-foreground">
+              <span className="font-medium text-foreground">On the roadmap:</span> automated compliance workflows, advanced state reporting, scheduling, and alumni/career pathways. Already in development with feedback from our partner schools.
+            </p>
+          </div>
         </div>
 
         <Dialog open={open !== null} onOpenChange={(o) => !o && setOpen(null)}>
