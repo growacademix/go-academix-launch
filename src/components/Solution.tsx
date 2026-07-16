@@ -59,6 +59,11 @@ export const Solution = () => {
     <section id="product" className="py-20">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+            <span className="w-2 h-2 rounded-full bg-primary" />
+            <span className="text-sm font-medium text-primary">Live Today</span>
+          </div>
+
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Everything your school runs on,{" "}
             <span className="text-primary">in one place</span>
@@ -70,35 +75,26 @@ export const Solution = () => {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {shots.map((shot, i) => {
-            const isTeal = i % 2 === 0;
-            return (
-              <button
-                key={i}
-                onClick={() => setOpen(i)}
-                className={`group text-left bg-card rounded-lg border border-border overflow-hidden hover:shadow-md transition-all ${
-                  isTeal ? "hover:border-primary/50" : "hover:border-success/50"
-                }`}
-              >
-                <div
-                  className={`aspect-[16/10] overflow-hidden bg-muted border-b-2 ${
-                    isTeal ? "border-b-primary/30" : "border-b-success/30"
-                  }`}
-                >
-                  <img
-                    src={shot.src}
-                    alt={shot.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-300"
-                  />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-semibold mb-1">{shot.title}</h3>
-                  <p className="text-sm text-muted-foreground">{shot.caption}</p>
-                </div>
-              </button>
-            );
-          })}
+          {shots.map((shot, i) => (
+            <button
+              key={i}
+              onClick={() => setOpen(i)}
+              className="group text-left bg-card rounded-lg border border-border overflow-hidden hover:border-primary/40 hover:shadow-md transition-all"
+            >
+              <div className="aspect-[16/10] overflow-hidden bg-muted">
+                <img
+                  src={shot.src}
+                  alt={shot.title}
+                  loading="lazy"
+                  className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-300"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="font-semibold mb-1">{shot.title}</h3>
+                <p className="text-sm text-muted-foreground">{shot.caption}</p>
+              </div>
+            </button>
+          ))}
         </div>
 
         <div className="mb-16">
@@ -124,7 +120,7 @@ export const Solution = () => {
           </DialogContent>
         </Dialog>
 
-        <div className="bg-gradient-to-br from-primary to-brand-green-deep rounded-lg p-12 text-center">
+        <div className="bg-primary rounded-lg p-12 text-center">
           <h3 className="text-3xl font-semibold mb-4 text-primary-foreground">
             The best way to see it is to see it.
           </h3>

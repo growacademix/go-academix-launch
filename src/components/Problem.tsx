@@ -1,4 +1,4 @@
-import { Puzzle, Receipt, ClipboardCheck, Users } from "lucide-react";
+import { AlertCircle, Puzzle, Receipt, ClipboardCheck, Users } from "lucide-react";
 
 const painPoints = [
   {
@@ -28,6 +28,11 @@ export const Problem = () => {
     <section className="py-20 bg-accent/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 max-w-3xl mx-auto">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+            <AlertCircle className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-primary">Sound Familiar?</span>
+          </div>
+
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">
             Running an Allied Health school shouldn't feel like duct-taping software together.
           </h2>
@@ -40,22 +45,13 @@ export const Problem = () => {
         <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
           {painPoints.map((p, i) => {
             const Icon = p.icon;
-            const isTeal = i % 2 === 0;
             return (
               <div
                 key={i}
-                className={`p-8 bg-card rounded-lg border border-border shadow-card border-l-4 ${
-                  isTeal ? "border-l-primary" : "border-l-success"
-                }`}
+                className="p-8 bg-card rounded-lg border border-border shadow-card"
               >
-                <div
-                  className={`inline-flex items-center justify-center w-12 h-12 rounded-lg border mb-5 ${
-                    isTeal
-                      ? "bg-primary/10 border-primary/20 text-primary"
-                      : "bg-success/10 border-success/30 text-success"
-                  }`}
-                >
-                  <Icon className="w-6 h-6" />
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 border border-primary/20 mb-5">
+                  <Icon className="w-6 h-6 text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{p.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{p.body}</p>

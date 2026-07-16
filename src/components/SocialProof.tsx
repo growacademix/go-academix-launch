@@ -1,4 +1,4 @@
-import { Quote } from "lucide-react";
+import { CheckCircle2, Quote } from "lucide-react";
 import ahctLogo from "@/assets/ahct-logo.png.asset.json";
 import inspireLogo from "@/assets/inspire-cna-logo.png.asset.json";
 import logo from "@/assets/logo-goacademix-official.png.asset.json";
@@ -42,6 +42,11 @@ export const SocialProof = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
+              <CheckCircle2 className="w-4 h-4 text-primary" />
+              <span className="text-sm font-medium text-primary">Built with real schools</span>
+            </div>
+
             <h2 className="text-3xl lg:text-5xl font-bold mb-5 tracking-tight">
               Built by owners,
               <br />
@@ -55,24 +60,18 @@ export const SocialProof = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
-            {stats.map((stat, i) => {
-              const isTeal = i === 0;
-              const isGreen = i === 1;
-              return (
-                <div
-                  key={stat.label}
-                  className={`bg-card rounded-xl border border-border p-6 shadow-sm border-t-4 ${
-                    isTeal ? "border-t-primary" : isGreen ? "border-t-success" : "border-t-border"
-                  }`}
-                >
-                  <p className="text-xs font-medium text-muted-foreground tracking-wider mb-3">
-                    / {stat.label}
-                  </p>
-                  <p className="text-4xl lg:text-5xl font-bold text-foreground mb-2">{stat.value}</p>
-                  <p className="text-sm text-muted-foreground">{stat.description}</p>
-                </div>
-              );
-            })}
+            {stats.map((stat) => (
+              <div
+                key={stat.label}
+                className="bg-card rounded-xl border border-border p-6 shadow-sm"
+              >
+                <p className="text-xs font-medium text-muted-foreground tracking-wider mb-3">
+                  / {stat.label}
+                </p>
+                <p className="text-4xl lg:text-5xl font-bold text-foreground mb-2">{stat.value}</p>
+                <p className="text-sm text-muted-foreground">{stat.description}</p>
+              </div>
+            ))}
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-4 items-stretch">
