@@ -896,6 +896,11 @@ Starting a CNA school in Texas takes work, but the hardest part is not the curri
 
 At GO ACADEMIX, we built a platform specifically for allied health school owners. If you want to see how we handle enrollment, student records, and certificates in one place, book a demo and we will walk through it together.
     `,
+    cta: {
+      headline: "Need help starting your CNA school?",
+      body: "We have opened and run an allied health school ourselves, so we know how overwhelming the startup process can feel. Book a free consultation and we will answer your questions about approvals, curriculum, and operations.",
+      button: "Book a startup consultation",
+    },
   },
   {
     slug: "steps-to-start-a-cna-school-in-oklahoma",
