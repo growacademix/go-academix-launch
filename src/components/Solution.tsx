@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { CostComparison } from "@/components/CostComparison";
 import shot1 from "@/assets/shot-11.45.17_am.png.asset.json";
 import shot2 from "@/assets/shot-11.50.58_am.png.asset.json";
 import shot3 from "@/assets/shot-11.49.00_am.png.asset.json";
@@ -70,13 +69,10 @@ export const Solution = () => {
           ))}
         </div>
 
-        <div className="mb-16">
-          <CostComparison />
-          <div className="mt-6 max-w-4xl mx-auto p-5 rounded-2xl border border-border bg-card">
-            <p className="text-sm text-muted-foreground">
-              <span className="font-semibold text-foreground">On the roadmap:</span> automated compliance workflows, advanced state reporting, scheduling, and alumni/career pathways. Already in development with feedback from our partner schools.
-            </p>
-          </div>
+        <div className="mb-16 max-w-4xl mx-auto p-5 rounded-2xl border border-border bg-card">
+          <p className="text-sm text-muted-foreground">
+            <span className="font-semibold text-foreground">On the roadmap:</span> automated compliance workflows, advanced state reporting, scheduling, and alumni/career pathways. Already in development with feedback from our partner schools.
+          </p>
         </div>
 
         <Dialog open={open !== null} onOpenChange={(o) => !o && setOpen(null)}>
