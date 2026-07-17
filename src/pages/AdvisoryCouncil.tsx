@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { ArrowRight, ArrowLeft, CheckCircle2, Phone, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, Phone, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import foundersPhoto from "@/assets/connor-jocelyn-2025.jpg.asset.json";
@@ -95,17 +95,6 @@ export const AdvisoryCouncil = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <div className="bg-accent/50 border-b border-border pt-24">
-        <div className="container mx-auto px-6 py-3">
-          <a
-            href="/"
-            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to Home
-          </a>
-        </div>
-      </div>
       <main>
         <section className="pt-32 pb-20 bg-accent/50">
           <div className="container mx-auto px-6">
