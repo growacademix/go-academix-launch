@@ -53,18 +53,18 @@ export const LeadershipTeam = () => {
                 key={leader.name}
                 className="bg-card rounded-2xl border border-border p-8 flex flex-col"
               >
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-14 h-14 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                    <span className="font-semibold text-primary text-lg">
-                      {leader.initials}
-                    </span>
+                <div className="flex flex-col items-center text-center mb-6">
+                  <div className="w-32 h-32 rounded-full overflow-hidden border border-border/60 bg-muted mb-4">
+                    <img
+                      src={leader.imageUrl}
+                      alt={leader.imageAlt}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
-                  <div>
-                    <h3 className="text-xl font-semibold text-foreground">
-                      {leader.name}
-                    </h3>
-                    <p className="mono-label mt-1">/ {leader.role}</p>
-                  </div>
+                  <h3 className="text-xl font-semibold text-foreground">
+                    {leader.name}
+                  </h3>
+                  <p className="mono-label mt-1">/ {leader.role}</p>
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   {leader.bio}
