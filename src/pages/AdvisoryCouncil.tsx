@@ -326,13 +326,11 @@ export const AdvisoryCouncil = () => {
                       <Mail className="w-4 h-4" />
                       <span>jocelyn@goacademix.com</span>
                     </a>
-                    <a
-                      href="tel:316-633-0621"
+                    <PhoneLink
+                      number="316-633-0621"
+                      label="(316) 633-0621"
                       className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
-                    >
-                      <Phone className="w-4 h-4" />
-                      <span>(316) 633-0621</span>
-                    </a>
+                    />
                   </div>
                 </div>
               </div>
