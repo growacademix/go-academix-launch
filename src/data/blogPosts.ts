@@ -1053,6 +1053,102 @@ Starting a CNA school in Oklahoma takes work, but the hardest part is not the cu
 At GO ACADEMIX, we built a platform specifically for allied health school owners. If you want to see how we handle enrollment, student records, and certificates in one place, book a demo and we will walk through it together.
     `,
   },
+  {
+    slug: "how-to-build-cna-curriculum-content",
+    title: "How to Build CNA Curriculum Content for Your School",
+    description:
+      "A practical guide to writing CNA course content: what the federal rules require, how state requirements differ, and a shortcut if you don't want to build it from scratch.",
+    date: "2026-07-17",
+    readTime: "10 min read",
+    author: "Jocelyn Powell",
+    category: "Curriculum",
+    keywords:
+      "CNA curriculum, how to build CNA content, CNA lesson plans, state CNA training requirements, allied health curriculum, CNA program content",
+    content: `
+## Legal disclaimer
+
+We are not attorneys or a state approval body. This article is based on our experience running Allied Health Career Training and building GO ACADEMIX. Always confirm curriculum requirements with your state's nurse aide registry, department of health, or department of education before you use any content with real students.
+
+## Start with the federal floor, then layer your state on top
+
+Every CNA program in the country has to meet the federal OBRA '87 minimum: at least 75 hours of training, with at least 16 of those in supervised clinical practice, covering a specific list of topics. That federal list is your foundation. It includes things like:
+
+- Basic nursing skills
+- Personal care skills
+- Mental health and social service needs
+- Care of cognitively impaired residents
+- Basic restorative services
+- Residents' rights
+- Communication and interpersonal skills
+- Infection control
+- Safety and emergency procedures
+
+If your content covers those areas well, you are meeting the national baseline. But almost every state adds hours, adds topics, or changes how the skills are taught and tested. That is where curriculum work actually starts.
+
+## Yes, content has to be different for each state
+
+This is the part new school owners underestimate. A curriculum that is approved in Kansas will not automatically be approved in Colorado, Texas, or Oklahoma. States differ in three big ways.
+
+### 1. Total required hours
+
+The federal minimum is 75 hours. Many states require more. Texas requires 100 hours. Colorado and Oklahoma stay at 75. California requires 160. If your lesson plans are built for a 75-hour program and you try to use them in a 100-hour state, you are short 25 hours of documented instruction.
+
+### 2. Required topics beyond the federal list
+
+Some states require content the federal rules do not. Oklahoma requires Alzheimer's and dementia training as its own module. Some states require specific hours on abuse and neglect reporting, HIPAA, cultural competency, or end-of-life care. Your content has to name those topics and prove the hours.
+
+### 3. Skills checklists and testing
+
+Every state contracts with a testing vendor (Prometric, Credentia, Headmaster, or a state-run exam). Each vendor publishes a skills list your students will be tested on. Your curriculum needs to teach every skill on the list the way the vendor scores it. If your instructor teaches handwashing in 8 steps and the state vendor scores it in 11, students will fail the skills exam even if they know the material.
+
+The practical answer: build one core curriculum, then maintain a state overlay for each state you operate in. Do not try to write one universal course.
+
+## What good CNA content actually looks like
+
+Regulators are not just checking that you have a textbook. When you submit for program approval, they want to see:
+
+- A written curriculum document that maps every required topic to lesson hours.
+- Lesson plans with objectives, content outline, teaching methods, and time allocations.
+- A skills checklist aligned to your state's testing vendor.
+- Written and practical assessments with answer keys.
+- A clinical rotation plan that explains where students train, what skills they perform, and how they are supervised.
+- Instructor qualifications and lesson delivery notes so a reviewer can see the RN instructor is guiding the content.
+
+If any of those pieces are missing, most states will send your application back.
+
+## How to actually write it without losing six months
+
+You have three realistic options.
+
+### Option 1: License a published CNA textbook and build around it
+
+Publishers like Hartman, Prentice Hall, and Pearson sell CNA textbooks with instructor guides, slides, and test banks. You license the book, then write your own lesson plans, hour breakdowns, and state overlay on top. This is the most common path and usually the fastest to state approval.
+
+### Option 2: Write everything from scratch
+
+Some school owners want full ownership of their content, especially if they plan to scale to multiple states or sell the school later. This means an RN or experienced educator writing every lesson, every quiz, every skills breakdown, and keeping it updated as state rules change. Expect this to take three to six months of serious work and ongoing maintenance every year.
+
+### Option 3: Use a platform that already includes CNA content
+
+If you are starting a school and do not want to write curriculum at all, you can start with a platform that has content built in and adapt it to your state.
+
+## If you are starting a CNA school, GO ACADEMIX can host the enrollment page and the content
+
+We built GO ACADEMIX because we ran into every one of these problems at our own school. Two things we include that new school owners tell us save them the most time:
+
+**A hosted enrollment page.** Prospective students can enroll online in minutes. They fill out the application, sign consent forms, upload documents, and pay their deposit without you touching anything. The lead goes straight into your student information system.
+
+**A student portal with prebuilt CNA content.** If you do not want to write your own curriculum, our student portal comes loaded with CNA lessons, quizzes, and a skills framework you can adapt to your state's hour requirements and testing vendor. You still need to submit your program for state approval and confirm it matches your state's rules, but you are not starting from a blank page.
+
+You can also bring your own content if you already have it. The platform does not force you into ours.
+
+## The honest bottom line
+
+Curriculum is the part of starting a school that feels overwhelming because it is technical, it is regulated, and getting it wrong delays your approval by months. Give it the time it deserves. Read your state's nurse aide training regulations word for word. Match every required topic to a lesson. Align every skill to your state's testing vendor.
+
+And if you want a shortcut on the enrollment page and the student-facing content, book a demo with us. We have already made most of the mistakes so you do not have to.
+    `,
+  },
 ];
 
 
