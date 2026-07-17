@@ -306,15 +306,13 @@ export const AdvisoryCouncil = () => {
                   )}
 
                   <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-primary-foreground/80">
-                    <a
-                      href={DEMO_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      to="/book-demo"
                       className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
                     >
                       <Calendar className="w-4 h-4" />
                       <span>Schedule a 30-Minute Demo</span>
-                    </a>
+                    </Link>
                     <a
                       href="mailto:jocelyn@goacademix.com"
                       className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
