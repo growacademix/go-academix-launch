@@ -29,6 +29,12 @@ export const Header = () => {
             >
               Team
             </Link>
+            <Link
+              to="/blog"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors hidden sm:block"
+            >
+              Blog
+            </Link>
             <Button asChild size="default" className="rounded-full">
               <Link to="/book-demo">Book a Demo</Link>
             </Button>

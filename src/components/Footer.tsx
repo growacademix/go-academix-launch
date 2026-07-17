@@ -1,4 +1,5 @@
 import { Linkedin } from "lucide-react";
+import { Link } from "react-router-dom";
 import logo from "@/assets/logo-goacademix-official.png.asset.json";
 
 export const Footer = () => {
@@ -15,6 +16,9 @@ export const Footer = () => {
           </p>
 
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
+            <Link to="/blog" className="hover:text-foreground transition-colors">
+              Blog
+            </Link>
             <a href="#" className="hover:text-foreground transition-colors">
               Privacy
             </a>
