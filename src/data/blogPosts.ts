@@ -283,19 +283,19 @@ This is paid marketing in the real world. Sponsor a booth at a local job fair, w
 
 One good event can fill a class. One bad event is just an expensive lesson. Track it either way.
 
-## The $200 test plan
+## The $200 per channel test plan
 
-If you are just getting started with paid marketing, do not blow your budget on one channel. Run a small test.
+If you are just getting started with paid marketing, do not blow your whole budget on one channel. Run a small test across a few channels so you can compare them fairly.
 
-### Week one and two
+### A sample two-week test
 
-- Google Ads: $80
-- TikTok Ads: $40
-- Facebook or Instagram Ads: $40
-- Retargeting: $20
-- YouTube or geofencing: $20
+- Google Ads: $200
+- TikTok Ads: $200
+- Facebook or Instagram Ads: $200
+- Retargeting: $200
+- YouTube or geofencing: $200
 
-That totals $200. It is not enough to dominate any channel, but it is enough to learn which one gives you the best cost per lead.
+That is roughly $600 to $1,000 total depending on how many channels you test. It is not enough to dominate any channel, but it is enough to see which one gives you real leads and enrollments. Any less and you are mostly paying for impressions that never convert.
 
 ### What to track
 
