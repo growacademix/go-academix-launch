@@ -144,7 +144,7 @@ If you want to see how GO ACADEMIX handles the enrollment piece, book a demo and
     slug: "paid-marketing-strategies-for-cna-schools",
     title: "Best Paid Marketing Strategies for CNA Schools",
     description:
-      "A practical guide to paid marketing for CNA and allied health schools. Start with a $200 test budget across 3-5 channels, then scale what actually enrolls students.",
+      "A practical guide to paid marketing for CNA and allied health schools. Start with a $200 test budget per channel across 3-5 channels, then scale what actually enrolls students.",
     date: "2026-07-17",
     readTime: "10 min read",
     author: "Jocelyn Powell",
@@ -158,7 +158,7 @@ Most CNA schools we talk to have tried one kind of paid advertising, got burned,
 
 At Allied Health Career Training, the school my husband and I run, we have tested a lot of channels. Google Ads has been our most consistent source of enrollments. TikTok has performed surprisingly well for us. Social banner ads work too. But none of that would matter if we were not measuring what happens after someone clicks.
 
-The best approach for most schools is simple. Start with about $200. Pick three to five channels. Run small campaigns for two weeks. Track cost per lead and cost per enrollment. Then kill the losers and double down on the winner.
+The best approach for most schools is simple. Pick three to five channels and allocate about $200 per channel. Run small campaigns for two to four weeks. Track cost per lead and cost per enrollment. Then kill the losers and double down on the winner. Spreading $200 across every channel will not give you enough data to make a real decision. $200 per channel is usually the minimum to see whether a platform can actually produce enrollments for your school.
 
 Here are the paid channels worth testing.
 
@@ -283,19 +283,19 @@ This is paid marketing in the real world. Sponsor a booth at a local job fair, w
 
 One good event can fill a class. One bad event is just an expensive lesson. Track it either way.
 
-## The $200 test plan
+## The $200 per channel test plan
 
-If you are just getting started with paid marketing, do not blow your budget on one channel. Run a small test.
+If you are just getting started with paid marketing, do not blow your whole budget on one channel. Run a small test across a few channels so you can compare them fairly.
 
-### Week one and two
+### A sample two-week test
 
-- Google Ads: $80
-- TikTok Ads: $40
-- Facebook or Instagram Ads: $40
-- Retargeting: $20
-- YouTube or geofencing: $20
+- Google Ads: $200
+- TikTok Ads: $200
+- Facebook or Instagram Ads: $200
+- Retargeting: $200
+- YouTube or geofencing: $200
 
-That totals $200. It is not enough to dominate any channel, but it is enough to learn which one gives you the best cost per lead.
+That is roughly $600 to $1,000 total depending on how many channels you test. It is not enough to dominate any channel, but it is enough to see which one gives you real leads and enrollments. Any less and you are mostly paying for impressions that never convert.
 
 ### What to track
 
