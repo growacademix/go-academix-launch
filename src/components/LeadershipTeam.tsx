@@ -54,7 +54,7 @@ export const LeadershipTeam = () => {
                 className="bg-card rounded-2xl border border-border p-8 flex flex-col"
               >
                 <div className="flex flex-col items-center text-center mb-6">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border border-border/60 bg-muted mb-4">
+                  <div className="w-32 h-32 rounded-full overflow-hidden mb-4">
                     <img
                       src={leader.imageUrl}
                       alt={leader.imageAlt}
