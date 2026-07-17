@@ -126,67 +126,6 @@ They pick a handful of students at random and ask for the full file. If it takes
 Store every one of those documents on the student's record, from day one. When the auditor picks a name, you filter to that student and export.
 `,
   },
-  {
-    slug: "choosing-school-software-questions",
-    title: "10 Questions to Ask Before Buying School Management Software",
-    description:
-      "A buyer's guide for allied health school owners evaluating LMS, SIS, or all-in-one platforms. Cut through the demos.",
-    date: "2026-07-14",
-    readTime: "8 min read",
-    author: "Jocelyn Powell",
-    category: "Buyer's Guide",
-    keywords:
-      "school management software, allied health software comparison, LMS buyer guide, education technology",
-    content: `
-## Demos are designed to impress, not to inform
-
-Every vendor will show you a beautiful dashboard. Here are the questions that surface how the software actually behaves once you're a customer.
-
-### 1. Does one student record power enrollment, payments, LMS, and attendance?
-
-If the answer involves the word "integration," it means two systems taped together.
-
-### 2. How do we collect tuition, and what financing options plug in?
-
-Ask specifically about ACH, cards, payment plans, and lenders like Fortify.
-
-### 3. Can I export every field for a state audit in one click?
-
-If the answer is "we can build a report for you," that's a red flag.
-
-### 4. What happens when a state changes required hours?
-
-You want configurable programs, not a support ticket.
-
-### 5. Who owns the student data?
-
-You should. Get it in writing.
-
-### 6. What's the real setup timeline?
-
-Not the marketing number. Ask for a customer reference at your school's size.
-
-### 7. How is pricing structured as we grow?
-
-Per student, per seat, and per module pricing all bite differently at scale.
-
-### 8. What's the roadmap, and what shipped in the last 90 days?
-
-A stale changelog means a stale product.
-
-### 9. Do you have current allied health customers?
-
-Generic school software often misses the compliance nuances of CNA, phlebotomy, and MA programs.
-
-### 10. Can I talk to a school owner who runs the platform?
-
-The best answer is yes, and here are three.
-
-## Our bias
-
-We built GO ACADEMIX because none of the existing platforms answered these ten questions the way we needed them answered for our own school. If you want to compare notes, book a demo with Jocelyn.
-`,
-  },
 ];
 
 export const getPostBySlug = (slug: string) =>
