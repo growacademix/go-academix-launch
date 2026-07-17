@@ -17,7 +17,7 @@ const DEMO_URL =
 const shots = [
   { src: shot1.url, title: "Owner Dashboard", caption: "One view of enrollment, revenue, and completion. No exports required." },
   { src: shot5.url, title: "Enrollment & Registration", caption: "Your branded catalog page where students self-enroll and pay online." },
-  { src: shot2.url, title: "Payments, Financing & Sponsors", caption: "Tuition, deposits, balances, Fortify loan options, and sponsor billing in one place." },
+  { src: shot2.url, title: "Payments, Financing & Sponsors", caption: "Tuition, deposits, balances, loan options via Fortify Education, and sponsor billing in one place." },
   { src: shot3.url, title: "Student Directory", caption: "Every student, their course, payment status, and contact info at a glance." },
   { src: shot4.url, title: "Learning, Attendance & Grades", caption: "Program details, schedule, modules, grades, and attendance inside one course view." },
   { src: shot7.url, title: "Certificates & Student Portal", caption: "Students see their courses, schedule, grades, certificates, and payments." },

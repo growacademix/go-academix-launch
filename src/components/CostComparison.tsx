@@ -20,7 +20,7 @@ const GO_INCLUDES = [
   "Enrollment",
   "Sponsor tracking",
   "Payments",
-  "Loan options via Fortify",
+  "Loan options via Fortify Education",
   "Learning management",
   "Certificate tracking",
   "Attendance",
