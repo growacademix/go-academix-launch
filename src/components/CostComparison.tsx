@@ -150,6 +150,7 @@ export const CostComparison = () => {
           Fewer logins, less re-entry, and one place to see every student from enrollment to certificate.
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
