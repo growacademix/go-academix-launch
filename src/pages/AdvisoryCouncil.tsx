@@ -6,12 +6,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PhoneLink } from "@/components/PhoneLink";
 import { ArrowRight, CheckCircle2, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import foundersPhoto from "@/assets/connor-jocelyn-2025.jpg.asset.json";
-
-const DEMO_URL =
-  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
 
 const benefits = [
   {
