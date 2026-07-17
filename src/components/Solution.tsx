@@ -12,7 +12,7 @@ import shot6 from "@/assets/shot-11.51.49_am.png.asset.json";
 import shot7 from "@/assets/shot-12.01.33_pm.png.asset.json";
 
 const DEMO_URL =
-  "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv";
+  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv";
 
 const shots = [
   { src: shot1.url, title: "Owner Dashboard", caption: "One view of enrollment, revenue, and completion. No exports required." },
