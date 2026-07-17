@@ -152,13 +152,11 @@ export const AdvisoryCouncil = () => {
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline">
-                  <PhoneLink
-                    number="316-633-0621"
-                    label="Call or Text Connor"
-                    className="px-6 py-3"
-                  />
-                </Button>
+                <PhoneLink
+                  number="316-633-0621"
+                  label="Call or Text Connor"
+                  className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium h-11 px-8 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground"
+                />
               </div>
             </div>
           </div>
