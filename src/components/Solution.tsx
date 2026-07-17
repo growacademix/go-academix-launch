@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { CostComparison } from "@/components/CostComparison";
 import shot1 from "@/assets/shot-11.45.17_am.png.asset.json";
 import shot2 from "@/assets/shot-11.50.58_am.png.asset.json";
 import shot3 from "@/assets/shot-11.49.00_am.png.asset.json";
