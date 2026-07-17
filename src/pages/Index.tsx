@@ -5,6 +5,7 @@ import { Solution } from "@/components/Solution";
 import { SocialProof } from "@/components/SocialProof";
 import { PressMentions } from "@/components/PressMentions";
 import { CostComparison } from "@/components/CostComparison";
+import { LeadershipTeam } from "@/components/LeadershipTeam";
 import { LeadCapture } from "@/components/LeadCapture";
 import { Footer } from "@/components/Footer";
 
