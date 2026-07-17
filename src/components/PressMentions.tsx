@@ -6,57 +6,43 @@ const mentions = [
   {
     source: "Groover Labs",
     logo: grooverLogo.url,
-    date: "Jan 2026",
     href: "https://www.grooverlabs.org/news/jocelyn-galicia-powell-2026",
-    quote:
-      "GO ACADEMIX modernizes how Allied Health schools teach, certify, and place students. Healthcare training has been stuck in PDFs, spreadsheets, and outdated LMS systems.",
   },
   {
     source: "Wichita Business Journal",
     logo: wbjLogo.url,
-    date: "Apr 2026",
     href: "https://www.bizjournals.com/wichita/news/2026/04/23/startups-to-watch-tech-entrepreneurship-funding.html",
-    quote:
-      "Featured among Wichita startups to watch, GO ACADEMIX is part of the city's growing health tech and entrepreneurship momentum.",
   },
 ];
 
 export const PressMentions = () => {
   return (
-    <section className="py-16 lg:py-24 bg-accent/30 border-y border-border">
+    <section className="py-12 lg:py-16 bg-accent/30 border-y border-border">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-3 mb-10">
-            <span className="pill-badge">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+            <span className="pill-badge shrink-0">
               <Newspaper className="w-3.5 h-3.5" />
               In the news
             </span>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {mentions.map((m) => (
-              <a
-                key={m.source}
-                href={m.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group block bg-card rounded-2xl border border-border hover:border-primary/40 p-7 transition-colors"
-              >
-                <div className="flex items-center justify-between mb-5 gap-4">
-                  <div className="h-10 flex items-center">
-                    <img
-                      src={m.logo}
-                      alt={`${m.source} logo`}
-                      className="max-h-10 w-auto object-contain"
-                    />
-                  </div>
-                  <p className="mono-label shrink-0">/ {m.date}</p>
-                </div>
-                <blockquote className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
-                  "{m.quote}"
-                </blockquote>
-              </a>
-            ))}
+            <div className="flex flex-wrap items-center gap-8 sm:gap-12">
+              {mentions.map((m) => (
+                <a
+                  key={m.source}
+                  href={m.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex items-center justify-center h-12 opacity-80 hover:opacity-100 transition-opacity"
+                >
+                  <img
+                    src={m.logo}
+                    alt={`${m.source} logo`}
+                    className="max-h-12 w-auto max-w-[180px] object-contain"
+                  />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </div>
