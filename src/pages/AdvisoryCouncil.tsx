@@ -116,7 +116,7 @@ export const AdvisoryCouncil = () => {
               <div className="order-1 lg:order-2">
                 <div className="rounded-lg border border-border shadow-card overflow-hidden bg-card">
                   <img
-                    src="/connor-jocelyn.jpg"
+                    src={foundersPhoto.url}
                     alt="Connor and Jocelyn Powell, co-founders of GO ACADEMIX"
                     className="w-full object-cover"
                   />
