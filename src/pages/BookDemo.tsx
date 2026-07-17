@@ -29,7 +29,8 @@ export const BookDemo = () => {
               <iframe
                 src={CALENDAR_EMBED_URL}
                 title="Book a 30-minute demo with GO ACADEMIX"
-                className="w-full h-[700px] rounded-xl border-0"
+                className="w-full h-[600px] border-0"
+                frameBorder={0}
                 allow="fullscreen"
               />
             </div>
