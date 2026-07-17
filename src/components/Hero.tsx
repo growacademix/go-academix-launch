@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Mail, CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
-
-const DEMO_URL =
-  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
 
 export const Hero = () => {
   return (
