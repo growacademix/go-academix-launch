@@ -144,6 +144,11 @@ At the end of the day, marketing your CNA school is not about being the loudest.
 
 If you want to see how GO ACADEMIX handles the enrollment piece, book a demo and we will walk through it together.
     `,
+    cta: {
+      headline: "Need help marketing your CNA school?",
+      body: "We run an allied health school ourselves, so we understand the marketing challenges school owners face. Book a free consultation and we will walk through what is working for us.",
+      button: "Book a marketing consultation",
+    },
   },
   {
     slug: "paid-marketing-strategies-for-cna-schools",
