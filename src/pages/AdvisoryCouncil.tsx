@@ -95,7 +95,7 @@ export const AdvisoryCouncil = () => {
   return (
     <div className="min-h-screen">
       <Header />
-      <div className="bg-accent/50 border-b border-border">
+      <div className="bg-accent/50 border-b border-border pt-24">
         <div className="container mx-auto px-6 py-3">
           <a
             href="/"
