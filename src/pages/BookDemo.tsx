@@ -17,7 +17,7 @@ export const BookDemo = () => {
               30 minutes
             </span>
             <h1 className="heading-xxl text-4xl lg:text-5xl mt-4 mb-4">
-              Book a demo with Connor
+              Book a demo with Jocelyn
             </h1>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Pick a time that works for you. We will show you how GO ACADEMIX works and answer whatever questions you have about your school.
@@ -28,7 +28,7 @@ export const BookDemo = () => {
             <div className="rounded-2xl border border-border bg-card p-2 shadow-sm overflow-hidden">
               <iframe
                 src={CALENDAR_EMBED_URL}
-                title="Book a 30-minute demo with GO ACADEMIX"
+                title="Book a 30-minute demo with Jocelyn at GO ACADEMIX"
                 className="w-full h-[600px] border-0"
                 frameBorder={0}
                 allow="fullscreen"
