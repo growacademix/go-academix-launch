@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PhoneLink } from "@/components/PhoneLink";
-import { ArrowRight, CheckCircle2, Phone, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
+import { ArrowRight, CheckCircle2, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import foundersPhoto from "@/assets/connor-jocelyn-2025.jpg.asset.json";
