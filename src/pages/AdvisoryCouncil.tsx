@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { ArrowRight, CheckCircle2, Phone, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
+import foundersPhoto from "@/assets/connor-jocelyn-2025.jpg.asset.json";
 
 const DEMO_URL =
   "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv";
