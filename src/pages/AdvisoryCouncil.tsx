@@ -95,6 +95,17 @@ export const AdvisoryCouncil = () => {
   return (
     <div className="min-h-screen">
       <Header />
+      <div className="bg-accent/50 border-b border-border">
+        <div className="container mx-auto px-6 py-3">
+          <a
+            href="/"
+            className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            Back to Home
+          </a>
+        </div>
+      </div>
       <main>
         <section className="pt-32 pb-20 bg-accent/50">
           <div className="container mx-auto px-6">
