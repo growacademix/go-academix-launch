@@ -144,7 +144,7 @@ If you want to see how GO ACADEMIX handles the enrollment piece, book a demo and
     slug: "paid-marketing-strategies-for-cna-schools",
     title: "Best Paid Marketing Strategies for CNA Schools",
     description:
-      "A practical guide to paid marketing for CNA and allied health schools. Start with a $200 test budget across 3-5 channels, then scale what actually enrolls students.",
+      "A practical guide to paid marketing for CNA and allied health schools. Start with a $200 test budget per channel across 3-5 channels, then scale what actually enrolls students.",
     date: "2026-07-17",
     readTime: "10 min read",
     author: "Jocelyn Powell",
