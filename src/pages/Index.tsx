@@ -20,6 +20,7 @@ const Index = () => {
         <CostComparison />
         <Problem />
         <Solution />
+        <LeadershipTeam />
         <LeadCapture />
       </main>
       <Footer />
