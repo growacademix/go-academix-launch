@@ -131,16 +131,17 @@ const BlogPost = () => {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
               <div className="max-w-xl">
                 <h2 className="text-2xl font-semibold tracking-tight mb-2">
-                  Need help marketing your CNA school?
+                  {post.cta?.headline ?? "Need help growing your CNA school?"}
                 </h2>
                 <p className="text-muted-foreground">
-                  We run an allied health school ourselves, so we understand the
-                  marketing challenges school owners face. Book a free consultation
-                  and we will walk through what is working for us.
+                  {post.cta?.body ??
+                    "We run an allied health school ourselves, so we understand the challenges school owners face. Book a free consultation and we will walk through what is working for us."}
                 </p>
               </div>
               <Button asChild className="rounded-full shrink-0">
-                <Link to="/book-demo">Book a marketing consultation</Link>
+                <Link to="/book-demo">
+                  {post.cta?.button ?? "Book a free consultation"}
+                </Link>
               </Button>
             </div>
           </div>

@@ -63,18 +63,18 @@ const Blog = () => {
           <div className="mt-16 border border-border rounded-lg p-8 md:p-10 bg-muted/30">
             <div className="max-w-2xl">
               <h2 className="text-2xl md:text-3xl font-semibold tracking-tight mb-3">
-                Need help marketing your CNA school?
+                Need help with your CNA school?
               </h2>
               <p className="text-muted-foreground mb-6">
-                We run an allied health school ourselves, so we understand the
-                marketing challenges school owners face. Book a free consultation
-                and we will walk through what is working for us.
+                We run an allied health school ourselves, so we understand what it
+                takes to start, market, and operate a profitable program. Book a
+                free consultation and we will point you in the right direction.
               </p>
               <Link
                 to="/book-demo"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
               >
-                Book a marketing consultation
+                Book a free consultation
                 <ArrowRight className="h-4 w-4" />
               </Link>
             </div>

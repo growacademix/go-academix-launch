@@ -8,6 +8,11 @@ export interface BlogPost {
   category: string;
   keywords: string;
   content: string; // markdown-lite; rendered as paragraphs and headings
+  cta?: {
+    headline: string;
+    body: string;
+    button: string;
+  };
 }
 
 export const blogPosts: BlogPost[] = [
@@ -139,6 +144,11 @@ At the end of the day, marketing your CNA school is not about being the loudest.
 
 If you want to see how GO ACADEMIX handles the enrollment piece, book a demo and we will walk through it together.
     `,
+    cta: {
+      headline: "Need help marketing your CNA school?",
+      body: "We run an allied health school ourselves, so we understand the marketing challenges school owners face. Book a free consultation and we will walk through what is working for us.",
+      button: "Book a marketing consultation",
+    },
   },
   {
     slug: "paid-marketing-strategies-for-cna-schools",
@@ -329,6 +339,11 @@ Paid marketing for CNA schools does not need to be complicated. Google Ads captu
 
 Start small, measure honestly, and scale the one that enrolls students. If you want to see how GO ACADEMIX helps schools turn clicks into enrolled students, book a demo and we will walk through it together.
     `,
+    cta: {
+      headline: "Need help marketing your CNA school?",
+      body: "We run an allied health school ourselves, so we understand the marketing challenges school owners face. Book a free consultation and we will walk through what is working for us.",
+      button: "Book a marketing consultation",
+    },
   },
   {
     slug: "steps-to-start-a-cna-school-in-kansas",
@@ -509,6 +524,11 @@ Starting a CNA school in Kansas takes work, but the hardest part is not the curr
 
 At GO ACADEMIX, we built a platform specifically for allied health school owners. If you want to see how we handle enrollment, student records, and certificates in one place, book a demo and we will walk through it together.
     `,
+    cta: {
+      headline: "Need help starting your CNA school?",
+      body: "We have opened and run an allied health school ourselves, so we know how overwhelming the startup process can feel. Book a free consultation and we will answer your questions about approvals, curriculum, and operations.",
+      button: "Book a startup consultation",
+    },
   },
   {
     slug: "steps-to-start-a-cna-school-in-colorado",
@@ -690,6 +710,11 @@ Starting a CNA school in Colorado takes work, but the hardest part is not the cu
 
 At GO ACADEMIX, we built a platform specifically for allied health school owners. If you want to see how we handle enrollment, student records, and certificates in one place, book a demo and we will walk through it together.
     `,
+    cta: {
+      headline: "Need help starting your CNA school?",
+      body: "We have opened and run an allied health school ourselves, so we know how overwhelming the startup process can feel. Book a free consultation and we will answer your questions about approvals, curriculum, and operations.",
+      button: "Book a startup consultation",
+    },
   },
   {
     slug: "steps-to-start-a-cna-school-in-texas",
@@ -871,6 +896,11 @@ Starting a CNA school in Texas takes work, but the hardest part is not the curri
 
 At GO ACADEMIX, we built a platform specifically for allied health school owners. If you want to see how we handle enrollment, student records, and certificates in one place, book a demo and we will walk through it together.
     `,
+    cta: {
+      headline: "Need help starting your CNA school?",
+      body: "We have opened and run an allied health school ourselves, so we know how overwhelming the startup process can feel. Book a free consultation and we will answer your questions about approvals, curriculum, and operations.",
+      button: "Book a startup consultation",
+    },
   },
   {
     slug: "steps-to-start-a-cna-school-in-oklahoma",
@@ -1052,6 +1082,11 @@ Starting a CNA school in Oklahoma takes work, but the hardest part is not the cu
 
 At GO ACADEMIX, we built a platform specifically for allied health school owners. If you want to see how we handle enrollment, student records, and certificates in one place, book a demo and we will walk through it together.
     `,
+    cta: {
+      headline: "Need help starting your CNA school?",
+      body: "We have opened and run an allied health school ourselves, so we know how overwhelming the startup process can feel. Book a free consultation and we will answer your questions about approvals, curriculum, and operations.",
+      button: "Book a startup consultation",
+    },
   },
   {
     slug: "how-to-build-cna-curriculum-content",
@@ -1148,6 +1183,11 @@ Curriculum is the part of starting a school that feels overwhelming because it i
 
 And if you want a shortcut on the enrollment page and the student-facing content, book a demo with us. We have already made most of the mistakes so you do not have to.
     `,
+    cta: {
+      headline: "Need help building your CNA curriculum?",
+      body: "We have built and approved CNA curriculum for our own school, and we include prebuilt lessons, quizzes, and skills frameworks in GO ACADEMIX. Book a free consultation and we will show you how it works.",
+      button: "Book a curriculum consultation",
+    },
   },
 ];
 
