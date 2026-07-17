@@ -153,10 +153,11 @@ export const AdvisoryCouncil = () => {
                   </a>
                 </Button>
                 <Button asChild size="lg" variant="outline">
-                  <a href="tel:316-633-0621">
-                    <Phone className="mr-2 w-4 h-4" />
-                    Call or Text Connor
-                  </a>
+                  <PhoneLink
+                    number="316-633-0621"
+                    label="Call or Text Connor"
+                    className="px-6 py-3"
+                  />
                 </Button>
               </div>
             </div>
