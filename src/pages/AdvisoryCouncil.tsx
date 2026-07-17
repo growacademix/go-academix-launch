@@ -345,10 +345,10 @@ export const AdvisoryCouncil = () => {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg">
-                  <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+                  <Link to="/book-demo">
                     <Calendar className="mr-2 w-4 h-4" />
                     Schedule a 30-Minute Demo
-                  </a>
+                  </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
                   <a href="mailto:jocelyn@goacademix.com">
