@@ -127,13 +127,22 @@ const BlogPost = () => {
 
           <div className="prose-lg">{renderContent(post.content)}</div>
 
-          <div className="mt-16 border-t border-border pt-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-            <p className="text-muted-foreground">
-              Want to see how GO ACADEMIX runs a real school?
-            </p>
-            <Button asChild className="rounded-full">
-              <Link to="/book-demo">Book a demo with Jocelyn</Link>
-            </Button>
+          <div className="mt-16 border border-border rounded-lg p-8 md:p-10 bg-muted/30">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+              <div className="max-w-xl">
+                <h2 className="text-2xl font-semibold tracking-tight mb-2">
+                  Need help marketing your CNA school?
+                </h2>
+                <p className="text-muted-foreground">
+                  We have built a significantly large and profitable allied health
+                  school. Book a free consultation and we will walk through what
+                  is actually working for us.
+                </p>
+              </div>
+              <Button asChild className="rounded-full shrink-0">
+                <Link to="/book-demo">Book a marketing consultation</Link>
+              </Button>
+            </div>
           </div>
 
           {related.length > 0 && (
