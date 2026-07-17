@@ -23,11 +23,11 @@ export const CTA = () => {
                   variant="outline"
                   className="bg-white text-primary border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary"
                 >
-                  <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+                  <Link to="/book-demo">
                     <Calendar className="mr-2 w-4 h-4" />
                     Book a 30-min demo
                     <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
+                  </Link>
                 </Button>
                 <Button
                   asChild
