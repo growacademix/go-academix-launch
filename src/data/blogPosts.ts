@@ -8,6 +8,11 @@ export interface BlogPost {
   category: string;
   keywords: string;
   content: string; // markdown-lite; rendered as paragraphs and headings
+  cta?: {
+    headline: string;
+    body: string;
+    button: string;
+  };
 }
 
 export const blogPosts: BlogPost[] = [
