@@ -96,14 +96,12 @@ export const LeadCapture = () => {
                   </p>
                   <p className="text-xs text-center text-muted-foreground">
                     Rather talk now?{" "}
-                    <a
-                      href={DEMO_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      to="/book-demo"
                       className="font-medium text-primary hover:underline"
                     >
                       Book a 30-min demo →
-                    </a>
+                    </Link>
                   </p>
                 </form>
               )}
