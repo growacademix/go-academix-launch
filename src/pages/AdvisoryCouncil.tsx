@@ -34,7 +34,7 @@ const expectations = [
     icon: Calendar,
     title: "30-Minute Demo",
     description: "Start with a single 30-minute demo to see what we are building and share your initial thoughts.",
-    href: DEMO_URL,
+    href: "/book-demo",
   },
   {
     icon: Mail,
