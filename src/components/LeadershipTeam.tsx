@@ -1,4 +1,4 @@
-import { Users } from "lucide-react";
+import { Users, Linkedin } from "lucide-react";
 import jocelynHeadshot from "@/assets/jocelyn-headshot.png.asset.json";
 import connorHeadshot from "@/assets/connor-headshot.png.asset.json";
 import masonHeadshot from "@/assets/mason-headshot.png.asset.json";
@@ -9,6 +9,7 @@ const leaders = [
     imageAlt: "Jocelyn Powell",
     name: "Jocelyn Powell",
     role: "Chief Executive Officer, GO ACADEMIX",
+    linkedIn: "https://www.linkedin.com/in/jocelyngpowell/",
     bio: "Jocelyn is the CEO and Co-Founder of GO ACADEMIX, where she leads vision, strategy, and growth. As an entrepreneur with experience building businesses across education, technology, and staffing, she is passionate about creating software that solves real operational problems for school owners. Together with her husband, Connor, Jocelyn also owns Allied Health Career Training, one of Kansas' leading allied health schools. Operating a school firsthand has given her deep insight into the challenges of admissions, compliance, scheduling, payments, and student management. Those experiences became the foundation for GO ACADEMIX. Her mission is simple: help healthcare schools spend less time managing disconnected systems and more time educating students and growing their businesses.",
   },
   {
@@ -16,6 +17,7 @@ const leaders = [
     imageAlt: "Connor Powell",
     name: "Connor Powell",
     role: "Chief Executive Officer, Allied Health Career Training",
+    linkedIn: "https://www.linkedin.com/in/connor-dane-powell-65a00578/",
     bio: "Connor is the CEO of Allied Health Career Training and Co-Founder of GO ACADEMIX. He has helped grow Allied Health Career Training into one of the region's leading healthcare education organizations, serving thousands of students each year. As a school owner and operator, Connor understands the day-to-day realities of running an allied health school. From regulatory compliance and staffing to student experience and operational efficiency, he brings firsthand knowledge to every product decision at GO ACADEMIX. His focus is ensuring the platform solves the real problems school owners face, making it easier to operate successful schools while delivering exceptional student outcomes.",
   },
   {
@@ -23,6 +25,7 @@ const leaders = [
     imageAlt: "Mason Powell",
     name: "Mason Powell",
     role: "Chief Product Officer, GO ACADEMIX",
+    linkedIn: "https://www.linkedin.com/in/mason-powell-07254329/",
     bio: "Mason is the Chief Product Officer at GO ACADEMIX, where he leads product strategy, user experience, and platform development. Working closely with school owners, instructors, and administrators, Mason translates real operational challenges into intuitive software solutions. He collaborates across engineering, customer feedback, and school operations to ensure every feature is practical, scalable, and designed for the way healthcare schools actually operate. His product philosophy is centered on simplicity, reliability, and building technology that empowers educators instead of slowing them down. Under Mason's product leadership, GO ACADEMIX continues to evolve alongside its partner schools, ensuring the platform grows with the changing needs of healthcare education.",
   },
 ];
