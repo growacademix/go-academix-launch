@@ -283,14 +283,12 @@ export const AdvisoryCouncil = () => {
                       </Button>
                       <p className="text-center text-sm text-primary-foreground/80 mt-4">
                         Rather pick a time?{" "}
-                        <a
-                          href={DEMO_URL}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <Link
+                          to="/book-demo"
                           className="underline hover:text-primary-foreground"
                         >
                           Schedule a 30-minute demo on Connor's calendar
-                        </a>{" "}
+                        </Link>{" "}
                         or email{" "}
                         <a href="mailto:jocelyn@goacademix.com" className="underline hover:text-primary-foreground">
                           jocelyn@goacademix.com
