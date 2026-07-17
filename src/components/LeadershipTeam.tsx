@@ -68,6 +68,16 @@ export const LeadershipTeam = () => {
                     {leader.name}
                   </h3>
                   <p className="mono-label mt-1">/ {leader.role}</p>
+                  <a
+                    href={leader.linkedIn}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 mt-3 text-sm text-primary hover:text-primary/80 transition-colors"
+                    aria-label={`${leader.name} on LinkedIn`}
+                  >
+                    <Linkedin className="w-4 h-4" />
+                    <span>LinkedIn</span>
+                  </a>
                 </div>
                 <p className="text-muted-foreground leading-relaxed text-sm">
                   {leader.bio}
