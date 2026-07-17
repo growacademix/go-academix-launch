@@ -691,7 +691,370 @@ Starting a CNA school in Colorado takes work, but the hardest part is not the cu
 At GO ACADEMIX, we built a platform specifically for allied health school owners. If you want to see how we handle enrollment, student records, and certificates in one place, book a demo and we will walk through it together.
     `,
   },
+  {
+    slug: "steps-to-start-a-cna-school-in-texas",
+    title: "Steps to Start a CNA School in Texas",
+    description:
+      "A practical step-by-step guide to opening a CNA school in Texas, from business formation and HHSC NATCEP approval to curriculum, clinical sites, and your first class.",
+    date: "2026-07-17",
+    readTime: "11 min read",
+    author: "Jocelyn Powell",
+    category: "Operations",
+    keywords:
+      "start a CNA school in Texas, Texas CNA school requirements, Texas NATCEP approval, how to open a CNA school Texas, CNA training program Texas",
+    content: `
+## Starting a CNA school in Texas is a real business, not just a classroom
+
+A lot of people who want to start a CNA school start by thinking about the curriculum. That makes sense, but the state approval process, business setup, and clinical partnerships usually take longer than the lesson plans. If you are serious about opening a CNA school in Texas, it helps to work through the steps in order so you are not scrambling later.
+
+At Allied Health Career Training, the school my husband and I run in Kansas, we have been through a similar process. We also built GO ACADEMIX because we got tired of juggling spreadsheets, PDF applications, and disconnected systems once the school was up and running. This guide covers what we have learned about getting started, applied to Texas rules.
+
+A quick note before we dive in: this is not legal advice. Regulations change, and every situation is different. Use this as a starting point, then confirm everything with the Texas Health and Human Services Commission, the Texas Workforce Commission, the Texas Secretary of State, the Texas Comptroller of Public Accounts, your attorney, and your accountant.
+
+## Step 1: Form your business entity
+
+Before you apply for anything, you need a legal business. Most small CNA schools in Texas start as an LLC because it is simple and offers liability protection.
+
+### What to do
+
+- Choose a business name and check availability with the Texas Secretary of State.
+- File your Certificate of Formation if you are forming an LLC.
+- Appoint a registered agent with a Texas address.
+- Get an Employer Identification Number from the IRS.
+- Open a business bank account and keep school money separate from personal money.
+
+You can register online through SOSDirect. The filing fee is usually reasonable, but check the current amount because it changes from time to time.
+
+## Step 2: Register for Texas business taxes
+
+Once your entity is set up, register with the Texas Comptroller. Depending on how you structure tuition and fees, you may need to consider franchise tax and sales tax obligations. You may also need to register for unemployment tax through the Texas Workforce Commission if you have employees.
+
+### What to do
+
+- Register through the Texas Comptroller's online systems.
+- Ask your accountant whether tuition, books, supplies, or enrollment fees are subject to Texas sales tax.
+- Set up a payroll system if you plan to hire instructors or administrative staff.
+
+Do not skip the tax conversation. A small mistake in the first year can turn into a big headache when you try to scale.
+
+## Step 3: Secure a location and build your classroom and lab
+
+You will need a physical location for classroom instruction and a skills lab. Texas requires a minimum 100-hour NATCEP course, with 60 hours of classroom training and 40 hours of hands-on clinical training. Your lab needs enough space, equipment, and supplies for students to practice skills like bed making, transfers, vital signs, and infection control.
+
+### What to think about
+
+- Classroom capacity and parking.
+- ADA accessibility.
+- Lab space with hospital beds, mannequins, wheelchairs, and other training equipment.
+- Restrooms, break areas, and a secure place for student records.
+- A location that is convenient for your target students.
+
+You do not need a fancy building, but the space needs to feel professional and meet any local zoning and fire safety requirements.
+
+## Step 4: Apply to become a Texas HHSC-approved NATCEP
+
+In Texas, CNA training programs are called Nurse Aide Training and Competency Evaluation Programs, or NATCEPs. They are overseen by the Texas Health and Human Services Commission. This is the most important approval you will need.
+
+You will submit a NATCEP application through the Texas Unified License Information Portal, or TULIP. The process includes showing that your school has the right people, curriculum, facilities, and clinical training arrangements.
+
+### What to do
+
+- Visit the Texas HHS NATCEP page.
+- Create or log into your TULIP account.
+- Download and complete the current NATCEP application.
+- Submit a complete application package with all required attachments.
+
+HHSC approval is not instant. Build in time for questions, corrections, and follow-up.
+
+## Step 5: Hire a qualified program director and instructors
+
+Texas requires specific qualifications for the people who run and teach your NATCEP. Your program director must be a Registered Nurse licensed in Texas. Instructors may be Registered Nurses or Licensed Vocational Nurses licensed in Texas.
+
+### What to do
+
+- Identify your program director and confirm they hold an active, unencumbered Texas RN license.
+- Confirm the director has at least two years of nursing experience and has completed a course in teaching adults, or has experience teaching adults or supervising nurse aides.
+- Hire instructors who hold active Texas RN or LVN licenses and meet the experience requirements.
+- Confirm that either the program director or a program instructor has at least one year of experience providing long-term care services in a nursing facility.
+- Keep copies of licenses, certifications, resumes, and training records on file.
+
+If an instructor is an LVN, your program must also have a director or RN instructor with at least one year of long-term care facility experience. Hiring the right instructors is about more than checking boxes. Your instructors are the face of your school. They will determine whether students pass the state exam and whether graduates refer their friends.
+
+## Step 6: Submit your curriculum for approval
+
+Texas requires a minimum of 100 clock hours of training, including 60 hours of classroom training and 40 hours of hands-on resident care in a nursing facility. The curriculum must also include at least 16 introductory hours before any direct client contact covering communication, infection control, safety and emergency procedures, promoting residents' independence, and respecting residents' rights.
+
+### What to do
+
+- Obtain the current Texas Curriculum for Nurse Aides from HHSC.
+- Build lesson plans, student handouts, quizzes, and skills checklists that match the required content.
+- Document how you will deliver classroom, lab, and clinical hours.
+- Submit your curriculum as part of your NATCEP application package.
+
+Many schools purchase an existing curriculum from an approved vendor. That can save time, but make sure it is current and accepted by HHSC for Texas.
+
+## Step 7: Set up clinical site agreements
+
+Clinical training is a required part of the NATCEP. You will need agreements with one or more approved facilities where students can complete their supervised clinical hours. Texas allows NATCEPs to use nursing facilities, assisted living facilities, hospitals, ICFs for individuals with intellectual disabilities, and hospice inpatient units as clinical sites.
+
+### What to do
+
+- Contact local nursing homes, assisted living facilities, and hospitals.
+- Negotiate a clinical affiliation agreement.
+- Verify that the facility is not restricted from participating in nurse aide training.
+- Coordinate schedules, pre-clinical requirements, and liability insurance.
+
+Start this process early. Good clinical sites are in demand, and it can take weeks or months to get an agreement signed.
+
+## Step 8: Register as a testing site or partner with one
+
+After students complete the 100-hour course, they must pass the Texas Nurse Aide Examination to be listed on the Texas Nurse Aide Registry. Texas contracts with Prometric to develop, score, and report the exam. Some schools become approved testing sites. Others partner with an existing testing vendor or site.
+
+### What to do
+
+- Contact Prometric or Texas HHS for current testing information.
+- Understand the testing schedule, fees, and registration process.
+- Decide whether you want to host testing at your school or send students to another location.
+
+Being able to offer testing at your school can be a competitive advantage, but it comes with additional requirements.
+
+## Step 9: Set up enrollment, payments, and student records
+
+Once you are approved to run classes, you need a way to enroll students, collect tuition, track attendance and grades, and manage records. This is where a lot of new schools get stuck using spreadsheets and paper folders.
+
+### What to do
+
+- Create an enrollment process that is easy for students to complete.
+- Set up tuition and payment options, including any deposit or payment plan policies.
+- Track attendance, lab skills, and grades in a way that is audit friendly.
+- Keep student files organized and backed up.
+
+At GO ACADEMIX, we give schools a branded online enrollment page so students can choose a class, fill out their information, and pay in one flow. That same system tracks attendance, grades, certificates, and payments so nothing falls through the cracks.
+
+![GO ACADEMIX branded online enrollment page where students select a class, enter their details, and pay in one flow](ENROLLMENT_SCREENSHOT)
+
+## Step 10: Launch with a local marketing plan
+
+Even the best CNA school will struggle if no one knows it exists. Your marketing should focus on being easy to find, easy to trust, and easy to enroll in.
+
+### What to do first
+
+- Claim and optimize your Google Business Profile.
+- Build a simple website with your schedule, tuition, location, and a clear call to action.
+- Ask every graduate for a review.
+- Follow up quickly with every inquiry.
+- Consider a small paid advertising test on Google, TikTok, or Facebook once you are ready.
+
+We have written more about CNA school marketing in another post, but the short version is this: local SEO and reviews matter more than a big advertising budget.
+
+## Common mistakes to avoid
+
+- Trying to start classes before HHSC NATCEP approval is final.
+- Hiring instructors who do not meet state qualification requirements.
+- Choosing a clinical site that is restricted or unwilling to commit.
+- Underpricing tuition because you are nervous about enrollment.
+- Using a patchwork of spreadsheets and paper forms instead of a real system from the start.
+
+## How long does it really take
+
+Most new CNA schools in Texas take three to six months from business formation to their first approved class. Some move faster if they already have instructors and a location. Others take longer if they need to renovate a space or wait on clinical agreements.
+
+Build in buffer time. It is better to launch a month late with everything in order than to launch early and get shut down over a missing form.
+
+## Final disclaimer
+
+This guide is based on publicly available information and our own experience running a CNA school. It is not legal, tax, or regulatory advice. Texas requirements can change, and the Texas Health and Human Services Commission and the Texas Workforce Commission have the final say on approvals. Always verify current rules directly with those agencies, the Texas Secretary of State, the Texas Comptroller, and qualified professionals before making decisions for your school.
+
+## Ready to build the systems side of your school
+
+Starting a CNA school in Texas takes work, but the hardest part is not the curriculum. It is keeping enrollment, attendance, grades, payments, and state reporting organized once students start showing up.
+
+At GO ACADEMIX, we built a platform specifically for allied health school owners. If you want to see how we handle enrollment, student records, and certificates in one place, book a demo and we will walk through it together.
+    `,
+  },
+  {
+    slug: "steps-to-start-a-cna-school-in-oklahoma",
+    title: "Steps to Start a CNA School in Oklahoma",
+    description:
+      "A practical step-by-step guide to opening a CNA school in Oklahoma, from business formation and OSDH approval to curriculum, clinical sites, and your first class.",
+    date: "2026-07-17",
+    readTime: "11 min read",
+    author: "Jocelyn Powell",
+    category: "Operations",
+    keywords:
+      "start a CNA school in Oklahoma, Oklahoma CNA school requirements, Oklahoma NATCEP approval, how to open a CNA school Oklahoma, CNA training program Oklahoma",
+    content: `
+## Starting a CNA school in Oklahoma is a real business, not just a classroom
+
+A lot of people who want to start a CNA school start by thinking about the curriculum. That makes sense, but the state approval process, business setup, and clinical partnerships usually take longer than the lesson plans. If you are serious about opening a CNA school in Oklahoma, it helps to work through the steps in order so you are not scrambling later.
+
+At Allied Health Career Training, the school my husband and I run in Kansas, we have been through a similar process. We also built GO ACADEMIX because we got tired of juggling spreadsheets, PDF applications, and disconnected systems once the school was up and running. This guide covers what we have learned about getting started, applied to Oklahoma's rules.
+
+A quick note before we dive in: this is not legal advice. Regulations change, and every situation is different. Use this as a starting point, then confirm everything with the Oklahoma State Department of Health, the Oklahoma Secretary of State, the Oklahoma Tax Commission, your attorney, and your accountant.
+
+## Step 1: Form your business entity
+
+Before you apply for anything, you need a legal business. Most small CNA schools in Oklahoma start as an LLC because it is simple and offers liability protection.
+
+### What to do
+
+- Choose a business name and check availability with the Oklahoma Secretary of State.
+- File your Articles of Organization if you are forming an LLC.
+- Appoint a registered agent with an Oklahoma address.
+- Get an Employer Identification Number from the IRS.
+- Open a business bank account and keep school money separate from personal money.
+
+You can register online through the Oklahoma Secretary of State's business portal. The filing fee is usually reasonable, but check the current amount because it changes from time to time.
+
+## Step 2: Register for Oklahoma business taxes
+
+Once your entity is set up, register with the Oklahoma Tax Commission. Depending on how you structure tuition and fees, you may need to collect and remit sales tax. You may also need to register for withholding tax if you have employees and unemployment tax through the Oklahoma Employment Security Commission.
+
+### What to do
+
+- Register through the Oklahoma Tax Commission.
+- Ask your accountant whether tuition, books, supplies, or enrollment fees are subject to Oklahoma sales tax.
+- Set up a payroll system if you plan to hire instructors or administrative staff.
+
+Do not skip the tax conversation. A small mistake in the first year can turn into a big headache when you try to scale.
+
+## Step 3: Secure a location and build your classroom and lab
+
+You will need a physical location for classroom instruction and a skills lab. Oklahoma requires a minimum 75-hour long-term care aide training program, and a meaningful portion of that involves hands-on skills practice. Your lab needs enough space, equipment, and supplies for students to practice skills like bed making, transfers, vital signs, and infection control.
+
+### What to think about
+
+- Classroom capacity and parking.
+- ADA accessibility.
+- Lab space with hospital beds, mannequins, wheelchairs, and other training equipment.
+- Restrooms, break areas, and a secure place for student records.
+- A location that is convenient for your target students.
+
+You do not need a fancy building, but the space needs to feel professional and meet any local zoning and fire safety requirements.
+
+## Step 4: Apply to become an Oklahoma OSDH-approved training provider
+
+In Oklahoma, CNA training programs are overseen by the Oklahoma State Department of Health through its Nurse Aide Registry. This is the most important approval you will need.
+
+You will submit a Nurse Aide Training and Competency Evaluation Program, or NATCEP, application and related documents to OSDH. The process includes showing that your school has the right people, curriculum, facilities, and clinical training arrangements.
+
+### What to do
+
+- Visit the Oklahoma State Department of Health Nurse Aide Registry page.
+- Download the current NATCEP application and instructions.
+- Review the nurse aide rules in OAC 310:677.
+- Submit a complete application package with all required attachments, including resumes for the program director and each instructor.
+
+OSDH approval is not instant. Build in time for questions, corrections, and follow-up.
+
+## Step 5: Hire a qualified program director and instructors
+
+Oklahoma requires specific qualifications for the people who run and teach your CNA course. Training must be done by or under the general supervision of a Registered Nurse who has at least two years of nursing experience, including at least one year in long-term care facility services, and who has completed a course in teaching adults or has experience teaching adults or supervising nurse aides.
+
+### What to do
+
+- Identify your program director or RN supervisor and confirm they hold an active, unencumbered RN license.
+- Confirm the RN has at least two years of nursing experience with at least one year in long-term care facility services.
+- Confirm the RN has completed a course in teaching adults, or has experience teaching adults or supervising nurse aides.
+- Hire primary instructors who hold active RN or LPN licenses and meet any experience requirements.
+- Keep copies of licenses, certifications, resumes, and training records on file.
+
+A Licensed Practical Nurse may act as an instructor when a Registered Nurse maintains responsibility for the program and is available to provide instruction in areas where the LPN may lack technical expertise. Hiring the right instructors is about more than checking boxes. Your instructors are the face of your school. They will determine whether students pass the state exam and whether graduates refer their friends.
+
+## Step 6: Submit your curriculum for approval
+
+Oklahoma requires a minimum of 75 hours of training for long-term care aide programs. The curriculum must include at least 16 hours of training in communication, infection control, safety and emergency procedures, promoting a resident's independence, and respecting a resident's rights before any direct contact with a resident. It must also include at least 16 hours of supervised practical training and a minimum of 10 hours of training in the care of Alzheimer's patients.
+
+### What to do
+
+- Obtain the current Oklahoma nurse aide training rules and any curriculum guidance from OSDH.
+- Build lesson plans, student handouts, quizzes, and skills checklists that match the required content.
+- Document how you will deliver classroom, lab, and clinical hours.
+- Submit your curriculum as part of your NATCEP application package.
+
+Many schools purchase an existing curriculum from an approved vendor. That can save time, but make sure it is current and accepted by OSDH for Oklahoma.
+
+## Step 7: Set up clinical site agreements
+
+Clinical training is a required part of the CNA course. You will need agreements with one or more long-term care facilities, hospitals, or other approved clinical sites where students can complete their supervised clinical hours.
+
+### What to do
+
+- Contact local nursing homes, assisted living facilities, and hospitals.
+- Negotiate a clinical affiliation agreement.
+- Verify that the facility is willing and qualified to serve as a clinical training site.
+- Coordinate schedules, pre-clinical requirements, and liability insurance.
+
+Start this process early. Good clinical sites are in demand, and it can take weeks or months to get an agreement signed.
+
+## Step 8: Register as a testing site or partner with one
+
+After students complete the 75-hour course, they must pass the Oklahoma Nurse Aide Competency Examination to be listed on the Oklahoma Nurse Aide Registry. Oklahoma uses Prometric for the competency examination. Some schools become approved testing sites. Others partner with an existing testing vendor or site.
+
+### What to do
+
+- Contact Prometric or the Oklahoma State Department of Health for current testing information.
+- Understand the testing schedule, fees, and registration process.
+- Decide whether you want to host testing at your school or send students to another location.
+
+Being able to offer testing at your school can be a competitive advantage, but it comes with additional requirements.
+
+## Step 9: Set up enrollment, payments, and student records
+
+Once you are approved to run classes, you need a way to enroll students, collect tuition, track attendance and grades, and manage records. This is where a lot of new schools get stuck using spreadsheets and paper folders.
+
+### What to do
+
+- Create an enrollment process that is easy for students to complete.
+- Set up tuition and payment options, including any deposit or payment plan policies.
+- Track attendance, lab skills, and grades in a way that is audit friendly.
+- Keep student files organized and backed up.
+
+At GO ACADEMIX, we give schools a branded online enrollment page so students can choose a class, fill out their information, and pay in one flow. That same system tracks attendance, grades, certificates, and payments so nothing falls through the cracks.
+
+![GO ACADEMIX branded online enrollment page where students select a class, enter their details, and pay in one flow](ENROLLMENT_SCREENSHOT)
+
+## Step 10: Launch with a local marketing plan
+
+Even the best CNA school will struggle if no one knows it exists. Your marketing should focus on being easy to find, easy to trust, and easy to enroll in.
+
+### What to do first
+
+- Claim and optimize your Google Business Profile.
+- Build a simple website with your schedule, tuition, location, and a clear call to action.
+- Ask every graduate for a review.
+- Follow up quickly with every inquiry.
+- Consider a small paid advertising test on Google, TikTok, or Facebook once you are ready.
+
+We have written more about CNA school marketing in another post, but the short version is this: local SEO and reviews matter more than a big advertising budget.
+
+## Common mistakes to avoid
+
+- Trying to start classes before OSDH NATCEP approval is final.
+- Hiring instructors who do not meet state qualification requirements.
+- Choosing a clinical site that is unwilling to commit or does not meet program requirements.
+- Underpricing tuition because you are nervous about enrollment.
+- Using a patchwork of spreadsheets and paper forms instead of a real system from the start.
+
+## How long does it really take
+
+Most new CNA schools in Oklahoma take three to six months from business formation to their first approved class. Some move faster if they already have instructors and a location. Others take longer if they need to renovate a space or wait on clinical agreements.
+
+Build in buffer time. It is better to launch a month late with everything in order than to launch early and get shut down over a missing form.
+
+## Final disclaimer
+
+This guide is based on publicly available information and our own experience running a CNA school. It is not legal, tax, or regulatory advice. Oklahoma requirements can change, and the Oklahoma State Department of Health has the final say on approvals. Always verify current rules directly with OSDH, the Oklahoma Secretary of State, the Oklahoma Tax Commission, and qualified professionals before making decisions for your school.
+
+## Ready to build the systems side of your school
+
+Starting a CNA school in Oklahoma takes work, but the hardest part is not the curriculum. It is keeping enrollment, attendance, grades, payments, and state reporting organized once students start showing up.
+
+At GO ACADEMIX, we built a platform specifically for allied health school owners. If you want to see how we handle enrollment, student records, and certificates in one place, book a demo and we will walk through it together.
+    `,
+  },
 ];
+
 
 export const getPostBySlug = (slug: string) =>
   blogPosts.find((p) => p.slug === slug);
