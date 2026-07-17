@@ -4,7 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
-import { ArrowRight, CheckCircle2, Phone, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
+import { PhoneLink } from "@/components/PhoneLink";
+import { ArrowRight, CheckCircle2, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import foundersPhoto from "@/assets/connor-jocelyn-2025.jpg.asset.json";
@@ -151,12 +152,11 @@ export const AdvisoryCouncil = () => {
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline">
-                  <a href="tel:316-633-0621">
-                    <Phone className="mr-2 w-4 h-4" />
-                    Call or Text Connor
-                  </a>
-                </Button>
+                <PhoneLink
+                  number="316-633-0621"
+                  label="Call or Text Connor"
+                  className="inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium h-11 px-8 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground"
+                />
               </div>
             </div>
           </div>
@@ -326,13 +326,11 @@ export const AdvisoryCouncil = () => {
                       <Mail className="w-4 h-4" />
                       <span>jocelyn@goacademix.com</span>
                     </a>
-                    <a
-                      href="tel:316-633-0621"
+                    <PhoneLink
+                      number="316-633-0621"
+                      label="(316) 633-0621"
                       className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
-                    >
-                      <Phone className="w-4 h-4" />
-                      <span>(316) 633-0621</span>
-                    </a>
+                    />
                   </div>
                 </div>
               </div>
