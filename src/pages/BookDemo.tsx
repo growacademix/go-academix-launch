@@ -2,7 +2,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { Calendar } from "lucide-react";
 
-const CALENDAR_EMBED_URL = "https://calendar.app.google/9DBGALNCPLC8sjLe6";
+const CALENDAR_EMBED_URL =
+  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv?gv=true";
 
 export const BookDemo = () => {
   return (
@@ -28,7 +29,8 @@ export const BookDemo = () => {
               <iframe
                 src={CALENDAR_EMBED_URL}
                 title="Book a 30-minute demo with GO ACADEMIX"
-                className="w-full h-[700px] rounded-xl border-0"
+                className="w-full h-[600px] border-0"
+                frameBorder={0}
                 allow="fullscreen"
               />
             </div>
