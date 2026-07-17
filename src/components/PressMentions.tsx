@@ -1,8 +1,11 @@
 import { Newspaper } from "lucide-react";
+import grooverLogo from "@/assets/groover-labs.webp.asset.json";
+import wbjLogo from "@/assets/wichita-business-journal.jpg.asset.json";
 
 const mentions = [
   {
     source: "Groover Labs",
+    logo: grooverLogo.url,
     date: "Jan 2026",
     href: "https://www.grooverlabs.org/news/jocelyn-galicia-powell-2026",
     quote:
@@ -10,6 +13,7 @@ const mentions = [
   },
   {
     source: "Wichita Business Journal",
+    logo: wbjLogo.url,
     date: "Apr 2026",
     href: "https://www.bizjournals.com/wichita/news/2026/04/23/startups-to-watch-tech-entrepreneurship-funding.html",
     quote:
@@ -38,9 +42,15 @@ export const PressMentions = () => {
                 rel="noopener noreferrer"
                 className="group block bg-card rounded-2xl border border-border hover:border-primary/40 p-7 transition-colors"
               >
-                <div className="flex items-center justify-between mb-4">
-                  <p className="font-semibold text-foreground">{m.source}</p>
-                  <p className="mono-label">/ {m.date}</p>
+                <div className="flex items-center justify-between mb-5 gap-4">
+                  <div className="h-10 flex items-center">
+                    <img
+                      src={m.logo}
+                      alt={`${m.source} logo`}
+                      className="max-h-10 w-auto object-contain"
+                    />
+                  </div>
+                  <p className="mono-label shrink-0">/ {m.date}</p>
                 </div>
                 <blockquote className="text-muted-foreground leading-relaxed group-hover:text-foreground transition-colors">
                   "{m.quote}"
