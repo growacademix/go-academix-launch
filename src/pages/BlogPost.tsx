@@ -5,11 +5,29 @@ import { Helmet } from "react-helmet-async";
 import { getPostBySlug, blogPosts } from "@/data/blogPosts";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import enrollmentScreenshot from "@/assets/shot-11.50.25_am.png.asset.json";
+
+const assetMap: Record<string, string> = {
+  "ENROLLMENT_SCREENSHOT": enrollmentScreenshot.url,
+};
 
 const renderContent = (content: string) => {
   const blocks = content.trim().split(/\n\n+/);
   return blocks.map((block, i) => {
     const trimmed = block.trim();
+    const imageMatch = trimmed.match(/^!\[(.*?)\]\((.*?)\)$/);
+    if (imageMatch) {
+      const [, alt, rawUrl ] = imageMatch;
+      const src = assetMap[rawUrl] || rawUrl;
+      return (
+        <figure key={i} className="my-8">
+          <div className="rounded-xl border border-border overflow-hidden bg-muted">
+            <img src={src} alt={alt} loading="lazy" className="w-full h-auto" />
+          </div>
+          {alt && <figcaption className="text-sm text-muted-foreground mt-3 text-center">{alt}</figcaption>}
+        </figure>
+      );
+    }
     if (trimmed.startsWith("### ")) {
       return (
         <h3 key={i} className="text-xl font-semibold tracking-tight mt-10 mb-3">
