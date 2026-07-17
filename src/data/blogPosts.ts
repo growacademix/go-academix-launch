@@ -339,6 +339,11 @@ Paid marketing for CNA schools does not need to be complicated. Google Ads captu
 
 Start small, measure honestly, and scale the one that enrolls students. If you want to see how GO ACADEMIX helps schools turn clicks into enrolled students, book a demo and we will walk through it together.
     `,
+    cta: {
+      headline: "Need help marketing your CNA school?",
+      body: "We run an allied health school ourselves, so we understand the marketing challenges school owners face. Book a free consultation and we will walk through what is working for us.",
+      button: "Book a marketing consultation",
+    },
   },
   {
     slug: "steps-to-start-a-cna-school-in-kansas",
