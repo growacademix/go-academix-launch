@@ -1183,6 +1183,11 @@ Curriculum is the part of starting a school that feels overwhelming because it i
 
 And if you want a shortcut on the enrollment page and the student-facing content, book a demo with us. We have already made most of the mistakes so you do not have to.
     `,
+    cta: {
+      headline: "Need help building your CNA curriculum?",
+      body: "We have built and approved CNA curriculum for our own school, and we include prebuilt lessons, quizzes, and skills frameworks in GO ACADEMIX. Book a free consultation and we will show you how it works.",
+      button: "Book a curriculum consultation",
+    },
   },
 ];
 
