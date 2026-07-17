@@ -1,8 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, Mail, ArrowRight } from "lucide-react";
-
-const DEMO_URL =
-  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
+import { Link } from "react-router-dom";
 
 export const CTA = () => {
   return (
