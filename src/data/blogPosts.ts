@@ -158,7 +158,7 @@ Most CNA schools we talk to have tried one kind of paid advertising, got burned,
 
 At Allied Health Career Training, the school my husband and I run, we have tested a lot of channels. Google Ads has been our most consistent source of enrollments. TikTok has performed surprisingly well for us. Social banner ads work too. But none of that would matter if we were not measuring what happens after someone clicks.
 
-The best approach for most schools is simple. Start with about $200. Pick three to five channels. Run small campaigns for two weeks. Track cost per lead and cost per enrollment. Then kill the losers and double down on the winner.
+The best approach for most schools is simple. Pick three to five channels and allocate about $200 per channel. Run small campaigns for two to four weeks. Track cost per lead and cost per enrollment. Then kill the losers and double down on the winner. Spreading $200 across every channel will not give you enough data to make a real decision. $200 per channel is usually the minimum to see whether a platform can actually produce enrollments for your school.
 
 Here are the paid channels worth testing.
 
