@@ -202,9 +202,9 @@ export const AdvisoryCouncil = () => {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {expectations.map((item, index) =>
                 item.href ? (
-                  <a key={index} href={item.href} target="_blank" rel="noopener noreferrer" className="block">
+                  <Link key={index} to={item.href} className="block">
                     <ExpectationCard item={item} />
-                  </a>
+                  </Link>
                 ) : (
                   <ExpectationCard key={index} item={item} />
                 )
