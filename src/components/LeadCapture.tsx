@@ -61,15 +61,13 @@ export const LeadCapture = () => {
                   <p className="text-sm text-muted-foreground">
                     We'll be in touch. If you want to skip ahead, book a demo anytime.
                   </p>
-                  <a
-                    href={DEMO_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/book-demo"
                     className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
                   >
                     <Calendar className="w-4 h-4" />
                     Book a 30-min demo
-                  </a>
+                  </Link>
                 </div>
               ) : (
                 <form onSubmit={onSubmit} className="space-y-3">
