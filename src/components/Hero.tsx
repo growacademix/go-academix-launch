@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Calendar, Mail, CheckCircle2 } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
-
-const DEMO_URL =
-  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
 
 export const Hero = () => {
   return (
@@ -27,11 +25,11 @@ export const Hero = () => {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <Button asChild size="lg" className="rounded-full">
-                <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+                <Link to="/book-demo">
                   <Calendar className="mr-2 w-4 h-4" />
                   Book a 30-min demo
                   <ArrowRight className="ml-2 w-4 h-4" />
-                </a>
+                </Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="rounded-full">
                 <a href="mailto:jocelyn@goacademix.com">

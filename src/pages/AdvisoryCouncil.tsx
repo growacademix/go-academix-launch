@@ -6,12 +6,10 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PhoneLink } from "@/components/PhoneLink";
 import { ArrowRight, CheckCircle2, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 import { toast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 import foundersPhoto from "@/assets/connor-jocelyn-2025.jpg.asset.json";
-
-const DEMO_URL =
-  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
 
 const benefits = [
   {
@@ -36,7 +34,7 @@ const expectations = [
     icon: Calendar,
     title: "30-Minute Demo",
     description: "Start with a single 30-minute demo to see what we are building and share your initial thoughts.",
-    href: DEMO_URL,
+    href: "/book-demo",
   },
   {
     icon: Mail,
@@ -204,9 +202,9 @@ export const AdvisoryCouncil = () => {
             <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
               {expectations.map((item, index) =>
                 item.href ? (
-                  <a key={index} href={item.href} target="_blank" rel="noopener noreferrer" className="block">
+                  <Link key={index} to={item.href} className="block">
                     <ExpectationCard item={item} />
-                  </a>
+                  </Link>
                 ) : (
                   <ExpectationCard key={index} item={item} />
                 )
@@ -285,14 +283,12 @@ export const AdvisoryCouncil = () => {
                       </Button>
                       <p className="text-center text-sm text-primary-foreground/80 mt-4">
                         Rather pick a time?{" "}
-                        <a
-                          href={DEMO_URL}
-                          target="_blank"
-                          rel="noopener noreferrer"
+                        <Link
+                          to="/book-demo"
                           className="underline hover:text-primary-foreground"
                         >
                           Schedule a 30-minute demo on Connor's calendar
-                        </a>{" "}
+                        </Link>{" "}
                         or email{" "}
                         <a href="mailto:jocelyn@goacademix.com" className="underline hover:text-primary-foreground">
                           jocelyn@goacademix.com
@@ -310,15 +306,13 @@ export const AdvisoryCouncil = () => {
                   )}
 
                   <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-primary-foreground/80">
-                    <a
-                      href={DEMO_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      to="/book-demo"
                       className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
                     >
                       <Calendar className="w-4 h-4" />
                       <span>Schedule a 30-Minute Demo</span>
-                    </a>
+                    </Link>
                     <a
                       href="mailto:jocelyn@goacademix.com"
                       className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
@@ -351,10 +345,10 @@ export const AdvisoryCouncil = () => {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg">
-                  <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+                  <Link to="/book-demo">
                     <Calendar className="mr-2 w-4 h-4" />
                     Schedule a 30-Minute Demo
-                  </a>
+                  </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline">
                   <a href="mailto:jocelyn@goacademix.com">

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { CostComparison } from "@/components/CostComparison";
 import shot1 from "@/assets/shot-11.45.17_am.png.asset.json";
@@ -10,9 +11,6 @@ import shot4 from "@/assets/shot-11.52.40_am.png.asset.json";
 import shot5 from "@/assets/shot-11.50.25_am.png.asset.json";
 import shot6 from "@/assets/shot-11.51.49_am.png.asset.json";
 import shot7 from "@/assets/shot-12.01.33_pm.png.asset.json";
-
-const DEMO_URL =
-  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
 
 const shots = [
   { src: shot1.url, title: "Owner Dashboard", caption: "One view of enrollment, revenue, and completion. No exports required." },
@@ -103,11 +101,11 @@ export const Solution = () => {
             Every school runs a little differently. Book a short call and we'll walk through your actual workflows, not a generic demo deck.
           </p>
           <Button asChild size="lg" className="rounded-full bg-white text-primary hover:bg-white/90">
-            <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+            <Link to="/book-demo">
               <Calendar className="mr-2 w-4 h-4" />
               Book a 30-min demo
               <ArrowRight className="ml-2 w-4 h-4" />
-            </a>
+            </Link>
           </Button>
         </div>
       </div>

@@ -2,9 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo-goacademix-official.png.asset.json";
 
-const DEMO_URL =
-  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
-
 export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
@@ -27,9 +24,7 @@ export const Header = () => {
               Advisory Council
             </Link>
             <Button asChild size="default" className="rounded-full">
-              <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
-                Book a Demo
-              </a>
+              <Link to="/book-demo">Book a Demo</Link>
             </Button>
           </div>
         </div>

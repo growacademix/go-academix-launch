@@ -2,11 +2,9 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { CheckCircle2, Mail, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
-
-const DEMO_URL =
-  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
 
 export const LeadCapture = () => {
   const { toast } = useToast();
@@ -63,15 +61,13 @@ export const LeadCapture = () => {
                   <p className="text-sm text-muted-foreground">
                     We'll be in touch. If you want to skip ahead, book a demo anytime.
                   </p>
-                  <a
-                    href={DEMO_URL}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    to="/book-demo"
                     className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline"
                   >
                     <Calendar className="w-4 h-4" />
                     Book a 30-min demo
-                  </a>
+                  </Link>
                 </div>
               ) : (
                 <form onSubmit={onSubmit} className="space-y-3">
@@ -100,14 +96,12 @@ export const LeadCapture = () => {
                   </p>
                   <p className="text-xs text-center text-muted-foreground">
                     Rather talk now?{" "}
-                    <a
-                      href={DEMO_URL}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <Link
+                      to="/book-demo"
                       className="font-medium text-primary hover:underline"
                     >
                       Book a 30-min demo →
-                    </a>
+                    </Link>
                   </p>
                 </form>
               )}
