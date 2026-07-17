@@ -151,6 +151,7 @@ export const CostComparison = () => {
         </div>
       </div>
       </div>
+      </div>
     </section>
   );
 };
