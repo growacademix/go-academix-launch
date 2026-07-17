@@ -44,7 +44,7 @@ export const CostComparison = () => {
   return (
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-12">
-        <h2 className="heading-xxl text-3xl lg:text-4xl mb-4">
+        <h2 className="heading-xxl text-4xl lg:text-5xl mb-4">
           The systems you juggle today vs. <span className="text-primary">GO ACADEMIX</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl mx-auto">
