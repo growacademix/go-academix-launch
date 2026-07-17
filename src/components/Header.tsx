@@ -24,9 +24,7 @@ export const Header = () => {
               Advisory Council
             </Link>
             <Button asChild size="default" className="rounded-full">
-              <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
-                Book a Demo
-              </a>
+              <Link to="/book-demo">Book a Demo</Link>
             </Button>
           </div>
         </div>
