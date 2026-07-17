@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { CostComparison } from "@/components/CostComparison";
 import shot1 from "@/assets/shot-11.45.17_am.png.asset.json";
@@ -10,9 +11,6 @@ import shot4 from "@/assets/shot-11.52.40_am.png.asset.json";
 import shot5 from "@/assets/shot-11.50.25_am.png.asset.json";
 import shot6 from "@/assets/shot-11.51.49_am.png.asset.json";
 import shot7 from "@/assets/shot-12.01.33_pm.png.asset.json";
-
-const DEMO_URL =
-  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
 
 const shots = [
   { src: shot1.url, title: "Owner Dashboard", caption: "One view of enrollment, revenue, and completion. No exports required." },
