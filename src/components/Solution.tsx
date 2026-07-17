@@ -69,13 +69,10 @@ export const Solution = () => {
           ))}
         </div>
 
-        <div className="mb-16">
-          <CostComparison />
-          <div className="mt-6 max-w-4xl mx-auto p-5 rounded-2xl border border-border bg-card">
-            <p className="text-sm text-muted-foreground">
-              <span className="font-semibold text-foreground">On the roadmap:</span> automated compliance workflows, advanced state reporting, scheduling, and alumni/career pathways. Already in development with feedback from our partner schools.
-            </p>
-          </div>
+        <div className="mb-16 max-w-4xl mx-auto p-5 rounded-2xl border border-border bg-card">
+          <p className="text-sm text-muted-foreground">
+            <span className="font-semibold text-foreground">On the roadmap:</span> automated compliance workflows, advanced state reporting, scheduling, and alumni/career pathways. Already in development with feedback from our partner schools.
+          </p>
         </div>
 
         <Dialog open={open !== null} onOpenChange={(o) => !o && setOpen(null)}>
