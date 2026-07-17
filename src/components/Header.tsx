@@ -2,9 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo-goacademix-official.png.asset.json";
 
-const DEMO_URL =
-  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
-
 export const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
