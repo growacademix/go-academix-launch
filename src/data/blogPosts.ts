@@ -330,6 +330,186 @@ Paid marketing for CNA schools does not need to be complicated. Google Ads captu
 Start small, measure honestly, and scale the one that enrolls students. If you want to see how GO ACADEMIX helps schools turn clicks into enrolled students, book a demo and we will walk through it together.
     `,
   },
+  {
+    slug: "steps-to-start-a-cna-school-in-kansas",
+    title: "Steps to Start a CNA School in Kansas",
+    description:
+      "A practical step-by-step guide to opening a CNA school in Kansas, from business formation and KDADS approval to curriculum, clinical sites, and your first class.",
+    date: "2026-07-17",
+    readTime: "11 min read",
+    author: "Jocelyn Powell",
+    category: "Operations",
+    keywords:
+      "start a CNA school in Kansas, Kansas CNA school requirements, KDADS CNA course approval, how to open a CNA school Kansas, CNA training program Kansas",
+    content: `
+## Starting a CNA school in Kansas is a real business, not just a classroom
+
+A lot of people who want to start a CNA school start by thinking about the curriculum. That makes sense, but the state approval process, business setup, and clinical partnerships usually take longer than the lesson plans. If you are serious about opening a CNA school in Kansas, it helps to work through the steps in order so you are not scrambling later.
+
+At Allied Health Career Training, the school my husband and I run in Kansas, we have been through this process. We also built GO ACADEMIX because we got tired of juggling spreadsheets, PDF applications, and disconnected systems once the school was up and running. This guide covers what we learned about getting started.
+
+A quick note before we dive in: this is not legal advice. Regulations change, and every situation is different. Use this as a starting point, then confirm everything with KDADS, the Kansas Secretary of State, the Kansas Department of Revenue, your attorney, and your accountant.
+
+## Step 1: Form your business entity
+
+Before you apply for anything, you need a legal business. Most small CNA schools in Kansas start as an LLC because it is simple and offers liability protection.
+
+### What to do
+
+- Choose a business name and check availability with the Kansas Secretary of State.
+- File your Articles of Organization if you are forming an LLC.
+- Appoint a registered agent with a Kansas address.
+- Get an Employer Identification Number from the IRS.
+- Open a business bank account and keep school money separate from personal money.
+
+You can register online through the Kansas Secretary of State and the Kansas Business One Stop portal. The filing fee is usually reasonable, but check the current amount because it changes from time to time.
+
+## Step 2: Register for Kansas business taxes
+
+Once your entity is set up, register with the Kansas Department of Revenue. Depending on how you structure tuition and fees, you may need to collect and remit sales tax. You may also need to register for withholding tax if you have employees and unemployment tax through the Kansas Department of Labor.
+
+### What to do
+
+- Register through the Kansas Department of Revenue Customer Service Center.
+- Ask your accountant whether tuition, books, supplies, or enrollment fees are subject to Kansas sales tax.
+- Set up a payroll system if you plan to hire instructors or administrative staff.
+
+Do not skip the tax conversation. A small mistake in the first year can turn into a big headache when you try to scale.
+
+## Step 3: Secure a location and build your classroom and lab
+
+You will need a physical location for classroom instruction and a skills lab. Kansas requires a 90-hour CNA course, and a meaningful portion of that involves hands-on skills practice. Your lab needs enough space, equipment, and supplies for students to practice skills like bed making, transfers, vital signs, and infection control.
+
+### What to think about
+
+- Classroom capacity and parking.
+- ADA accessibility.
+- Lab space with hospital beds, mannequins, wheelchairs, and other training equipment.
+- Restrooms, break areas, and a secure place for student records.
+- A location that is convenient for your target students.
+
+You do not need a fancy building, but the space needs to feel professional and meet any local zoning and fire safety requirements.
+
+## Step 4: Apply to become a KDADS-approved training provider
+
+In Kansas, CNA training programs are overseen by the Kansas Department for Aging and Disability Services, or KDADS, through its Health Occupations Credentialing unit. This is the most important approval you will need.
+
+You will submit a Course Approval Application and related documents to KDADS. The process includes showing that your school has the right people, curriculum, facilities, and clinical training arrangements.
+
+### What to do
+
+- Visit the KDADS Health Occupations Credentialing training provider page.
+- Download the current Course Approval Application.
+- Review the list of facilities with active bans before selecting clinical sites.
+- Submit a complete application package with all required attachments.
+
+KDADS approval is not instant. Build in time for questions, corrections, and follow-up.
+
+## Step 5: Hire a qualified course supervisor and instructors
+
+Kansas requires specific qualifications for the people who run and teach your CNA course. Your course supervisor and instructors must meet the requirements outlined by KDADS, which generally include being a licensed nurse with relevant experience and completing the instructor approval process.
+
+### What to do
+
+- Identify your course supervisor and have them complete the Course Supervisor Application.
+- Have each instructor complete the CNA Instructor Application.
+- Keep copies of licenses, certifications, and resumes on file.
+- Make sure everyone understands the Kansas certified nurse aide curriculum guidelines.
+
+Hiring the right instructors is about more than checking boxes. Your instructors are the face of your school. They will determine whether students pass the state exam and whether graduates refer their friends.
+
+## Step 6: Submit your curriculum for approval
+
+Kansas uses the Kansas certified nurse aide curriculum guidelines for the 90-hour CNA course. Your program must cover the required topics and hours. KDADS adopts these curriculum guidelines by reference, so your course content needs to align with them.
+
+### What to do
+
+- Obtain the current Kansas certified nurse aide curriculum guidelines from KDADS.
+- Build lesson plans, student handouts, quizzes, and skills checklists that match the required content.
+- Document how you will deliver classroom, lab, and clinical hours.
+- Submit your curriculum as part of your course approval package.
+
+Many schools purchase an existing curriculum from an approved vendor. That can save time, but make sure it is current and accepted by KDADS for Kansas.
+
+## Step 7: Set up clinical site agreements
+
+Clinical training is a required part of the CNA course. You will need agreements with one or more long-term care facilities, hospitals, or other approved clinical sites where students can complete their supervised clinical hours.
+
+### What to do
+
+- Contact local nursing homes, assisted living facilities, and hospitals.
+- Negotiate a clinical affiliation agreement.
+- Verify that the facility is not on the KDADS ban list.
+- Coordinate schedules, pre-clinical requirements, and liability insurance.
+
+Start this process early. Good clinical sites are in demand, and it can take weeks or months to get an agreement signed.
+
+## Step 8: Register as a testing site or partner with one
+
+After students complete the 90-hour course, they must pass the Kansas nurse aide competency exam to be listed on the Kansas Nurse Aide Registry. Some schools become approved testing sites. Others partner with an existing testing vendor or site.
+
+### What to do
+
+- Contact KDADS or the approved nurse aide testing vendor for Kansas.
+- Understand the testing schedule, fees, and registration process.
+- Decide whether you want to host testing at your school or send students to another location.
+
+Being able to offer testing at your school can be a competitive advantage, but it comes with additional requirements.
+
+## Step 9: Set up enrollment, payments, and student records
+
+Once you are approved to run classes, you need a way to enroll students, collect tuition, track attendance and grades, and manage records. This is where a lot of new schools get stuck using spreadsheets and paper folders.
+
+### What to do
+
+- Create an enrollment process that is easy for students to complete.
+- Set up tuition and payment options, including any deposit or payment plan policies.
+- Track attendance, lab skills, and grades in a way that is audit friendly.
+- Keep student files organized and backed up.
+
+At GO ACADEMIX, we give schools a branded online enrollment page so students can choose a class, fill out their information, and pay in one flow. That same system tracks attendance, grades, certificates, and payments so nothing falls through the cracks.
+
+![GO ACADEMIX branded online enrollment page where students select a class, enter their details, and pay in one flow](ENROLLMENT_SCREENSHOT)
+
+## Step 10: Launch with a local marketing plan
+
+Even the best CNA school will struggle if no one knows it exists. Your marketing should focus on being easy to find, easy to trust, and easy to enroll in.
+
+### What to do first
+
+- Claim and optimize your Google Business Profile.
+- Build a simple website with your schedule, tuition, location, and a clear call to action.
+- Ask every graduate for a review.
+- Follow up quickly with every inquiry.
+- Consider a small paid advertising test on Google, TikTok, or Facebook once you are ready.
+
+We have written more about CNA school marketing in another post, but the short version is this: local SEO and reviews matter more than a big advertising budget.
+
+## Common mistakes to avoid
+
+- Trying to start classes before KDADS approval is final.
+- Hiring instructors who do not meet state qualification requirements.
+- Choosing a clinical site that is on the banned list or unwilling to commit.
+- Underpricing tuition because you are nervous about enrollment.
+- Using a patchwork of spreadsheets and paper forms instead of a real system from the start.
+
+## How long does it really take
+
+Most new CNA schools in Kansas take three to six months from business formation to their first approved class. Some move faster if they already have instructors and a location. Others take longer if they need to renovate a space or wait on clinical agreements.
+
+Build in buffer time. It is better to launch a month late with everything in order than to launch early and get shut down over a missing form.
+
+## Final disclaimer
+
+This guide is based on publicly available information and our own experience running a CNA school in Kansas. It is not legal, tax, or regulatory advice. Kansas requirements can change, and KDADS has the final say on approvals. Always verify current rules directly with KDADS, the Kansas Secretary of State, the Kansas Department of Revenue, and qualified professionals before making decisions for your school.
+
+## Ready to build the systems side of your school
+
+Starting a CNA school in Kansas takes work, but the hardest part is not the curriculum. It is keeping enrollment, attendance, grades, payments, and state reporting organized once students start showing up.
+
+At GO ACADEMIX, we built a platform specifically for allied health school owners. If you want to see how we handle enrollment, student records, and certificates in one place, book a demo and we will walk through it together.
+    `,
+  },
 ];
 
 export const getPostBySlug = (slug: string) =>
