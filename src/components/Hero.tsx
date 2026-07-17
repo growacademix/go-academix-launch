@@ -3,7 +3,7 @@ import { ArrowRight, Calendar, Mail, CheckCircle2 } from "lucide-react";
 import heroVideoAsset from "@/assets/hero-video.mp4.asset.json";
 
 const DEMO_URL =
-  "https://calendar.google.com/calendar/appointments/schedules/AcZssZ1As3Xpq5uWK7VJmTvU0lDvlIB7iZpTKnBE2WocnKb-qIOfJ-PX9RjRGSRsap5SSwgHYOt0dvCv";
+  "https://calendar.app.google/9DBGALNCPLC8sjLe6";
 
 export const Hero = () => {
   return (
