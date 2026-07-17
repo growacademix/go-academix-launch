@@ -14,7 +14,7 @@ export const Footer = () => {
             © {new Date().getFullYear()} GO ACADEMIX. Transforming healthcare education.
           </p>
 
-          <div className="flex gap-6 text-sm text-muted-foreground">
+          <div className="flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-foreground transition-colors">
               Privacy
             </a>
@@ -23,6 +23,15 @@ export const Footer = () => {
             </a>
             <a href="#" className="hover:text-foreground transition-colors">
               Contact
+            </a>
+            <a
+              href="https://www.linkedin.com/company/goacademix/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GO ACADEMIX on LinkedIn"
+              className="hover:text-foreground transition-colors"
+            >
+              <Linkedin className="w-5 h-5" />
             </a>
           </div>
         </div>
