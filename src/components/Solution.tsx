@@ -101,11 +101,11 @@ export const Solution = () => {
             Every school runs a little differently. Book a short call and we'll walk through your actual workflows, not a generic demo deck.
           </p>
           <Button asChild size="lg" className="rounded-full bg-white text-primary hover:bg-white/90">
-            <a href={DEMO_URL} target="_blank" rel="noopener noreferrer">
+            <Link to="/book-demo">
               <Calendar className="mr-2 w-4 h-4" />
               Book a 30-min demo
               <ArrowRight className="ml-2 w-4 h-4" />
-            </a>
+            </Link>
           </Button>
         </div>
       </div>
