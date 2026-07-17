@@ -134,9 +134,9 @@ const BlogPost = () => {
                   Need help marketing your CNA school?
                 </h2>
                 <p className="text-muted-foreground">
-                  We have built a significantly large and profitable allied health
-                  school. Book a free consultation and we will walk through what
-                  is actually working for us.
+                  We run an allied health school ourselves, so we understand the
+                  marketing challenges school owners face. Book a free consultation
+                  and we will walk through what is working for us.
                 </p>
               </div>
               <Button asChild className="rounded-full shrink-0">
