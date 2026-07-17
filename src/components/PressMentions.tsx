@@ -17,32 +17,30 @@ const mentions = [
 
 export const PressMentions = () => {
   return (
-    <section className="py-12 lg:py-16 bg-accent/30 border-y border-border">
+    <section className="py-14 lg:py-20 border-y border-border bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
-            <span className="pill-badge shrink-0">
-              <Newspaper className="w-3.5 h-3.5" />
-              In the news
-            </span>
+        <div className="max-w-6xl mx-auto flex flex-col items-center gap-8">
+          <span className="pill-badge">
+            <Newspaper className="w-3.5 h-3.5" />
+            In the news
+          </span>
 
-            <div className="flex flex-wrap items-center gap-8 sm:gap-12">
-              {mentions.map((m) => (
-                <a
-                  key={m.source}
-                  href={m.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center justify-center h-12 opacity-80 hover:opacity-100 transition-opacity"
-                >
-                  <img
-                    src={m.logo}
-                    alt={`${m.source} logo`}
-                    className="max-h-12 w-auto max-w-[180px] object-contain"
-                  />
-                </a>
-              ))}
-            </div>
+          <div className="flex flex-wrap items-center justify-center gap-10 sm:gap-16">
+            {mentions.map((m) => (
+              <a
+                key={m.source}
+                href={m.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex items-center justify-center h-14 opacity-80 hover:opacity-100 transition-opacity"
+              >
+                <img
+                  src={m.logo}
+                  alt={`${m.source} logo`}
+                  className="h-12 md:h-14 w-auto max-w-[180px] object-contain grayscale group-hover:grayscale-0 transition-all duration-200"
+                />
+              </a>
+            ))}
           </div>
         </div>
       </div>

@@ -42,7 +42,9 @@ export const CostComparison = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <section className="py-24 lg:py-32">
+      <div className="container mx-auto px-6">
+        <div className="max-w-6xl mx-auto">
       <div className="text-center mb-12">
         <h2 className="heading-xxl text-4xl lg:text-5xl mb-4">
           The systems you juggle today vs. <span className="text-primary">GO ACADEMIX</span>
@@ -148,6 +150,8 @@ export const CostComparison = () => {
           Fewer logins, less re-entry, and one place to see every student from enrollment to certificate.
         </div>
       </div>
-    </div>
+      </div>
+      </div>
+    </section>
   );
 };
