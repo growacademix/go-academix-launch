@@ -187,9 +187,9 @@ export const AdvisoryCouncil = () => {
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
                 If you run a healthcare training school and want to share input, we would love to hear from you. The commitment is small: one 30-minute demo, then occasional short questions by email when we want your perspective.
               </p>
-              <pdate className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
                 No committees, no ongoing meetings. Just email Jocelyn or schedule a demo with Connor whenever it is convenient.
-              </date>
+              </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg">
                   <Link to="/book-demo">
