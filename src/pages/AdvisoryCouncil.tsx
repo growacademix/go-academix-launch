@@ -1,14 +1,9 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PhoneLink } from "@/components/PhoneLink";
 import { ArrowRight, CheckCircle2, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-import { toast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 import foundersPhoto from "@/assets/connor-jocelyn-2025.jpg.asset.json";
 
 const benefits = [
