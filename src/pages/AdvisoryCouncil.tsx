@@ -183,10 +183,13 @@ export const AdvisoryCouncil = () => {
                 <Calendar className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium text-primary">Let's Find a Few Minutes</span>
               </div>
-              <h2 className="text-3xl font-semibold mb-6">Prefer to Schedule Directly?</h2>
+              <h2 className="text-3xl font-semibold mb-6">Interested in Helping Shape GO ACADEMIX?</h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                The only time commitment is a 30-minute demo. After that, we will occasionally send short questions by email. Book a demo with Connor below or email Jocelyn directly.
+                If you run a healthcare training school and want to share input, we would love to hear from you. The commitment is small: one 30-minute demo, then occasional short questions by email when we want your perspective.
               </p>
+              <pdate className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+                No committees, no ongoing meetings. Just email Jocelyn or schedule a demo with Connor whenever it is convenient.
+              </date>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg">
                   <Link to="/book-demo">
