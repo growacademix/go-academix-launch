@@ -108,10 +108,10 @@ export const AdvisoryCouncil = () => {
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg">
-                  <a href="#join">
+                  <Link to="/book-demo">
                     Join the Advisory Council
                     <ArrowRight className="ml-2 w-4 h-4" />
-                  </a>
+                  </Link>
                 </Button>
                 <PhoneLink
                   number="316-633-0621"
