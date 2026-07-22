@@ -5,7 +5,6 @@ import { Solution } from "@/components/Solution";
 import { SocialProof } from "@/components/SocialProof";
 import { PressMentions } from "@/components/PressMentions";
 import { CostComparison } from "@/components/CostComparison";
-import { LeadCapture } from "@/components/LeadCapture";
 import { Footer } from "@/components/Footer";
 
 const Index = () => {
@@ -19,7 +18,6 @@ const Index = () => {
         <CostComparison />
         <Problem />
         <Solution />
-        <LeadCapture />
       </main>
       <Footer />
     </div>
