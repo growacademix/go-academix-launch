@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Calendar, ArrowRight } from "lucide-react";
+import { Calendar, ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import shot1 from "@/assets/shot-11.45.17_am.png.asset.json";
@@ -22,7 +22,23 @@ const shots = [
 ];
 
 export const Solution = () => {
+  const [active, setActive] = useState(0);
   const [open, setOpen] = useState<number | null>(null);
+  const stripRef = useRef<HTMLDivElement>(null);
+
+  const goTo = (index: number) => {
+    const next = (index + shots.length) % shots.length;
+    setActive(next);
+  };
+
+  useEffect(() => {
+    if (stripRef.current) {
+      const thumb = stripRef.current.children[active] as HTMLElement | undefined;
+      if (thumb) {
+        thumb.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      }
+    }
+  }, [active]);
 
   return (
     <section id="product" className="py-24 lg:py-32 bg-muted/40">
@@ -43,30 +59,70 @@ export const Solution = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20">
-          {shots.map((shot, i) => (
+        <div className="max-w-5xl mx-auto mb-20">
+          <div className="relative group">
             <button
-              key={i}
-              onClick={() => setOpen(i)}
-              className="group text-left bg-card rounded-2xl border border-border overflow-hidden hover:border-primary/40 transition-all"
+              onClick={() => goTo(active - 1)}
+              className="absolute left-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-card border border-border shadow-sm flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors"
+              aria-label="Previous screenshot"
             >
-              <div className="p-4 pb-0 flex items-center justify-between">
-                <span className="mono-num">/ {String(i + 1).padStart(2, "0")}</span>
-              </div>
-              <div className="aspect-[16/10] mx-4 mt-2 overflow-hidden bg-muted rounded-lg border border-border">
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+
+            <button
+              onClick={() => goTo(active + 1)}
+              className="absolute right-4 top-1/2 -translate-y-1/2 z-10 w-12 h-12 rounded-full bg-card border border-border shadow-sm flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-primary/40 transition-colors"
+              aria-label="Next screenshot"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
+
+            <button
+              onClick={() => setOpen(active)}
+              className="block w-full rounded-2xl border border-border bg-card overflow-hidden focus:outline-none focus:ring-2 focus:ring-primary/30"
+            >
+              <div className="aspect-[16/10] overflow-hidden bg-muted">
                 <img
-                  src={shot.src}
-                  alt={shot.title}
-                  loading="lazy"
-                  className="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-300"
+                  src={shots[active].src}
+                  alt={shots[active].title}
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
-              <div className="p-5">
-                <h3 className="font-semibold text-lg mb-1 tracking-tight">{shot.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed">{shot.caption}</p>
-              </div>
             </button>
-          ))}
+          </div>
+
+          <div className="mt-8 text-center max-w-2xl mx-auto">
+            <span className="mono-num text-muted-foreground">/ {String(active + 1).padStart(2, "0")}</span>
+            <h3 className="font-semibold text-xl mt-2 mb-2 tracking-tight">{shots[active].title}</h3>
+            <p className="text-muted-foreground">{shots[active].caption}</p>
+          </div>
+
+          <div
+            ref={stripRef}
+            className="mt-10 flex gap-3 overflow-x-auto pb-4 scrollbar-thin scrollbar-thumb-border scrollbar-track-transparent"
+          >
+            {shots.map((shot, i) => (
+              <button
+                key={i}
+                onClick={() => setActive(i)}
+                className={`flex-shrink-0 w-28 md:w-36 rounded-lg border overflow-hidden transition-all ${
+                  i === active
+                    ? "border-primary ring-1 ring-primary"
+                    : "border-border opacity-70 hover:opacity-100"
+                }`}
+                aria-label={`View ${shot.title}`}
+              >
+                <div className="aspect-[16/10] bg-muted">
+                  <img
+                    src={shot.src}
+                    alt={shot.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover object-top"
+                  />
+                </div>
+              </button>
+            ))}
+          </div>
         </div>
 
         <div className="mb-16 max-w-4xl mx-auto p-5 rounded-2xl border border-border bg-card">
