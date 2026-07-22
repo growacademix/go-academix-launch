@@ -1,14 +1,9 @@
-import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PhoneLink } from "@/components/PhoneLink";
 import { ArrowRight, CheckCircle2, Mail, Calendar, Users, MessageSquare, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
-import { toast } from "@/hooks/use-toast";
-import { supabase } from "@/integrations/supabase/client";
 import foundersPhoto from "@/assets/connor-jocelyn-2025.jpg.asset.json";
 
 const benefits = [
@@ -59,38 +54,6 @@ const ExpectationCard = ({ item }: { item: typeof expectations[number] }) => (
 );
 
 export const AdvisoryCouncil = () => {
-  const [email, setEmail] = useState("");
-  const [school, setSchool] = useState("");
-  const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email || !email.includes("@") || !school) return;
-    setSubmitting(true);
-    try {
-      const { error } = await supabase.functions.invoke("submit-advisory-council", {
-        body: { school, email, message: message || null },
-      });
-      if (error) throw error;
-      setSubmitted(true);
-      toast({
-        title: "Thank you for your interest!",
-        description: "Connor or Jocelyn will reach out soon to schedule a conversation.",
-      });
-    } catch (err) {
-      console.error(err);
-      toast({
-        title: "Something went wrong",
-        description: "Please try again, or email jocelyn@goacademix.com directly.",
-        variant: "destructive",
-      });
-    } finally {
-      setSubmitting(false);
-    }
-  };
-
   return (
     <div className="min-h-screen">
       <Header />
@@ -226,84 +189,32 @@ export const AdvisoryCouncil = () => {
                     No ongoing meetings, no committees, and no other requirements. We know your time is valuable. Schedule a demo with Connor or email Jocelyn and we will handle the rest.
                   </p>
 
-                  {!submitted ? (
-                    <form onSubmit={handleSubmit} className="max-w-lg mx-auto text-left">
-                      <div className="space-y-4 mb-6">
-                        <div>
-                          <label htmlFor="school" className="block text-sm font-medium text-primary-foreground/90 mb-2">
-                            School Name
-                          </label>
-                          <Input
-                            id="school"
-                            type="text"
-                            placeholder="Your school name"
-                            value={school}
-                            onChange={(e) => setSchool(e.target.value)}
-                            required
-                            className="h-12 text-base bg-background/95 text-foreground border-background/20"
-                          />
-                        </div>
-                        <div>
-                          <label htmlFor="email" className="block text-sm font-medium text-primary-foreground/90 mb-2">
-                            Email Address
-                          </label>
-                          <Input
-                            id="email"
-                            type="email"
-                            placeholder="you@school.edu"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                            className="h-12 text-base bg-background/95 text-foreground border-background/20"
-                          />
-                        </div>
-                        <div>
-                          <label htmlFor="message" className="block text-sm font-medium text-primary-foreground/90 mb-2">
-                            What challenges are you facing? (Optional)
-                          </label>
-                          <Textarea
-                            id="message"
-                            placeholder="Tell us about your current systems and what frustrates you most..."
-                            value={message}
-                            onChange={(e) => setMessage(e.target.value)}
-                            rows={4}
-                            className="text-base bg-background/95 text-foreground border-background/20"
-                          />
-                        </div>
-                      </div>
-                      <Button
-                        type="submit"
-                        size="lg"
-                        variant="outline"
-                        disabled={submitting}
-                        className="w-full h-12 px-8 shadow-sm bg-white text-primary border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary"
+                  <div className="max-w-lg mx-auto text-center">
+                    <p className="text-base text-primary-foreground/90 mb-6">
+                      We are looking for 10 healthcare training schools to help shape the platform. Send Jocelyn an email and she will get back to you within one business day.
+                    </p>
+                    <Button
+                      asChild
+                      size="lg"
+                      variant="outline"
+                      className="w-full h-12 px-8 shadow-sm bg-white text-primary border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary"
+                    >
+                      <a href="mailto:jocelyn@goacademix.com">
+                        Email jocelyn@goacademix.com
+                        <Mail className="ml-2 w-4 h-4" />
+                      </a>
+                    </Button>
+                    <p className="text-center text-sm text-primary-foreground/80 mt-4">
+                      Rather pick a time?{" "}
+                      <Link
+                        to="/book-demo"
+                        className="underline hover:text-primary-foreground"
                       >
-                        {submitting ? "Sending..." : "Request a Conversation"}
-                        <ArrowRight className="ml-2 w-4 h-4" />
-                      </Button>
-                      <p className="text-center text-sm text-primary-foreground/80 mt-4">
-                        Rather pick a time?{" "}
-                        <Link
-                          to="/book-demo"
-                          className="underline hover:text-primary-foreground"
-                        >
-                          Schedule a 30-minute demo on Connor's calendar
-                        </Link>{" "}
-                        or email{" "}
-                        <a href="mailto:jocelyn@goacademix.com" className="underline hover:text-primary-foreground">
-                          jocelyn@goacademix.com
-                        </a>
-                        .
-                      </p>
-                    </form>
-                  ) : (
-                    <div className="max-w-md mx-auto p-6 bg-background/95 rounded-lg">
-                      <div className="flex items-center gap-3 text-foreground justify-center">
-                        <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
-                        <p className="font-medium">Thank you! Connor or Jocelyn will be in touch soon.</p>
-                      </div>
-                    </div>
-                  )}
+                        Schedule a 30-minute demo on Connor's calendar
+                      </Link>
+                      .
+                    </p>
+                  </div>
 
                   <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-primary-foreground/80">
                     <Link
