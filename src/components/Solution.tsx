@@ -85,7 +85,7 @@ export const Solution = () => {
                 <img
                   src={shots[active].src}
                   alt={shots[active].title}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-contain"
                 />
               </div>
             </button>
@@ -117,7 +117,7 @@ export const Solution = () => {
                     src={shot.src}
                     alt={shot.title}
                     loading="lazy"
-                    className="w-full h-full object-cover object-top"
+                    className="w-full h-full object-contain"
                   />
                 </div>
               </button>
