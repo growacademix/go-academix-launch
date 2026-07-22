@@ -176,73 +176,6 @@ export const AdvisoryCouncil = () => {
           </div>
         </section>
 
-        <section id="join" className="py-20">
-          <div className="container mx-auto px-6">
-            <div className="max-w-4xl mx-auto">
-              <div className="rounded-lg bg-primary p-12 shadow-card">
-                <div className="text-center text-primary-foreground">
-                  <h2 className="text-3xl lg:text-4xl font-semibold mb-6">Join the Advisory Council</h2>
-                  <p className="text-lg text-primary-foreground/90 mb-4 max-w-2xl mx-auto">
-                    We are looking for 10 healthcare training schools to help shape the platform. The total commitment is one 30-minute demo, followed by occasional short email questions when we want your input.
-                  </p>
-                  <p className="text-base text-primary-foreground/80 mb-8 max-w-2xl mx-auto">
-                    No ongoing meetings, no committees, and no other requirements. We know your time is valuable. Schedule a demo with Connor or email Jocelyn and we will handle the rest.
-                  </p>
-
-                  <div className="max-w-lg mx-auto text-center">
-                    <p className="text-base text-primary-foreground/90 mb-6">
-                      We are looking for 10 healthcare training schools to help shape the platform. Send Jocelyn an email and she will get back to you within one business day.
-                    </p>
-                    <Button
-                      asChild
-                      size="lg"
-                      variant="outline"
-                      className="w-full h-12 px-8 shadow-sm bg-white text-primary border-primary-foreground/20 hover:bg-primary-foreground hover:text-primary"
-                    >
-                      <a href="mailto:jocelyn@goacademix.com">
-                        Email jocelyn@goacademix.com
-                        <Mail className="ml-2 w-4 h-4" />
-                      </a>
-                    </Button>
-                    <p className="text-center text-sm text-primary-foreground/80 mt-4">
-                      Rather pick a time?{" "}
-                      <Link
-                        to="/book-demo"
-                        className="underline hover:text-primary-foreground"
-                      >
-                        Schedule a 30-minute demo on Connor's calendar
-                      </Link>
-                      .
-                    </p>
-                  </div>
-
-                  <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-6 text-sm text-primary-foreground/80">
-                    <Link
-                      to="/book-demo"
-                      className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
-                    >
-                      <Calendar className="w-4 h-4" />
-                      <span>Schedule a 30-Minute Demo</span>
-                    </Link>
-                    <a
-                      href="mailto:jocelyn@goacademix.com"
-                      className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
-                    >
-                      <Mail className="w-4 h-4" />
-                      <span>jocelyn@goacademix.com</span>
-                    </a>
-                    <PhoneLink
-                      number="316-633-0621"
-                      label="(316) 633-0621"
-                      className="flex items-center gap-2 hover:text-primary-foreground transition-colors"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section className="py-20 bg-accent/50">
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
@@ -250,9 +183,12 @@ export const AdvisoryCouncil = () => {
                 <Calendar className="w-4 h-4 text-primary" />
                 <span className="text-sm font-medium text-primary">Let's Find a Few Minutes</span>
               </div>
-              <h2 className="text-3xl font-semibold mb-6">Prefer to Schedule Directly?</h2>
+              <h2 className="text-3xl font-semibold mb-6">Interested in Helping Shape GO ACADEMIX?</h2>
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-                The only time commitment is a 30-minute demo. After that, we will occasionally send short questions by email. Book a demo with Connor below or email Jocelyn directly.
+                If you run a healthcare training school and want to share input, we would love to hear from you. The commitment is small: one 30-minute demo, then occasional short questions by email when we want your perspective.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+                No committees, no ongoing meetings. Just email Jocelyn or schedule a demo with Connor whenever it is convenient.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
                 <Button asChild size="lg">
