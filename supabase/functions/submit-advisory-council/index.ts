@@ -48,7 +48,7 @@ Deno.serve(async (req) => {
       const { error: emailError } = await supabase.functions.invoke("send-transactional-email", {
         body: {
           templateName: "advisory-council-notification",
-          recipientEmail: "tanmay@goacademix.com",
+          recipientEmail: "jocelyn@goacademix.com",
           idempotencyKey: `advisory-${inserted.id}`,
           templateData: { school, email, message: message ?? "" },
         },
