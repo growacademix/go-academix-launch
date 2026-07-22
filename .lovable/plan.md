@@ -1,28 +1,29 @@
-## Root cause
+## Problem
 
-The `submit-advisory-council` edge function fails to boot, so the browser sees a CORS error (no response = no CORS headers). Logs show:
+On mobile, the nav links (Home, Advisory Council, Team, Blog) are hidden via `hidden sm:block` in `src/components/Header.tsx`, leaving only the logo and "Book a Demo" button. There's no way to reach the other pages from a phone.
 
-```
-worker boot error: Unable to load .../@supabase/supabase-js/2.45.0/cors ... path not found
-```
+## Plan
 
-The import `import { corsHeaders } from 'npm:@supabase/supabase-js@2/cors'` is not a real module. The same broken import exists in `submit-lead`.
+Add a mobile hamburger menu to `src/components/Header.tsx` using the existing shadcn `Sheet` component (already in the project) so it matches the current editorial style.
 
-## Fix
+### Changes
 
-Replace the bad import in both edge functions with an inline `corsHeaders` constant (the standard Lovable pattern):
+1. **`src/components/Header.tsx`**
+   - Keep the current desktop nav (`hidden sm:flex`) exactly as-is.
+   - On mobile (`sm:hidden`), show a hamburger icon button (Lucide `Menu`) to the left of the "Book a Demo" button.
+   - Tapping it opens a `Sheet` sliding in from the right with:
+     - GO ACADEMIX logo at the top
+     - Vertical stack of links: Home, Advisory Council, Team, Blog
+     - A "Book a Demo" button at the bottom
+   - Each link closes the sheet on tap (controlled `open` state).
+   - Use existing tokens (cream background, teal accent, hairline borders) — no new styles.
 
-```ts
-const corsHeaders = {
-  "Access-Control-Allow-Origin": "*",
-  "Access-Control-Allow-Headers": "authorization, x-client-info, apikey, content-type",
-};
-```
+2. Keep "Book a Demo" visible in the top bar on mobile too, since it's the primary CTA.
 
-Files to update:
-1. `supabase/functions/submit-advisory-council/index.ts` — remove bad import, add inline `corsHeaders`.
-2. `supabase/functions/submit-lead/index.ts` — same fix (same broken import per logs).
+No other files change. No routing, data, or business logic changes.
 
-Then redeploy both functions and test the advisory council submission from the preview to confirm a 200 response.
+### Technical notes
 
-No frontend, schema, or RLS changes needed.
+- Use `@/components/ui/sheet` (`Sheet`, `SheetTrigger`, `SheetContent`) and `lucide-react`'s `Menu` icon, both already installed.
+- Controlled `useState` for open/close so link clicks can dismiss the sheet.
+- Accessibility: `aria-label="Open menu"` on the trigger button.
