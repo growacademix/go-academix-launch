@@ -54,38 +54,6 @@ const ExpectationCard = ({ item }: { item: typeof expectations[number] }) => (
 );
 
 export const AdvisoryCouncil = () => {
-  const [email, setEmail] = useState("");
-  const [school, setSchool] = useState("");
-  const [message, setMessage] = useState("");
-  const [submitted, setSubmitted] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email || !email.includes("@") || !school) return;
-    setSubmitting(true);
-    try {
-      const { error } = await supabase.functions.invoke("submit-advisory-council", {
-        body: { school, email, message: message || null },
-      });
-      if (error) throw error;
-      setSubmitted(true);
-      toast({
-        title: "Thank you for your interest!",
-        description: "Connor or Jocelyn will reach out soon to schedule a conversation.",
-      });
-    } catch (err) {
-      console.error(err);
-      toast({
-        title: "Something went wrong",
-        description: "Please try again, or email jocelyn@goacademix.com directly.",
-        variant: "destructive",
-      });
-    } finally {
-      setSubmitting(false);
-    }
-  };
-
   return (
     <div className="min-h-screen">
       <Header />
