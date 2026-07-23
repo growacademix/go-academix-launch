@@ -82,7 +82,16 @@ export const Header = () => {
                       </Link>
                     ))}
                   </nav>
-                  <div className="mt-auto pb-6">
+                  <div className="mt-auto pb-6 flex flex-col gap-3">
+                    <Button
+                      asChild
+                      size="lg"
+                      variant="outline"
+                      className="w-full rounded-full"
+                      onClick={() => setOpen(false)}
+                    >
+                      <a href="https://app.goacademix.com">Login</a>
+                    </Button>
                     <Button
                       asChild
                       size="lg"
