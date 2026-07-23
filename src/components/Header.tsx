@@ -47,6 +47,9 @@ export const Header = () => {
             <Button asChild size="sm" className="rounded-full">
               <Link to="/book-demo">Book a Demo</Link>
             </Button>
+            <Button asChild variant="outline" size="sm" className="rounded-full">
+              <a href="https://app.goacademix.com">Login</a>
+            </Button>
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
                 <Button
