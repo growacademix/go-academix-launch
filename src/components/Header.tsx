@@ -37,6 +37,9 @@ export const Header = () => {
             <Button asChild size="default" className="rounded-full">
               <Link to="/book-demo">Book a Demo</Link>
             </Button>
+            <Button asChild variant="outline" size="default" className="rounded-full">
+              <a href="https://app.goacademix.com">Login</a>
+            </Button>
           </div>
 
           {/* Mobile nav */}
