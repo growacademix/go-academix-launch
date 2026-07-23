@@ -37,12 +37,18 @@ export const Header = () => {
             <Button asChild size="default" className="rounded-full">
               <Link to="/book-demo">Book a Demo</Link>
             </Button>
+            <Button asChild variant="outline" size="default" className="rounded-full">
+              <a href="https://app.goacademix.com">Login</a>
+            </Button>
           </div>
 
           {/* Mobile nav */}
           <div className="flex sm:hidden items-center gap-2">
             <Button asChild size="sm" className="rounded-full">
               <Link to="/book-demo">Book a Demo</Link>
+            </Button>
+            <Button asChild variant="outline" size="sm" className="rounded-full">
+              <a href="https://app.goacademix.com">Login</a>
             </Button>
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
@@ -76,7 +82,16 @@ export const Header = () => {
                       </Link>
                     ))}
                   </nav>
-                  <div className="mt-auto pb-6">
+                  <div className="mt-auto pb-6 flex flex-col gap-3">
+                    <Button
+                      asChild
+                      size="lg"
+                      variant="outline"
+                      className="w-full rounded-full"
+                      onClick={() => setOpen(false)}
+                    >
+                      <a href="https://app.goacademix.com">Login</a>
+                    </Button>
                     <Button
                       asChild
                       size="lg"
