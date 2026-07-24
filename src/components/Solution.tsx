@@ -25,6 +25,7 @@ export const Solution = () => {
   const [active, setActive] = useState(0);
   const [open, setOpen] = useState<number | null>(null);
   const stripRef = useRef<HTMLDivElement>(null);
+  const didMount = useRef(false);
 
   const goTo = (index: number) => {
     const next = (index + shots.length) % shots.length;
@@ -32,12 +33,16 @@ export const Solution = () => {
   };
 
   useEffect(() => {
-    if (stripRef.current) {
-      const thumb = stripRef.current.children[active] as HTMLElement | undefined;
-      if (thumb) {
-        thumb.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
-      }
+    if (!didMount.current) {
+      didMount.current = true;
+      return;
     }
+    const strip = stripRef.current;
+    if (!strip) return;
+    const thumb = strip.children[active] as HTMLElement | undefined;
+    if (!thumb) return;
+    const left = thumb.offsetLeft - strip.clientWidth / 2 + thumb.clientWidth / 2;
+    strip.scrollTo({ left, behavior: "smooth" });
   }, [active]);
 
   return (
