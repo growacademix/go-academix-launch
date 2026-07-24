@@ -38,7 +38,7 @@ export const Header = () => {
               <Link to="/book-demo">Book a Demo</Link>
             </Button>
             <Button asChild variant="outline" size="default" className="rounded-full">
-              <a href="https://app.goacademix.com">Login</a>
+              <a href="https://app.goacademix.com/login">Login</a>
             </Button>
           </div>
 
@@ -48,7 +48,7 @@ export const Header = () => {
               <Link to="/book-demo">Book a Demo</Link>
             </Button>
             <Button asChild variant="outline" size="sm" className="rounded-full">
-              <a href="https://app.goacademix.com">Login</a>
+              <a href="https://app.goacademix.com/login">Login</a>
             </Button>
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
@@ -90,7 +90,7 @@ export const Header = () => {
                       className="w-full rounded-full"
                       onClick={() => setOpen(false)}
                     >
-                      <a href="https://app.goacademix.com">Login</a>
+                      <a href="https://app.goacademix.com/login">Login</a>
                     </Button>
                     <Button
                       asChild
