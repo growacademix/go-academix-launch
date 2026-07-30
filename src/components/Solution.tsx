@@ -150,7 +150,7 @@ export const Solution = () => {
           </DialogContent>
         </Dialog>
 
-        <div className="rounded-3xl p-12 lg:p-16 text-center relative overflow-hidden bg-gradient-to-br from-primary to-[hsl(var(--brand-green-deep))]">
+        <div className="rounded-3xl p-12 lg:p-16 text-center relative overflow-hidden surface-gradient-brand">
           <h3 className="heading-xxl text-3xl lg:text-5xl mb-4 text-primary-foreground">
             The best way to see it is to see it.
           </h3>

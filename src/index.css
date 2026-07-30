@@ -204,4 +204,25 @@
     letter-spacing: -0.03em;
     line-height: 1.02;
   }
+  /* Explicit gradients (avoids Tailwind gradient custom-property chains,
+     which can fail to resolve in some Edge/Chromium builds and leave text
+     unreadable on an unpainted background). Solid color fallback first. */
+  .surface-gradient-ink {
+    background-color: hsl(var(--brand-ink));
+    background-image: linear-gradient(
+      to bottom right,
+      hsl(var(--brand-ink)),
+      hsl(222 47% 16%)
+    );
+    color: hsl(0 0% 100%);
+  }
+  .surface-gradient-brand {
+    background-color: hsl(var(--primary));
+    background-image: linear-gradient(
+      to bottom right,
+      hsl(var(--primary)),
+      hsl(var(--brand-green-deep))
+    );
+  }
+
 }
